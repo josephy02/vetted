@@ -87,13 +87,16 @@ export async function verifyBusiness(req: ScreenRequest): Promise<Verification> 
     {
       query:
         `Verify the US business ${describe(req)} using Baselayer. Return its legal name, ` +
-        `state of incorporation, current entity status, and officers. Screen it against the ` +
+        `state of incorporation, current entity status, and current officers. Screen it against the ` +
         `OFAC SDN watchlist. Do not run lien or litigation searches.`,
       systemPrompt:
         "Use Baselayer as the source of truth for identity, registration, officers, and watchlist " +
         "data; do not fill these fields from general web pages. Use verified only when Baselayer " +
         "resolves exactly one entity. Use ambiguous when several distinct entities plausibly match " +
-        "and list them as candidates. Use no_match when Baselayer finds nothing. Never guess.",
+        "and list them as candidates. Use no_match when Baselayer finds nothing. Never guess. " +
+        "For officers, list each current officer, director, or manager once, with one short title " +
+        "(e.g. CEO, President, Treasurer). Exclude registered agents, organizers, tax preparers, " +
+        "and real-property contacts.",
       dataSources: [{ provider: "baselayer" }],
       effort: "low",
       outputSchema: KYB_SCHEMA,
@@ -123,10 +126,31 @@ export async function verifyBusiness(req: ScreenRequest): Promise<Verification> 
     legalName: out.legal_name ?? undefined,
     incorporationState: out.incorporation_state ?? undefined,
     entityStatus: out.entity_status ?? undefined,
-    officers: out.officers,
+    officers: cleanOfficers(out.officers),
     watchlistHits: out.watchlist_hits,
     sourceNote: "baselayer",
   };
+}
+
+const NON_OFFICER_ROLE = /real property|tax preparer|registered agent|organizer|incorporator/i;
+
+// Registry data repeats people across filings and mixes in non-officer roles.
+function cleanOfficers(officers: KybOutput["officers"]) {
+  const seen = new Set<string>();
+  return officers.flatMap(({ name, title }) => {
+    const primary = title.split(";")[0].trim();
+    if (!primary || NON_OFFICER_ROLE.test(primary)) return [];
+    // Match "Heather A Lang" with "Heather Anastasia Lang" by first + last name.
+    const parts = name.toLowerCase().split(/\s+/);
+    const key = `${parts[0]} ${parts[parts.length - 1]}`;
+    if (seen.has(key)) return [];
+    seen.add(key);
+    return [{ name: name === name.toUpperCase() ? titleCase(name) : name, title: primary }];
+  });
+}
+
+function titleCase(s: string): string {
+  return s.toLowerCase().replace(/\b\p{L}/gu, (c) => c.toUpperCase());
 }
 
 // ---------------------------------------------------------------------------

@@ -74,7 +74,9 @@ export function VerificationCard({
               statusOk === false ? "font-semibold text-escalate" : statusOk ? "text-proceed" : undefined
             }
           >
-            {verification.entityStatus ?? "Not reported"}
+            {verification.entityStatus
+              ? verification.entityStatus[0].toUpperCase() + verification.entityStatus.slice(1)
+              : "Not reported"}
           </span>
         </Item>
         <Item label="Registered in">{verification.incorporationState ?? "Not reported"}</Item>
