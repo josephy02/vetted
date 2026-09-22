@@ -23,7 +23,10 @@ const memoSchema = z.object({
     .describe("Only genuine adverse findings about this exact company. May be empty."),
   overallRationale: z
     .string()
-    .describe("3-5 plain-language sentences an analyst could defend to an auditor. Cite findings inline as [f1]."),
+    .describe(
+      "3-5 plain-language sentences an analyst could defend to an auditor. Cite findings inline " +
+        "as [f1]; brackets are only for finding ids. Refer to the verification record in words.",
+    ),
   recommendation: z.enum(["proceed", "proceed_with_caution", "escalate_for_review"]),
 });
 
@@ -107,7 +110,7 @@ export async function synthesizeMemo(input: {
   const renumber = new Map(traced.map((f, i) => [f.id, `f${i + 1}`]));
   const findings = traced.map((f) => ({ ...f, id: renumber.get(f.id)! }));
   const overallRationale = output.overallRationale
-    .replace(/\[(f\d+)\]/g, (_, id: string) => (renumber.has(id) ? `[${renumber.get(id)}]` : ""))
+    .replace(/\s*\[([^\]]+)\]/g, (_, id: string) => (renumber.has(id) ? ` [${renumber.get(id)}]` : ""))
     .replace(/\s+([.,;])/g, "$1");
 
   return {
