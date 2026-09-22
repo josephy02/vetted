@@ -80,9 +80,11 @@ export async function synthesizeMemo(input: {
 
   // Enforce traceability: drop any finding that doesn't map to a real source.
   const byId = new Map((sources ?? []).map((s) => [s.id, s]));
-  const findings: Finding[] = output.findings.flatMap((f) => {
+  const seen = new Set<string>();
+  const traced: Finding[] = output.findings.flatMap((f) => {
     const src = byId.get(f.sourceId);
-    if (!src) return [];
+    if (!src || seen.has(src.id)) return [];
+    seen.add(src.id);
     return [
       {
         id: src.id,
@@ -96,8 +98,22 @@ export async function synthesizeMemo(input: {
     ];
   });
 
+  // Order by severity then recency, and renumber f1..fn so citations read in order.
+  traced.sort(
+    (a, b) =>
+      SEVERITY_ORDER.indexOf(a.severity) - SEVERITY_ORDER.indexOf(b.severity) ||
+      (b.publishedDate ?? "").localeCompare(a.publishedDate ?? ""),
+  );
+  const renumber = new Map(traced.map((f, i) => [f.id, `f${i + 1}`]));
+  const findings = traced.map((f) => ({ ...f, id: renumber.get(f.id)! }));
+  const overallRationale = output.overallRationale
+    .replace(/\[(f\d+)\]/g, (_, id: string) => (renumber.has(id) ? `[${renumber.get(id)}]` : ""))
+    .replace(/\s+([.,;])/g, "$1");
+
   return {
     findings,
-    riskMemo: { overallRationale: output.overallRationale, recommendation: output.recommendation },
+    riskMemo: { overallRationale, recommendation: output.recommendation },
   };
 }
+
+const SEVERITY_ORDER: Finding["severity"][] = ["high", "medium", "low", "informational"];
