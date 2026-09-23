@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import type { ScreenEvent, ScreenRequest, ScreenResponse, ScreenStep } from "@/lib/types";
+import { CorroborationTable } from "./components/CorroborationTable";
 import { FindingsList } from "./components/FindingsList";
+import { FootprintBanner } from "./components/FootprintBanner";
 import { MonitorButton } from "./components/MonitorButton";
 import { RiskMemo } from "./components/RiskMemo";
 import { ScreenProgress, type StepState } from "./components/ScreenProgress";
@@ -13,7 +15,9 @@ type Steps = Record<ScreenStep, StepState>;
 
 const PENDING: Steps = {
   verification: { status: "pending" },
-  search: { status: "pending" },
+  self_published: { status: "pending" },
+  independent: { status: "pending" },
+  provenance: { status: "pending" },
   synthesis: { status: "pending" },
 };
 
@@ -82,7 +86,7 @@ export default function Home() {
       </header>
 
       <SearchForm
-        key={query ? `${query.companyName}|${query.city}|${query.state}` : "new"}
+        key={query ? `${query.companyName}|${query.domain}|${query.city}|${query.state}` : "new"}
         onSubmit={screen}
         disabled={view.kind === "loading"}
         initial={query}
@@ -104,7 +108,8 @@ export default function Home() {
 }
 
 function Results({ result }: { result: ScreenResponse }) {
-  const searchFailed = result.warnings?.some((w) => w.startsWith("Adverse-media")) ?? false;
+  const searchFailed =
+    result.warnings?.some((w) => /^(Independent-coverage|Web research)/.test(w)) ?? false;
 
   return (
     <div className="grid gap-12">
@@ -120,7 +125,9 @@ function Results({ result }: { result: ScreenResponse }) {
       )}
 
       <VerificationCard verification={result.verification} query={result.query} />
+      <FootprintBanner footprint={result.footprint} />
       <RiskMemo memo={result.riskMemo} findings={result.findings} />
+      <CorroborationTable checks={result.corroboration} resolvedDomain={result.resolvedDomain} />
 
       <section>
         <h2 className="mb-4 text-lg font-semibold">
@@ -133,13 +140,13 @@ function Results({ result }: { result: ScreenResponse }) {
         <MonitorButton query={result.query} exampleHeadline={result.findings[0]?.headline} />
       </section>
 
-      {result.timings && (
-        <p className="text-xs text-muted">
-          Verification {(result.timings.verificationMs / 1000).toFixed(1)}s, search{" "}
-          {(result.timings.searchMs / 1000).toFixed(1)}s (run in parallel), memo{" "}
-          {(result.timings.synthesisMs / 1000).toFixed(1)}s
-        </p>
-      )}
+      <p className="text-xs text-muted">
+        Screened in {(result.timings.totalMs / 1000).toFixed(1)}s: identity{" "}
+        {(result.timings.verificationMs / 1000).toFixed(1)}s and web research{" "}
+        {(result.timings.searchMs / 1000).toFixed(1)}s in parallel, memo{" "}
+        {(result.timings.synthesisMs / 1000).toFixed(1)}s. {result.sources.length} sources,{" "}
+        {result.footprint.independentSourceCount} independent.
+      </p>
     </div>
   );
 }

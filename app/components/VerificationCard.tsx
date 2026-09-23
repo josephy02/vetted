@@ -1,4 +1,5 @@
 import type { ScreenRequest, Verification } from "@/lib/types";
+import { formatDate } from "./FindingsList";
 
 const UNVERIFIED_COPY = {
   no_match: {
@@ -67,7 +68,7 @@ export function VerificationCard({
         </p>
       </div>
 
-      <dl className="mt-5 grid gap-x-8 gap-y-4 sm:grid-cols-3">
+      <dl className="mt-5 grid gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-4">
         <Item label="Entity status">
           <span
             className={
@@ -80,6 +81,9 @@ export function VerificationCard({
           </span>
         </Item>
         <Item label="Registered in">{verification.incorporationState ?? "Not reported"}</Item>
+        <Item label="Registered on">
+          {verification.incorporationDate ? formatDate(verification.incorporationDate) : "Not reported"}
+        </Item>
         <Item label="Watchlists">
           {!verification.watchlistHits?.length ? (
             "Not screened"

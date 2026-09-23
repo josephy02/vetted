@@ -1,4 +1,5 @@
 import type { Finding, Severity } from "@/lib/types";
+import { ProvenanceBadge } from "./ProvenanceBadge";
 
 const SEVERITY: Record<Severity, { label: string; dot: string }> = {
   high: { label: "High", dot: "bg-escalate" },
@@ -27,8 +28,8 @@ export function FindingsList({ findings, searchFailed }: { findings: Finding[]; 
   if (findings.length === 0) {
     return (
       <p className="max-w-prose text-muted">
-        No adverse coverage found for this company in the last three years of news. That is a
-        good sign, not an error.
+        No adverse coverage found in the independent sources retrieved for the last three years.
+        That is a good sign, but it is an absence of evidence rather than proof of a clean record.
       </p>
     );
   }
@@ -46,6 +47,7 @@ export function FindingsList({ findings, searchFailed }: { findings: Finding[]; 
             </span>
             <span>{CATEGORY[f.category]}</span>
             {f.publishedDate && <time dateTime={f.publishedDate}>{formatDate(f.publishedDate)}</time>}
+            <ProvenanceBadge provenance={f.sourceProvenance} />
           </div>
           <h3 className="mt-2 text-lg font-medium leading-snug">{f.headline}</h3>
           <p className="mt-1 max-w-[70ch] text-muted">{f.summary}</p>
