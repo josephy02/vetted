@@ -10,7 +10,7 @@ export async function GET(_req: Request, ctx: RouteContext<"/api/monitor/[id]">)
     if (!status) return Response.json({ error: "Monitor not found" }, { status: 404 });
     return Response.json(status);
   } catch (err) {
-    const message = err instanceof Error ? err.message : String(err);
-    return Response.json({ error: `Could not check monitor: ${message}` }, { status: 502 });
+    console.error("Could not check monitor:", err);
+    return Response.json({ error: "Could not check monitor." }, { status: 502 });
   }
 }

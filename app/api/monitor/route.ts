@@ -19,7 +19,7 @@ export async function POST(req: Request) {
   try {
     return Response.json(await createMonitor(parsed));
   } catch (err) {
-    const message = err instanceof Error ? err.message : String(err);
-    return Response.json({ error: `Could not create monitor: ${message}` }, { status: 502 });
+    console.error("Could not create monitor:", err);
+    return Response.json({ error: "Could not create monitor." }, { status: 502 });
   }
 }

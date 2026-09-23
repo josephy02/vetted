@@ -24,8 +24,10 @@ async function timed<T>(fn: () => Promise<T>): Promise<{ value?: T; error?: unkn
   }
 }
 
-function message(err: unknown): string {
-  return err instanceof Error ? err.message : String(err);
+// Logs the upstream error and returns a warning that is safe to show the client.
+function failed(what: string, err: unknown): string {
+  console.error(`${what} failed:`, err);
+  return `${what} failed.`;
 }
 
 export async function POST(req: Request) {
@@ -72,7 +74,7 @@ export async function POST(req: Request) {
           let domainSource: ResolvedDomain["domainSource"] = domain ? "user" : "unknown";
           if (!domain) {
             domain = await resolvePrimaryDomain(parsed).catch((err) => {
-              warnings.push(`Company domain lookup failed: ${message(err)}`);
+              warnings.push(failed("Company domain lookup", err));
               return undefined;
             });
             if (domain) domainSource = "resolved";
@@ -91,9 +93,9 @@ export async function POST(req: Request) {
             }),
           ]);
           if (independent.error) {
-            warnings.push(`Independent-coverage search failed: ${message(independent.error)}`);
+            warnings.push(failed("Independent-coverage search", independent.error));
           }
-          if (self.error) warnings.push(`Company-page search failed: ${message(self.error)}`);
+          if (self.error) warnings.push(failed("Company-page search", self.error));
 
           const sources = await step("provenance", () =>
             assembleSources({
@@ -103,7 +105,7 @@ export async function POST(req: Request) {
               independent: independent.value ?? [],
             }),
           );
-          if (sources.error) warnings.push(`Source labeling failed: ${message(sources.error)}`);
+          if (sources.error) warnings.push(failed("Source labeling", sources.error));
 
           const resolvedDomain: ResolvedDomain = { ...(domain ? { domain } : {}), domainSource };
           return {
@@ -115,13 +117,9 @@ export async function POST(req: Request) {
 
         const [kyb, web] = await Promise.all([kybP, webP]);
 
-        const verification: Verification = kyb.value ?? {
-          verified: false,
-          reason: "error",
-          detail: message(kyb.error),
-        };
-        if (kyb.error) warnings.push(`Identity verification failed: ${message(kyb.error)}`);
-        if (web.error) warnings.push(`Web research failed: ${message(web.error)}`);
+        const verification: Verification = kyb.value ?? { verified: false, reason: "error" };
+        if (kyb.error) warnings.push(failed("Identity verification", kyb.error));
+        if (web.error) warnings.push(failed("Web research", web.error));
 
         // KYB finishes after web research, so an automatically found domain can be checked
         // against the registry's for free. A mismatch means sources may be mislabeled.
@@ -156,7 +154,7 @@ export async function POST(req: Request) {
             searchFailed,
           }),
         );
-        if (synth.error) warnings.push(`Risk memo synthesis failed: ${message(synth.error)}`);
+        if (synth.error) warnings.push(failed("Risk memo synthesis", synth.error));
 
         const result: ScreenResponse = {
           query: parsed,
@@ -188,7 +186,8 @@ export async function POST(req: Request) {
         if (!warnings.length) setCached(key, result);
         send({ type: "result", data: result });
       } catch (err) {
-        send({ type: "error", message: message(err) });
+        console.error("Screening failed:", err);
+        send({ type: "error", message: "Unexpected server error." });
       } finally {
         controller.close();
       }
