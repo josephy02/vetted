@@ -10,9 +10,12 @@ export function exa(): Exa {
   return client;
 }
 
-function describe({ companyName, city, state }: ScreenRequest): string {
+function describe({ companyName, city, state, domain }: ScreenRequest): string {
+  const parts = [`'${companyName}'`];
+  if (domain) parts.push(`(website ${domain})`);
   const location = [city, state].filter(Boolean).join(", ");
-  return location ? `'${companyName}' in ${location}` : `'${companyName}'`;
+  if (location) parts.push(`in ${location}`);
+  return parts.join(" ");
 }
 
 // ---------------------------------------------------------------------------
@@ -33,6 +36,15 @@ const KYB_SCHEMA = {
     entity_status: {
       type: ["string", "null"],
       description: "Registration status as reported, e.g. active, inactive, dissolved.",
+    },
+    incorporation_date: {
+      type: ["string", "null"],
+      description: "Date of incorporation or formation as YYYY-MM-DD, if reported.",
+    },
+    primary_domain: {
+      type: ["string", "null"],
+      description:
+        "The company's primary website domain as a bare host, e.g. acme.ai: no scheme, no www, no path.",
     },
     officers: {
       type: "array",
@@ -76,6 +88,8 @@ interface KybOutput {
   legal_name?: string | null;
   incorporation_state?: string | null;
   entity_status?: string | null;
+  incorporation_date?: string | null;
+  primary_domain?: string | null;
   officers: { name: string; title: string }[];
   watchlist_hits: { list: string; match: boolean }[];
   candidates: { legal_name: string; location?: string | null }[];
@@ -87,7 +101,8 @@ export async function verifyBusiness(req: ScreenRequest): Promise<Verification> 
     {
       query:
         `Verify the US business ${describe(req)} using Baselayer. Return its legal name, ` +
-        `state of incorporation, current entity status, and current officers. Screen it against the ` +
+        `state of incorporation, date of incorporation, current entity status, current officers, ` +
+        `and primary website domain. Screen it against the ` +
         `OFAC SDN watchlist. Do not run lien or litigation searches.`,
       systemPrompt:
         "Use Baselayer as the source of truth for identity, registration, officers, and watchlist " +
@@ -96,7 +111,9 @@ export async function verifyBusiness(req: ScreenRequest): Promise<Verification> 
         "and list them as candidates. Use no_match when Baselayer finds nothing. Never guess. " +
         "For officers, list each current officer, director, or manager once, with one short title " +
         "(e.g. CEO, President, Treasurer). Exclude registered agents, organizers, tax preparers, " +
-        "and real-property contacts.",
+        "and real-property contacts. If a website domain is given in the query, use it to " +
+        "disambiguate between similarly named entities. Report incorporation_date only if " +
+        "Baselayer gives a formation or registration date; never estimate it.",
       dataSources: [{ provider: "baselayer" }],
       effort: "low",
       outputSchema: KYB_SCHEMA,
@@ -126,6 +143,8 @@ export async function verifyBusiness(req: ScreenRequest): Promise<Verification> 
     legalName: out.legal_name ?? undefined,
     incorporationState: out.incorporation_state ?? undefined,
     entityStatus: out.entity_status ?? undefined,
+    incorporationDate: out.incorporation_date ?? undefined,
+    website: out.primary_domain ?? undefined,
     officers: cleanOfficers(out.officers),
     watchlistHits: out.watchlist_hits,
     sourceNote: "baselayer",
