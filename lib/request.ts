@@ -43,3 +43,8 @@ export function parseScreenRequest(body: unknown): ScreenRequest | string {
     ...(state?.trim() ? { state: state.trim().toUpperCase() } : {}),
   };
 }
+
+// Identifies the caller for rate limiting. Vercel sets x-forwarded-for.
+export function clientId(req: Request): string {
+  return req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "local";
+}

@@ -9,7 +9,7 @@ import {
   verifyBusiness,
 } from "@/lib/exa";
 import { sameSite } from "@/lib/provenance";
-import { parseScreenRequest } from "@/lib/request";
+import { clientId, parseScreenRequest } from "@/lib/request";
 import { synthesizeMemo } from "@/lib/synthesis";
 import type { ResolvedDomain, ScreenEvent, ScreenResponse, ScreenStep, Verification } from "@/lib/types";
 
@@ -35,8 +35,7 @@ export async function POST(req: Request) {
   const key = cacheKey([parsed.companyName, parsed.city, parsed.state, parsed.domain]);
   const cached = getCached<ScreenResponse>(key);
 
-  const clientId = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "local";
-  if (!cached && !allow(clientId)) {
+  if (!cached && !allow(clientId(req))) {
     return Response.json(
       { error: "Too many screenings in the last minute. Please wait and try again." },
       { status: 429 },

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { normalizeDomain, parseScreenRequest } from "../lib/request";
+import { clientId, normalizeDomain, parseScreenRequest } from "../lib/request";
 
 describe("normalizeDomain", () => {
   it("accepts a bare domain", () => {
@@ -41,5 +41,17 @@ describe("parseScreenRequest", () => {
       companyName: "Acme",
       state: "CA",
     });
+  });
+});
+
+describe("clientId", () => {
+  const req = (headers: Record<string, string>) => new Request("http://x", { headers });
+
+  it("uses the first x-forwarded-for address", () => {
+    expect(clientId(req({ "x-forwarded-for": "1.2.3.4, 10.0.0.1" }))).toBe("1.2.3.4");
+  });
+
+  it("falls back to local without the header", () => {
+    expect(clientId(req({}))).toBe("local");
   });
 });
