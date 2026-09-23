@@ -1,6 +1,6 @@
 import "server-only";
 import crypto from "node:crypto";
-import { createExaMonitor, listExaMonitorHits, searchAdverseMedia } from "./exa";
+import { createExaMonitor, listExaMonitorHits, searchIndependentAdverse } from "./exa";
 import type { MonitorHit, MonitorResponse, MonitorStatusResponse, ScreenRequest } from "./types";
 
 // In-memory state for this server instance. Exa Monitors keep their own run
@@ -43,7 +43,7 @@ export async function createMonitor(req: ScreenRequest): Promise<MonitorResponse
   }
 
   // Fallback: record today's results as the baseline and diff on each check.
-  const baseline = await searchAdverseMedia(req);
+  const baseline = await searchIndependentAdverse(req);
   const id = `local_${crypto.randomUUID()}`;
   local.set(id, {
     request: req,
@@ -57,11 +57,11 @@ export async function createMonitor(req: ScreenRequest): Promise<MonitorResponse
 export async function checkMonitor(id: string): Promise<MonitorStatusResponse | null> {
   const entry = local.get(id);
   if (entry) {
-    const results = await searchAdverseMedia(entry.request);
+    const results = await searchIndependentAdverse(entry.request);
     for (const r of results) {
       if (entry.seenUrls.has(r.url)) continue;
       entry.seenUrls.add(r.url);
-      entry.hits.unshift({ title: r.title, url: r.url, publishedDate: r.publishedDate });
+      entry.hits.unshift({ title: r.title ?? r.url, url: r.url, publishedDate: r.publishedDate });
     }
     entry.lastRunAt = new Date().toISOString();
     return { monitorId: id, mode: "local", lastRunAt: entry.lastRunAt, hits: entry.hits };

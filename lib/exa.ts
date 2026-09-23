@@ -1,5 +1,6 @@
 import "server-only";
 import Exa, { DYNAMIC_HIGHLIGHTS_BETA } from "exa-js";
+import { hostOf, isGenericHost, WIRE_DOMAINS } from "./provenance";
 import type { MonitorHit, ScreenRequest, Verification } from "./types";
 
 let client: Exa | undefined;
@@ -176,10 +177,9 @@ function titleCase(s: string): string {
 // Adverse-media search.
 // ---------------------------------------------------------------------------
 
-export interface MediaResult {
-  id: string;
-  title: string;
+export interface RetrievedSource {
   url: string;
+  title?: string;
   publishedDate?: string;
   highlights: string[];
 }
@@ -193,41 +193,91 @@ export function adverseMediaQuery(companyName: string): string {
   );
 }
 
-export async function searchAdverseMedia(req: ScreenRequest): Promise<MediaResult[]> {
-  const since = new Date();
-  since.setFullYear(since.getFullYear() - LOOKBACK_YEARS);
+type SearchOptions = NonNullable<Parameters<Exa["search"]>[1]>;
 
-  const query = adverseMediaQuery(req.companyName);
-  const base = {
-    type: "auto" as const,
-    category: "news" as const,
-    numResults: 12,
-    startPublishedDate: since.toISOString(),
-    // includeText accepts a single phrase of up to five words.
-    ...(req.companyName.split(/\s+/).length <= 5 ? { includeText: [req.companyName] } : {}),
-  };
-
+// Dynamic Highlights is a research preview; fall back to standard highlights.
+async function searchWithHighlights(
+  query: string,
+  options: SearchOptions,
+  highlightQuery: string,
+): Promise<RetrievedSource[]> {
   let res;
   try {
     res = await exa().search(query, {
-      ...base,
-      contents: { highlights: { dynamic: true, query: "allegations, penalties, and outcomes" } },
+      ...options,
+      contents: { highlights: { dynamic: true, query: highlightQuery } },
       betas: [DYNAMIC_HIGHLIGHTS_BETA],
     });
   } catch {
-    // Dynamic Highlights is a research preview; fall back to standard highlights.
-    res = await exa().search(query, { ...base, contents: { highlights: true } });
+    res = await exa().search(query, { ...options, contents: { highlights: true } });
   }
 
-  return res.results
-    .map((r, i) => ({
-      id: `f${i + 1}`,
-      title: r.title ?? r.url,
-      url: r.url,
-      publishedDate: r.publishedDate,
-      highlights: r.highlights ?? [],
-    }))
-    .sort((a, b) => (b.publishedDate ?? "").localeCompare(a.publishedDate ?? ""));
+  return res.results.map((r) => ({
+    url: r.url,
+    title: r.title ?? r.url,
+    publishedDate: r.publishedDate,
+    highlights: r.highlights ?? [],
+  }));
+}
+
+const CLAIM_HIGHLIGHTS = "founding year, headquarters, leadership, and what the company sells";
+
+function excluding(domain?: string): string[] {
+  return domain ? [domain, ...WIRE_DOMAINS] : WIRE_DOMAINS;
+}
+
+// The company's own account of itself: the claims the corroboration step checks.
+export function searchSelfPublished(req: ScreenRequest, domain: string) {
+  return searchWithHighlights(
+    `${req.companyName} about the company: founding year, headquarters, leadership team, products`,
+    { type: "auto", numResults: 8, includeDomains: [domain] },
+    CLAIM_HIGHLIGHTS,
+  );
+}
+
+// Adverse coverage from sources the company does not control.
+export function searchIndependentAdverse(req: ScreenRequest, domain?: string) {
+  const since = new Date();
+  since.setFullYear(since.getFullYear() - LOOKBACK_YEARS);
+
+  return searchWithHighlights(
+    adverseMediaQuery(req.companyName),
+    {
+      type: "auto",
+      category: "news",
+      numResults: 12,
+      startPublishedDate: since.toISOString(),
+      excludeDomains: excluding(domain),
+      // includeText accepts a single phrase of up to five words.
+      ...(req.companyName.split(/\s+/).length <= 5 ? { includeText: [req.companyName] } : {}),
+    },
+    "allegations, penalties, and outcomes",
+  );
+}
+
+// Independent background with no start date. This is how the earliest independent
+// mention is found, since the search API has no sort-by-date option.
+export function searchIndependentBackground(req: ScreenRequest, domain?: string) {
+  return searchWithHighlights(
+    `${req.companyName} company profile: what it does, who founded it, where it is based, funding`,
+    { type: "auto", numResults: 10, excludeDomains: excluding(domain) },
+    CLAIM_HIGHLIGHTS,
+  );
+}
+
+// Used only when the user gave no domain: the first result that isn't an
+// aggregator, outlet or wire is taken as the company's own site.
+export async function resolvePrimaryDomain(req: ScreenRequest): Promise<string | undefined> {
+  const res = await exa().search(`${req.companyName} official company website`, {
+    type: "auto",
+    category: "company",
+    numResults: 5,
+  });
+  for (const r of res.results) {
+    const host = hostOf(r.url);
+    if (host && !isGenericHost(host)) return host;
+  }
+  return undefined;
 }
 
 // ---------------------------------------------------------------------------
