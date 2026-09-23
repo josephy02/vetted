@@ -1,8 +1,17 @@
+import { computeFootprint } from "@/lib/analysis";
 import { allow, cacheKey, getCached, setCached } from "@/lib/cache";
-import { searchAdverseMedia, verifyBusiness, type MediaResult } from "@/lib/exa";
+import { assembleSources } from "@/lib/classify";
+import {
+  resolvePrimaryDomain,
+  searchIndependentAdverse,
+  searchIndependentBackground,
+  searchSelfPublished,
+  verifyBusiness,
+} from "@/lib/exa";
+import { sameSite } from "@/lib/provenance";
 import { parseScreenRequest } from "@/lib/request";
 import { synthesizeMemo } from "@/lib/synthesis";
-import type { ScreenEvent, ScreenResponse, Verification } from "@/lib/types";
+import type { ResolvedDomain, ScreenEvent, ScreenResponse, ScreenStep, Verification } from "@/lib/types";
 
 export const maxDuration = 300;
 
@@ -23,7 +32,7 @@ export async function POST(req: Request) {
   const parsed = parseScreenRequest(await req.json().catch(() => null));
   if (typeof parsed === "string") return Response.json({ error: parsed }, { status: 400 });
 
-  const key = cacheKey([parsed.companyName, parsed.city, parsed.state]);
+  const key = cacheKey([parsed.companyName, parsed.city, parsed.state, parsed.domain]);
   const cached = getCached<ScreenResponse>(key);
 
   const clientId = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "local";
@@ -46,18 +55,66 @@ export async function POST(req: Request) {
           return;
         }
 
+        const started = Date.now();
         const warnings: string[] = [];
 
-        const [kyb, media] = await Promise.all([
-          timed(() => verifyBusiness(parsed)).then((r) => {
-            send({ type: "step", step: "verification", status: r.error ? "error" : "done", ms: r.ms });
+        // Runs a step and reports it to the client the moment it settles.
+        const step = <T>(name: ScreenStep, fn: () => Promise<T>) =>
+          timed(fn).then((r) => {
+            send({ type: "step", step: name, status: r.error ? "error" : "done", ms: r.ms });
             return r;
-          }),
-          timed(() => searchAdverseMedia(parsed)).then((r) => {
-            send({ type: "step", step: "search", status: r.error ? "error" : "done", ms: r.ms });
-            return r;
-          }),
-        ]);
+          });
+
+        // Baselayer is the long pole; all web research runs inside its window.
+        const kybP = step("verification", () => verifyBusiness(parsed));
+
+        const webP = timed(async () => {
+          let domain = parsed.domain;
+          let domainSource: ResolvedDomain["domainSource"] = domain ? "user" : "unknown";
+          if (!domain) {
+            domain = await resolvePrimaryDomain(parsed).catch((err) => {
+              warnings.push(`Company domain lookup failed: ${message(err)}`);
+              return undefined;
+            });
+            if (domain) domainSource = "resolved";
+          }
+
+          const [self, independent] = await Promise.all([
+            step("self_published", async () =>
+              domain ? searchSelfPublished(parsed, domain) : [],
+            ),
+            step("independent", async () => {
+              const [adverse, background] = await Promise.all([
+                searchIndependentAdverse(parsed, domain),
+                searchIndependentBackground(parsed, domain),
+              ]);
+              return [...adverse, ...background];
+            }),
+          ]);
+          if (independent.error) {
+            warnings.push(`Independent-coverage search failed: ${message(independent.error)}`);
+          }
+          if (self.error) warnings.push(`Company-page search failed: ${message(self.error)}`);
+
+          const sources = await step("provenance", () =>
+            assembleSources({
+              companyName: parsed.companyName,
+              domain,
+              selfPublished: self.value ?? [],
+              independent: independent.value ?? [],
+            }),
+          );
+          if (sources.error) warnings.push(`Source labeling failed: ${message(sources.error)}`);
+
+          const resolvedDomain: ResolvedDomain = { ...(domain ? { domain } : {}), domainSource };
+          return {
+            resolvedDomain,
+            sources: sources.value ?? [],
+            independentFailed: !!independent.error,
+          };
+        });
+
+        const [kyb, web] = await Promise.all([kybP, webP]);
 
         const verification: Verification = kyb.value ?? {
           verified: false,
@@ -65,23 +122,53 @@ export async function POST(req: Request) {
           detail: message(kyb.error),
         };
         if (kyb.error) warnings.push(`Identity verification failed: ${message(kyb.error)}`);
+        if (web.error) warnings.push(`Web research failed: ${message(web.error)}`);
 
-        const sources: MediaResult[] | null = media.value ?? null;
-        if (media.error) warnings.push(`Adverse-media search failed: ${message(media.error)}`);
+        // KYB finishes after web research, so an automatically found domain can be checked
+        // against the registry's for free. A mismatch means sources may be mislabeled.
+        const resolved = web.value?.resolvedDomain;
+        if (
+          resolved?.domainSource === "resolved" &&
+          resolved.domain &&
+          verification.verified &&
+          verification.website &&
+          !sameSite(resolved.domain, verification.website)
+        ) {
+          warnings.push(
+            `The automatically found domain ${resolved.domain} differs from the registry's ` +
+              `${verification.website}. Add the right domain and screen again.`,
+          );
+        }
 
-        const synth = await timed(() =>
+        const searchFailed = !!web.error || !!web.value?.independentFailed;
+        const sources = web.value?.sources ?? [];
+        const footprint = computeFootprint({
+          incorporationDate: verification.verified ? verification.incorporationDate : undefined,
+          independentSources: sources.filter((s) => s.provenance === "independent"),
+          searchFailed,
+        });
+
+        const synth = await step("synthesis", () =>
           synthesizeMemo({
             companyName: parsed.companyName,
             verification: kyb.error ? null : verification,
             sources,
+            footprint,
+            searchFailed,
           }),
         );
-        send({ type: "step", step: "synthesis", status: synth.error ? "error" : "done", ms: synth.ms });
         if (synth.error) warnings.push(`Risk memo synthesis failed: ${message(synth.error)}`);
 
         const result: ScreenResponse = {
           query: parsed,
           verification,
+          resolvedDomain: web.value?.resolvedDomain ?? {
+            ...(parsed.domain ? { domain: parsed.domain } : {}),
+            domainSource: parsed.domain ? "user" : "unknown",
+          },
+          sources,
+          corroboration: synth.value?.corroboration ?? [],
+          footprint,
           findings: synth.value?.findings ?? [],
           riskMemo: synth.value?.riskMemo ?? {
             recommendation: "escalate_for_review",
@@ -90,7 +177,12 @@ export async function POST(req: Request) {
               "Review the raw verification data and retry the screening.",
           },
           ...(warnings.length ? { warnings } : {}),
-          timings: { verificationMs: kyb.ms, searchMs: media.ms, synthesisMs: synth.ms },
+          timings: {
+            verificationMs: kyb.ms,
+            searchMs: web.ms,
+            synthesisMs: synth.ms,
+            totalMs: Date.now() - started,
+          },
         };
 
         // Only cache complete screenings so a transient failure can be retried.
