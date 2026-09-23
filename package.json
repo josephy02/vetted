@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "fixture": "node scripts/save-fixture.mjs"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^3.0.119",

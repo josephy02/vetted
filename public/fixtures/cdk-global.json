@@ -1,0 +1,644 @@
+{
+  "savedAt": "2026-09-23T00:17:41.063Z",
+  "result": {
+    "query": {
+      "companyName": "CDK Global",
+      "domain": "cdkglobal.com"
+    },
+    "verification": {
+      "verified": true,
+      "legalName": "CDK Global, LLC",
+      "incorporationState": "DE",
+      "entityStatus": "active",
+      "incorporationDate": "2007-10-10",
+      "website": "cdkglobal.com",
+      "officers": [
+        {
+          "name": "Cameron Williams",
+          "title": "President"
+        },
+        {
+          "name": "James Brooks Kinzer",
+          "title": "Manager"
+        },
+        {
+          "name": "Joseph A Tautges",
+          "title": "Manager"
+        },
+        {
+          "name": "Lee James Brunz",
+          "title": "Manager"
+        },
+        {
+          "name": "Neil Fairfield",
+          "title": "Manager"
+        },
+        {
+          "name": "Sylvia Shi",
+          "title": "Manager"
+        },
+        {
+          "name": "Mark Sherman",
+          "title": "Manager"
+        },
+        {
+          "name": "Eric Guerin",
+          "title": "Vice President"
+        },
+        {
+          "name": "Taze Rowe",
+          "title": "Vice President"
+        },
+        {
+          "name": "Laurie Beaudet",
+          "title": "Secretary"
+        },
+        {
+          "name": "Kenneth James Gladish",
+          "title": "CEO"
+        },
+        {
+          "name": "Michael C. Eberhard",
+          "title": "CFO"
+        },
+        {
+          "name": "Siegmund Jan",
+          "title": "Vice President"
+        },
+        {
+          "name": "Bruce Wechsler",
+          "title": "Director"
+        }
+      ],
+      "watchlistHits": [
+        {
+          "list": "OFAC SDN",
+          "match": false
+        }
+      ],
+      "sourceNote": "baselayer"
+    },
+    "resolvedDomain": {
+      "domain": "cdkglobal.com",
+      "domainSource": "user"
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.cdkglobal.com/about",
+        "title": "About CDK Global",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "# Dealer Success Drives Everything We Do\n\n...\n\nFor over 50 years, CDK has been empowering dealers with the tools and technology they need to build deeper relationships with customers.\n\n...\n\nCDK brings together advanced technology, data, and industry expertise to help dealerships operate more efficiently, make smarter decisions, and drive better business outcomes. Our continued investment in innovation is designed to support your growth today — and long term.\n\n...\n\nCDK is a technology company with a singular focus. Our priority is to make it easier for dealerships of all types to excel, and we do it by developing integrated technology that delivers.\n\n...\n\n### Leadership\n\n...\n\nBrian MacDonald President and Chief Executive Officer\n\n...\n\nAlex Choy Chief Technology Officer\n\n...\n\nAmy Smith Chief Human Resources Officer\n\n...\n\nBarb Edson Chief Marketing Officer\n\n...\n\n### Brian MacDonald\n\n...\n\n#### President and Chief Executive Officer\n\n...\n\nBrian MacDonald returned to CDK as president and chief executive officer in July 2022. He was previously president and CEO of CDK between 2016 and late 2018, overseeing a successful transformation effort which created a solid foundation for future growth. During that time, Brian successfully increased margins, met or exceeded earnings consensus every quarter, significantly improved customer service levels, oversaw new product designs and increased employee engagement.\n\n...\n\n### Alex Choy\n\n...\n\n#### Chief Technology Officer\n\n...\n\nAlex Choy is the chief technology officer at CDK.\n\n...\n\n### Amy Smith\n\n...\n\n#### Chief Human Resources Officer\n\n...\n\nAmy Smith is the chief human resources officer at CDK. She is responsible for providing strategic and functional human resources leadership across the organization. Amy has more than twenty years of HR experience working in multiple industries and diverse organizations.\n\n...\n\n### Barb Edson\n\n...\n\n#### Chief Marketing Officer\n\n...\n\nBarb Edson is chief marketing officer at CDK. She is responsible for delivering successful marketing and commercial strategies that help strengthen connections across the automotive retail ecosystem through technology for CDK, its dealer and manufacturer customers, and the consumers they serve.\n\n...\n\n### Dan Flynn\n\n...\n\n#### Chief Transformation Officer\n\n...\n\n### Kathy-Anne \"KAM\" McManus\n\n...\n\n#### Chief Customer Officer\n\n...\n\n### Sanjay Almeida\n\n...\n\n#### Chief Product Officer\n\n...\n\n### Scott Herbers\n\n...\n\nScott Herbers was named chief revenue officer at CDK in August 2020, leading the teams that are responsible for the growth and retention of the 9,000+ CDK customers in the automotive and heavy truck markets. Prior to this role, Scott was the leader of the North America Dealership Sales group.\n\n...\n\n### Steve Lifshatz\n\n...\n\n#### Chief Financial Officer\n\n...\n\nSteve Lifshatz is the chief financial officer at CDK. He has nearly four decades of C-Suite experience at technology software and software-as-a-service companies, and extensive experience in operational effectiveness, mergers and acquisitions, public offerings and investor relations."
+        ]
+      },
+      {
+        "id": "s2",
+        "url": "https://www.cdkglobal.com/",
+        "title": "CDK Global: Homepage",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "# Powering Automotive Retail at Scale\n\n...\n\n$540 billion in automotive commerce runs through CDK dealership software and systems every year. Our unrivaled scale, combined with deep industry expertise and dynamic record of technological innovation, is why more dealerships and automotive groups like yours choose us — to help fuel growth, increase efficiency, and achieve stronger business results.\n\n...\n\n### Dealership Xperience Platform\n\n...\n\nTransform how you sell and service cars and operate your business through our open, integrated and customer-focused platform.\n\n...\n\n### Digital Retail\n\n...\n\nFrom online to in store, deliver one seamless, consistent customer experience\n\n...\n\n### Customer Relationship Management (CRM)\n\n...\n\nPut your customers at the heart of your business and drive real growth.\n\n...\n\n### Finance & Insurance (F&I)\n\n...\n\n### Dealer Management System (DMS)\n\n...\n\nStreamline your dealership with the most powerful system in the industry.\n\n...\n\n### Fixed Operations\n\n...\n\n### Network & Communication Services\n\n...\n\n### Intelligence\n\n...\n\nFor 50 years, CDK Global has had just one purpose: to let dealers offer their customers the very best experience and grow their businesses. Our products are designed to let you focus on just one thing. Your customer."
+        ]
+      },
+      {
+        "id": "s3",
+        "url": "https://www.cdkglobal.com/media-center/cdk-global-names-sudhakar-ramakrishna-president-and-ceo",
+        "title": "CDK Global Names Sudhakar Ramakrishna President and CEO",
+        "publishedDate": "2026-08-27T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "AUSTIN, Texas — Aug. 27, 2026 — CDK, the leading automotive retail software provider, today named Sudhakar Ramakrishna president and CEO and member of the CDK board of directors, effective Oct. 5. He succeeds Brian MacDonald, who will retire and serve as a senior strategic advisor to Brookfield and CDK, providing continuity and perspective through the planned transition.\n\n...\n\nRamakrishna is a seasoned enterprise technology leader with decades of experience building and scaling software businesses across cloud, mobility, networking, security and collaboration markets. He most recently served as president and CEO of SolarWinds, a leading provider of infrastructure management software, and previously led Pulse Secure, where he worked closely with customers and partners in complex, mission-critical environments. He also held senior leadership roles at Citrix, Polycom, Motorola, 3Com and U.S. Robotics.\n\n...\n\nCDK enters this transition positioned for its next phase of growth, supported by more than $500 million invested over several years to evolve its platform from an industry-leading system of record into a system of intelligence and engagement. As technology becomes more central to automotive retail, CDK’s unmatched automotive-specific data—including 257 million unique customer IDs reflecting most U.S. consumers and vehicles on its platform—creates a strong foundation for AI, analytics and customer insights. That advantage allows CDK to embed intelligence directly into the workflows customers already rely on without disruption."
+        ]
+      },
+      {
+        "id": "s4",
+        "url": "https://www.cdkglobal.com/media-center/cdk-global-brings-digital-transformation-automotive-retail-new-category-software-cdk",
+        "title": "CDK GLOBAL BRINGS DIGITAL TRANSFORMATION TO AUTOMOTIVE RETAIL WITH NEW CATEGORY OF SOFTWARE: THE CDK DEALERSHIP XPERIENCE | CDK Global",
+        "publishedDate": "2023-08-14T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "AUSTIN, Texas – Aug. 14, 2023 – CDK Global Inc., the leading automotive retail software provider, today announced the launch of the CDK Dealership Xperience, an open and integrated platform that transforms how dealers sell and service cars and operate their businesses simply in a modern and digital world. The new platform provides a foundation of proven, built-in functionality that unifies workflows at the dealership into a single experience, resulting in increased employee proficiency and elevated consumer experiences.\n\n...\n\nThe Foundations Suite is at the heart of CDK Dealership Xperience platform, which extends the ability for dealers to operate their entire business on one platform while increasing control over the consumer’s retail journey digitally from start to finish. It includes:\n\n...\n\n- CDK’s industry-leading DMS technology paired with highly sought features that modernize the front office with digital retailing, e-signing, and a desking solution that will shorten the deal process for dealers and consumers.\n- Powerful accounting capabilities, digital document archiving, and AI-assisted business management to strengthen overall dealership operations.\n- Online service scheduling, digital service recommendations and faster, more-accurate receiving with parts scanning to maximize efficiency in Fixed Operations.\n\n...\n\nThe CDK Foundations Suite also seamlessly integrates with three new, additional advanced solution suites—the CDK Modern Retail Suite, the CDK Fixed Operations Suite, and the CDK Intelligence Suite—to expand dealers’ business potential while further accelerating performance.\n\n...\n\nAbout CDK Global, Inc.\n\n...\n\nCDK Global is a leading provider of cloud-based software to dealerships and Original Equipment Manufacturers (“OEMs”) across automotive and related industries. The Company’s cloud-based, software as a service (“SaaS”) platform enables dealerships to manage their end-to-end business operations including the acquisition, sale, financing, insuring, repair, and maintenance of vehicles. By automating and streamlining critical workflows, the integrated platform of modern solutions enables dealers to sell and service more vehicles by creating simple and convenient experiences for customers and improves their financial and operational performance."
+        ]
+      },
+      {
+        "id": "s5",
+        "url": "http://cdkglobal.com/us/contact-us",
+        "title": "Contact Us | CDK Global",
+        "publishedDate": "2025-10-31T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "### Corporate Headquarters\n...\n11809 Domain DrAustin, TX 78758\n...\na question or want more information about CDK Global products? You can fill out the form below to have a sales representative contact you directly, or you can call Sales at 833.620.2129."
+        ]
+      },
+      {
+        "id": "s6",
+        "url": "https://www.cdkglobal.com/media-center",
+        "title": "CDK Global News | CDK Global",
+        "publishedDate": "2025-06-23T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "## CDK Global Names Sudhakar Ramakrishna President and CEO\n...\nCDK announced the launch of its Customer Data Platform (CDP) that unifies fragmented customer information and delivers real-time, actionable insights across the dealership.January 22, 2026"
+        ]
+      },
+      {
+        "id": "s7",
+        "url": "https://www.cdkglobal.com/dms",
+        "title": "Industry-Leading Dealer Management System (DMS) Software",
+        "publishedDate": "2023-03-15T15:40:18.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Industry-Leading Dealer Management System (DMS) Software\n\n...\n\n# Dealer Management System\n\n...\n\n## The DMS Is the Engine That Drives Your Operation\n\n...\n\nA Dealer Management System (DMS) is a suite of powerful software tools that equips auto dealers with the solutions they need to be profitable on one fully integrated platform."
+        ]
+      },
+      {
+        "id": "s8",
+        "url": "https://www.cdkglobal.com/automotive",
+        "title": "Maximize Profitability with Smart Car Dealership Software | CDK Global",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Industry-Leading Auto Dealer Software\n\n...\n\nOur automotive software solutions help your dealership respond to today’s challenges and opportunities while creating best-in-class customer experiences.\n\n...\n\nOur expertise is helping dealers make stronger connections at every level — internally, among departments and multiple rooftops. And externally, with consumers, OEMs and independent software vendors.\n\n...\n\nyears listening to our dealer customers"
+        ]
+      },
+      {
+        "id": "s9",
+        "url": "https://www.reuters.com/legal/auto-tech-firm-cdk-reaches-630-million-settlement-us-dealer-data-case-2025-01-28/",
+        "title": "Auto tech firm CDK reaches $630 million settlement in US dealer data case | Reuters",
+        "publishedDate": "2025-01-28T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Jan 28 (Reuters) - Automotive technology giant CDK Global has agreed to pay $630 million to settle antitrust claims that it caused hundreds of software vendors to overpay for vehicle dealership data by restricting access.\n...\nin agreeing to settle"
+        ]
+      },
+      {
+        "id": "s10",
+        "url": "https://www.reuters.com/legal/litigation/auto-tech-company-cdk-settles-dealers-antitrust-lawsuit-100-mln-2024-08-16/",
+        "title": "Auto tech company CDK settles dealers’ antitrust lawsuit for $100 mln",
+        "publishedDate": "2024-08-16T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "The plaintiffs alleged CDK violated antitrust law by conspiring to eliminate competition among vendors that need to access dealer data to create apps for dealers. Those apps can include inventory management, repair orders, warranty services and other functions within dealer-management systems.\n\nCDK has denied the claims and did not admit wrongdoing in the settlement.\n\n...\n\nThe proposed settlement covers purchases of dealer management systems from CDK and a rival, Reynolds & Reynolds, since September 2013. Reynolds in 2018 settled claims lodged by car dealers for nearly $30 million. It did not admit wrongdoing."
+        ]
+      },
+      {
+        "id": "s11",
+        "url": "https://news.bloomberglaw.com/litigation/car-dealers-sue-cdk-global-over-hack-of-data-management-system",
+        "title": "Car Dealers Sue CDK Global Over Hack of Data-Management System",
+        "publishedDate": "2024-07-01T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "of consumers and caused more than 15,000 car dealerships to put a halt to sales, financing, servicing, and payroll operations, according to separate complaints filed June 25 in the US District Court for the Northern District of Illinois and June 30 in the"
+        ]
+      },
+      {
+        "id": "s12",
+        "url": "https://www.reuters.com/legal/litigation/auto-tech-giant-cdk-accuses-rival-tekion-hacking-campaign-lawsuit-2025-02-11/",
+        "title": "Auto tech giant CDK accuses rival Tekion of hacking 'campaign' in lawsuit",
+        "publishedDate": "2025-02-11T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Tekion Inc\n\nFollow\nFeb 11 (Reuters) - Automotive retail software giant CDK Global has sued rival Tekion in U.S. court, accusing it of an illegal cyber hacking campaign to scrape confidential data from dealerships’ computer systems in a bid to drive new business.\nCDK said in its complaint, opens new tab in the San Francisco federal court on Monday that Tekion was attempting to gain market share “through unlawful practices that damage competition and harm customers.”\nSign up here.\nThe lawsuit accused Pleasanton, California-based Tekion and one of its business partners of running a “sophisticated” scheme to breach CDK data systems that dealers use to run daily sales and service operations. CDK said Tekion was interfering with its business relationships with dealers and violating California's unfair competition law.\n“This court must intervene to restore a fair and legal playing field among CDK and its competitor Tekion,” CDK’s lawyers at Susman Godfrey said in the lawsuit.\nTekion in a"
+        ]
+      },
+      {
+        "id": "s13",
+        "url": "https://news.bloomberglaw.com/privacy-and-data-security/cdk-global-sued-after-major-breach-of-15-000-autodealerships",
+        "title": "CDK Global Sued Over Hack of 15,000 Auto Dealerships’ Software",
+        "publishedDate": "2024-06-27T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          ", according to one of six complaints filed so far in the US District for the Northern District of Illinois. The hack, attributed to an Eastern European cybercrime group , continues to disrupt retail services for dealers. Hackers demanded a ransom which the"
+        ]
+      },
+      {
+        "id": "s14",
+        "url": "https://www.cbsnews.com/news/cdk-global-lawsuits-cyberattack/",
+        "title": "CDK Global faces multiple lawsuits from dealerships crippled by cyberattack - CBS News",
+        "publishedDate": "2024-07-03T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "CDK Global faces at least eight lawsuits from auto dealerships over cyberattacks that took down the software provider's dealer management system, crippling car sellers' operations. \nThe plaintiffs, who are employees or customers of car dealerships that use CDK tools, allege CDK did not adequately protect customer data and that the personal information of tens of thousands of people was likely exposed in the hack.\nTucson, Arizona-resident Omar Aviles, an employee of Asbury Automotive Group, one of CDK Global's roughly 15,000 clients, has filed a proposed class-action suit against the Illinois-based company, alleging it failed to protect the \"litany of highly sensitive personal identifiable information\" it had stored about former and current auto dealership clients and their customers and employees. \nThe trove of data was exposed due to CDK's \"insufficiently protected computer systems,\" according to the complaint, filed in district court in Illinois.\nOn its website, CDK touts its cybersecurity capabilities, promising to \"stop cyberattacks in their tracks.\" \n\"CDK Cybersecurity Solutions provide a three-tiered cybersecurity strategy to prevent, protect and respond to cyberattacks so you can defend your dealership,\" the website states. \n## Social Security numbers exposed\nThe suit, by contrast, claims that CDK \"had no effective means to prevent, detect, stop or mitigate breaches of its systems — thereby allowing cybercriminals unrestricted access to its current and former clients'\" personal data. That data includes Social Security numbers, employment history, driver's license info, financial account details and more. \nThe security failure stems from CDK's inadequate training of its own employees on on cybersecurity, the lawsuit claims. As a result, Aviles \"fears for his personal financial security and worries about what information was exposed in the data breach\" and is suffering from \"anxiety, sleep disruption, stress, fear and frustration.\"\nThe collection of suits are seeking damages, as well as for CDK to better protect customer information.\n## \"It's a disaster\"\nA second lawsuit from a group of dealers including Formula Sports Cars, Prestige Motor Car Imports, Bill Holt Chevrolet of Canton, Bill Holt Chevrolet of Blue Ridge and a pair of consumers, also claims CDK was negligent in protecting its clients. \"CDK has failed to uphold its promises and responsibilities that it made throughout the course of its marketing campaigns making users feel at ease,\" the suit states in part. \n\"It's a disaster,\" said one affected dealer quoted in the lawsuit, in describing the toll of the breach on his business. \"Customers are coming in, we're selling cars, but we can't book the deals, can't finance the deals or get them to the banks. Which means we cannot fund the cars or pay off the cars,\" he said.\n## Like stitching up a wound without cleaning it\nAfter CDK was first breached, it restored its systems, only to be hacked a second time. In their suit, the dealers compare CDK's decision to restore systems without resolving"
+        ]
+      },
+      {
+        "id": "s15",
+        "url": "https://www.autonews.com/retail/an-cdk-cyber-lawsuit-ruling-1111/",
+        "title": "Judge lets breach-of-contract suits against CDK Global proceed - Automotive News",
+        "publishedDate": "2025-11-11T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "The stores contend the cyberattacks that crippled CDK Global’s dealership management system cut off their access to essential business systems, causing serious financial losses. (MICHAEL CERDEIROS) \n\nBy Eric Freedman"
+        ]
+      },
+      {
+        "id": "s16",
+        "url": "https://www.reuters.com/legal/transactional/automotive-tech-company-cdk-must-face-antitrust-class-action-judge-says-2024-07-24/",
+        "title": "Automotive tech company CDK must face antitrust class action, judge says | Reuters",
+        "publishedDate": "2024-07-24T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "July 24 (Reuters) - Software vendors can band together as a class to sue automotive technology giant CDK Global for allegedly restricting access to data and causing them to pay hundreds of millions of dollars in overcharges, a federal judge in Chicago has ruled.\n\nChief U.S. District Judge Rebecca Pallmeyer on Tuesday said, opens new tab AutoLoop, which sells software to thousands of dealerships, had met the legal standard to certify its 2018 lawsuit against CDK into a class action with hundreds of other auto industry vendors.\n\n...\n\nThe vendors accused CDK of violating antitrust law by suppressing competition. They are seeking estimated damages of $395 million against Austin, Texas-based CDK, which sells software platforms to dealers to run their daily sales, financing and service operations.\n\nThe class includes vendors that create apps for inventory management, repair orders, warranty services and other functions for dealer-management systems. CDK allegedly curtailed once-broad access"
+        ]
+      },
+      {
+        "id": "s17",
+        "url": "https://news.bloomberglaw.com/antitrust/cdk-global-inks-630-million-deal-in-auto-vendor-antitrust-suit",
+        "title": "CDK Global Inks $630 Million Deal in Auto Vendor Antitrust Suit",
+        "publishedDate": "2025-01-28T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "CDK Global Inc. reached a $630 million settlement with a certified class of automotive technology vendors who allege the company colluded with Reynolds & Reynolds Co. to inflate prices for data integration services."
+        ]
+      },
+      {
+        "id": "s18",
+        "url": "https://cyberscoop.com/cdk-ransomware-attack-sec-disclosure-material-impact/",
+        "title": "CDK hack shows SEC disclosure standards are unsettled | CyberScoop",
+        "publishedDate": "2024-07-16T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "As the damage from the ransomware attack on automotive software provider CDK Global has become clear over recent weeks, numerous auto dealers felt compelled to notify the Securities and Exchange Commission that the breach had harmed their operations.\n\nCDK’s parent company, Brookfield Business Partners, which apparently paid nearly $25 million in ransom to attackers, does not feel the same way. In a press release issued July 3, the company said “we do not expect this incident to have a material impact on Brookfield Business Partners.”\n\nDespite the attack’s downstream effect on the U.S. auto industry, CDK and its parent company did not file with the SEC under its new rules for reporting breaches.\n\n...\n\nBrookfield Business Partners didn’t respond to questions about how it determined the materiality of the CDK Global breach. The attack, which impacted software used by nearly 15,000 auto dealerships, crippled sales operations in the U.S. auto industry for several weeks.\n\n...\n\nSome of the affected auto dealerships commented on the disruption in their filings to the SEC, but included caveats about materiality. “While this incident has had, and is likely to continue to have, a negative impact on the Company’s business operations until the relevant systems are fully restored, the Company has not yet determined whether the incident is reasonably likely to materially impact the Company’s financial condition or results of operations,” wrote Lithia Motors.\n\n...\n\nFort Lauderdale, Florida-based AutoNation, one of the country’s biggest car dealership chains announced Monday in an SEC filing that the attack lowered its second-quarter profit by about $1.50 a share. Despite the loss, the company said it doesn’t expect the incident to have a material impact on its overall financial condition or ongoing results."
+        ]
+      },
+      {
+        "id": "s19",
+        "url": "https://www.forthepeople.com/blog/alert-morgan-morgan-investigates-cdk-global-cybersecurity-incident/",
+        "title": "Alert: Investigating CDK Global's Cybersecurity Incident",
+        "publishedDate": "2024-06-24T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "at roughly 15,000 US car dealerships which use CDK Global software to store customer data.\n...\n- whether CDK Global has provided affected individuals adequate protection and compensation for any harms they have experienced as a result of the data breach."
+        ]
+      },
+      {
+        "id": "s20",
+        "url": "https://exa.ai/library/legal/opinion/r440kgfwf7qs4tdxm318j1m5",
+        "title": "Loop LLC v. CDK Global, LLC (trial court document), District Court, W.D. Wisconsin, 2025",
+        "publishedDate": "2025-04-29T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "IN THE UNITED STATES DISTRICT COURT FOR THE WESTERN DISTRICT OF WISCONSIN LOOP LLC d/b/a AUTOLOOP, on behalf of itself and all others similarly situated, Plaintiff, OPINION and ORDER v. 24-cv-571-jdp CDK GLOBAL, LLC, Defendant. In this certified class action, plaintiff Loop LLC contends that defendant CDK Global, LLC violated antitrust law by conspiring with its competitor The Reynolds and Reynolds Company to unreasonably restrain trade in the market for data-integration services, leading to higher prices. Two weeks before trial was scheduled to begin, the parties notified the court that they had reached a settlement. Dkt. 244. The parties now move for preliminary approval of their settlement under Federal Rule of Civil Procedure 23(e)(1)(b). Dkt. 248. For the reasons below, the court will grant the motion but also identify potential issues for concern that should be addressed in a motion for final approval. ANALYSIS A court may grant preliminary approval of a settlement if the court “will likely be able to” find that the settlement is “fair, reasonable, and adequate” after a hearing. Fed. R. Civ. P. 23(e)(1)(B) and (e)(2). The court must consider several factors, including the adequacy of relief to the class, the relative fairness of the settlement for each class member, and the reasonableness of the attorney fees. Id. The settlement agreement provides that CDK will pay a total of $630 million, which will be divided up as follows:  $20 million for class counsel’s legal expenses  $350,000 for the administrator’s expenses  $250,000 for Loop’s service award  One-third of the remaining amount, or $203,133,133, for attorney fees.  Two-thirds of the remaining amount, or $406,266,667, to be distributed to the 243 class members The settlement will be paid in four installments, over three years. The first payment of $450 million will be made shortly after the settlement is finally approved. Taxes, legal expenses, administrative expenses, the named plaintiff’s service award, and attorney fees will be paid first, and the remainder will be paid to the class. CDK will make additional payments of $60 million each year for three years. Any amount that goes unpaid to a class member will be redistributed to other class members in accordance with their pro-rata share; no portion of the settlement fund will revert to CDK. By any measure, this is a large settlement, one of the largest ever in this district. Loop’s expert calculates class damages at approximately $490 million, Dkt. 247, and the class will get about 82 percent of that, or an average of nearly $2 million per class member. If the class prevailed at trial, they could have recovered treble damages. See"
+        ]
+      },
+      {
+        "id": "s21",
+        "url": "https://www.sec.gov/Archives/edgar/data/1609702/000160970220000015/cdk-20200630.htm",
+        "title": "cdk-20200630",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "1950 Hassell Road, Hoffman Estates\n\nIL, 60169\n\n...\n\n(Address of principal executive offices) (Zip Code)\n\n...\n\nRegistrant’s telephone number, including area code: (847) 397-1700\n\n...\n\nCDK Global, Inc. is the former Dealer Services division of Automatic Data Processing, Inc. (\"ADP\"). We were incorporated in Delaware as a wholly-owned subsidiary of ADP on September 29, 2014 and began operating as an independent public company on September 30, 2014. Our principal corporate offices are located in Hoffman Estates, Illinois. Our common stock is listed on the NASDAQ Global Select Market under the symbol “CDK.”\n\n...\n\nOur purpose is to enable end-to-end automotive commerce across the globe. For over 40 years, CDK Global has served automotive retailers and original equipment manufacturers (\"OEMs\") by providing innovative solutions that allow them to better connect, manage, analyze, and grow their businesses. Our solutions automate and integrate all parts of the buying process, including the acquisition, sale, financing, insuring, parts supply, repair, and maintenance of vehicles, in more than 100 countries around the world, for approximately 30,000 retail locations and most OEMs.\n\n...\n\ncentric solutions that are highly functional, flexible, and fast. Our flagship Dealer Management System (\"DMS\") software solutions are hosted enterprise resource planning applications tailored to the unique requirements of the retail automotive industry. Our DMS products facilitate the sale of new and used vehicles, consumer financing, repair and maintenance services, and vehicle and parts inventory management. Additionally, these solutions enable company-wide accounting, financial reporting, cash flow management, and payroll services. Our DMSs are typically integrated with OEM data processing systems that enable automotive retailers to order vehicles and parts, receive vehicle records, process warranties, and check recall campaigns and service bulletins while helping them to fulfill their franchisee responsibilities to their OEM franchisors."
+        ]
+      },
+      {
+        "id": "s22",
+        "url": "https://www.crunchbase.com/organization/dealer-services",
+        "title": "CDK Global - Crunchbase Company Profile & Funding",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "CDK Global is an automotive retail company that offers integrated data and technology solutions for\n...\n* HeadquartersRegionsGreater Chicago Area,Great Lakes,Midwestern US\n...\n* FoundedDate1972\n...\n* LegalNameCDK Global, LLC\n...\n* StockSymbolNASDAQ:CDK"
+        ]
+      },
+      {
+        "id": "s23",
+        "url": "https://www.sec.gov/Archives/edgar/data/1609702/000160970217000016/cdk_q4fy1710-k.htm",
+        "title": "Document",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "We are a leading global provider of integrated information technology and digital marketing solutions to the automotive retail and adjacent industries. Focused on enabling end-to-end automotive commerce, we provide solutions to dealers in more than 100 countries around the world, serving approximately 28,000 retail locations and most original equipment manufacturers (\"OEMs\"). We have over 40 years of history providing innovative solutions to automotive retailers and OEMs to better manage, analyze, and grow their businesses. Our solutions automate and integrate all parts of the buying process from targeted digital advertising and marketing campaigns to the sale, financing, insuring, parts supply, repair, and maintenance of vehicles. We believe the breadth of our integrated solutions allows us to more"
+        ]
+      },
+      {
+        "id": "s24",
+        "url": "https://www.sec.gov/Archives/edgar/data/1609702/000119312517161770/d360338dex991.htm",
+        "title": "EX-99.1",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "We are led by a talented and experienced global senior management team that has successfully grown our business both organically and through a series of strategic acquisitions and alliances, including the acquisition of Cobalt, which led to our leadership position in digital marketing. The members of our senior management team have a deep understanding of the unique dynamics of the automotive retail industry."
+        ]
+      },
+      {
+        "id": "s25",
+        "url": "https://www.cbinsights.com/company/cdk-global",
+        "title": "CDK Global - Products, Competitors, Financials, Employees, Headquarters Locations",
+        "publishedDate": "2022-07-07T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "CDK Global provides automotive dealership software solutions within the automotive industry. The company offers various products including digital retail, customer relationship management, finance and insurance, dealer management systems, fixed operations, and network and communication services. CDK Global serves auto dealerships, original equipment manufacturers, independent software vendors, and the heavy truck sector. It was founded in 2014 and is based in Austin, Texas. In July 2022, CDK Global was acquired by Brookfield Business Partners.3B.\n\n...\n\n## Headquarters Location\n\n...\n\n11809 Domain Drive\n\n...\n\nAustin, Texas, 78758,\n\n...\n\nUnited States"
+        ]
+      },
+      {
+        "id": "s26",
+        "url": "https://www.sec.gov/Archives/edgar/data/1609702/000160970221000053/cdk_q4fy21exhibit991.htm",
+        "title": "CDK) today announced financial results for its fiscal 2021 fourth ...",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "HOFFMAN ESTATES, IL, August 17, 2021 - CDK Global, Inc. (NASDAQ: CDK) today announced financial results for its fiscal 2021 fourth\n\n...\n\n\"CDK closed out the year strong, with a tenth consecutive quarter of year-over-year growth in auto sites,\" said Brian Krzanich, CDK chief executive officer.\" The investments we have made in our product and service offerings are resonating with our customers, and we are excited to have added Roadster to the CDK family in the fourth quarter as we continue to enhance the product offerings we have to help drive customer success.\"\n\n...\n\n\"We saw a continued strength in our core business metrics and financial results in the quarter,\" said Eric Guerin, CDK chief financial officer.\" We had solid growth in both revenue and earnings in the quarter. Given the momentum in the business, we are well positioned for the coming year and are initiating fiscal 2022 guidance which shows accelerating revenue growth.\""
+        ]
+      },
+      {
+        "id": "s27",
+        "url": "https://materials.proxyvote.com/default.aspx?docHostID=DWlkti+lTg0vgE6lBVNZeEJYReMMgCrlIdsU1uwqHzs%3D&encr=Y",
+        "title": "CDK GLOBAL, INC._10K_2021_V1",
+        "provenance": "self_published",
+        "classifiedBy": "model",
+        "highlights": [
+          "1950 Hassell Road, Hoffman Estates IL, 60169 (Address of principal executive offices) (Zip Code) Registrant’s telephone number, including area code: (847) 397-1700 ______________ Securities registered pursuant to Section 12(b) of the Act: Title of class Trading Symbol(s) Name of each exchange on which registered Common Stock, $0.01 Par Value CDK NASDAQ Global Select Market\n\n...\n\nsubsidiaries, unless the context indicates otherwise. \nCDK Global, Inc. is the former Dealer Services division of Automatic Data Processing, Inc. (\"ADP\"). We were incorporated in \nDelaware as a wholly-owned subsidiary of ADP on September 29, 2014 and began operating as an independent public company on \nSeptember 30, 2014. Our principal corporate offices are located in Hoffman Estates, Illinois. Our common stock is listed on the \nNASDAQ Global Select Market under the symbol “CDK.” We report our annual results for our fiscal year, which ends June 30. As \nsuch, all references to 2021, 2020, and 2019 contained within this Annual Report on Form 10-K relate to the applicable fiscal year,\n\n...\n\nNote 4 - Discontinued Operations. \nOverview \nWe are a leading provider of integrated data and technology solutions to the automotive, heavy truck, recreation and heavy \nequipment industries. Focused on enabling end-to-end, omnichannel retail commerce through open, agnostic technology, we \nprovide solutions to dealers and original equipment manufacturers (\"OEMs\"), serving nearly 15,000 retail locations in North \nAmerica. Our solutions connect people with technology by automating and integrating all parts of the dealership and buying \nprocess, including the acquisition, sale, financing, insuring, parts supply, repair and maintenance of vehicles. \nWe generate revenue primarily by providing a broad suite of subscription-based software and technology solutions for our core \ncustomer base of automotive retailers as well as to retailers and manufacturers of heavy trucks, construction equipment, agricultural \nequipment, motorcycles, boats, and other marine and recreational vehicles. \nOur Strategy\n\n...\n\nintegrated technology solutions and platform tools that can connect the disparate elements to create continuous retail workflows. \nOur Business \nWe generate revenue primarily by providing a broad suite of subscription-based software and technology solutions for automotive \nretailers in North America. We are focused on the use of software-as-a-service \"SaaS\" and mobile-centric solutions that are highly \nfunctional, flexible, and fast. Our flagship Dealer Management System (\"DMS\") software solutions are hosted enterprise resource \nplanning applications tailored to the unique requirements of the retail automotive industry. Our DMS products facilitate the sale of\n\n...\n\nnew and used vehicles, consumer financing, repair and maintenance services, and vehicle and parts inventory management. We also \nprovide a broad portfolio of layered software applications and services, a robust and secure interface to the DMS through our \nPartner Program, data management and business intelligence solutions, a variety of professional services, and a full range of \ncustomer support solutions. These solutions enable company-wide accounting, financial reporting, cash flow management, and \npayroll services. Our DMSs are typically integrated with OEM data processing systems that enable automotive retailers to order \nvehicles and parts, receive vehicle records, process warranties, and check recall campaigns and service bulletins while helping them \nto fulfill their franchisee responsibilities to their OEM franchisers. \nComplementary to our core DMS, we also provide a portfolio of layered software applications and services to address the unique \nneeds of automotive retail workflows. These solutions are often integrated to and targeted at users of our DMSs, but may, in some \ncases, be provided to customers that do not otherwise use our DMS. Our principal layered applications are: \nSolutions Description \nVehicle Sales Solutions Technology tools and services to streamline the entire vehicle inventory, sales, \nand finance and insurance (\"F&I\") process \nFixed Operations Solutions Solutions to manage the parts and service profit center of dealerships, including \ncustomer targeting, appointment scheduling, on-site workflow, and billing \nCustomer Relationship Management Solutions Software to manage interactions with current and prospective customers \nFinancial Management Solutions Value-added capabilities for accounts payable, payments, and payroll \nDocument Management Solutions Document creation and archiving solutions to address the complex automotive \nretail sales process \nNetwork Management Solutions Wired and wireless network solutions to support dealer connectivity and security \nefforts \nIntegrated Telephony Management Solutions \nIntegrated telephony solutions that allow automotive retailers to connect and \ncommunicate via presence, instant messaging, voice, and video \nIn recent years, we have strategically focused on delivering solutions that remove friction from the vehicle-buying experience. \nSpecifically, we digitized critical pieces of the sales process with products such as Connected Store, ELEAD1ONE (\"ELEAD\") \ncustomer relationship management (\"CRM\"), Digital Contracting and eSign. On an as-needed basis, we have also implemented"
+        ]
+      },
+      {
+        "id": "s28",
+        "url": "https://en.wikipedia.org/wiki/CDK_Global",
+        "title": "CDK Global - Wikipedia",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "| | |\n| --- | --- |\n| Type | Private |\n| Industry | Software |\n| Founded | 2014; 12 years ago |\n| Headquarters | Austin, Texas, U.S. |\n| Key people | Brian P. MacDonald (president & CEO) [1] [2] |\n| Products | Software for automotive retail |\n| Revenue | US$ 1.67 billion (2021) |\n| Operating income | US$425 million (2021) |\n| Net income | US$1.03 billion (2021) |\n| Total assets | US$2.71 billion (2021) |\n| Total equity | US$495 million (2021) |\n| Owner | Brookfield Business Partners |\n| Number of employees | 6,500 (2021) |\n| Website | cdkglobal.com |\n| Footnotes [3] | |"
+        ]
+      },
+      {
+        "id": "s29",
+        "url": "https://www.globaldata.com/company-profile/cdk-global-inc/",
+        "title": "Cdk Global Inc Company Profile",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "##### Executives\n\n...\n\n| Name | Position | Board | Since | Age |\n| --- | --- | --- | --- | --- |\n| Brian MacDonald | Chief Executive Officer; President | Senior Management | 2022 | - |\n| Steve Lifshatz | Chief Financial Officer | Senior Management | - | - |\n| Warren Leggett | Chief Information Officer | Senior Management | - | - |\n| Alex Choy | Chief Technology Officer | Senior Management | - | - |\n| Barb Edson | Chief Marketing Officer | Senior Management | - | - |\n| Non Dignissim Eros | Proin vel | Convallis | 2026 | XY |\n| Non Dignissim Eros | Proin vel | Convallis | 2026 | XY |\n| Non Dignissim Eros | Proin vel | Convallis | 2026 | XY |"
+        ]
+      },
+      {
+        "id": "s30",
+        "url": "https://linkedin.com/company/cdknorthamerica",
+        "title": "CDK Global",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "CDK Global (CDK) is a Software Development company. CDK Global is a company that connects auto dealerships, original equipment manufacturers, independent software vendors, and heavy truck dealers with world-class dealership software solutions. CDK Global employs 8,348 people (+0.8% YoY, +66 people) and has an annual revenue of $1.7B, founded in 1972. Headquartered in Austin, Texas, United States, with an office in Hoffman Estates. Its workforce is distributed across 47 countries (including United States, India, Canada, China, and United Kingdom)."
+        ]
+      }
+    ],
+    "corroboration": [
+      {
+        "claim": "Legal/trading name is CDK Global",
+        "selfSource": {
+          "id": "s1",
+          "url": "https://www.cdkglobal.com/about",
+          "title": "About CDK Global",
+          "provenance": "self_published",
+          "classifiedBy": "rule",
+          "highlights": [
+            "# Dealer Success Drives Everything We Do\n\n...\n\nFor over 50 years, CDK has been empowering dealers with the tools and technology they need to build deeper relationships with customers.\n\n...\n\nCDK brings together advanced technology, data, and industry expertise to help dealerships operate more efficiently, make smarter decisions, and drive better business outcomes. Our continued investment in innovation is designed to support your growth today — and long term.\n\n...\n\nCDK is a technology company with a singular focus. Our priority is to make it easier for dealerships of all types to excel, and we do it by developing integrated technology that delivers.\n\n...\n\n### Leadership\n\n...\n\nBrian MacDonald President and Chief Executive Officer\n\n...\n\nAlex Choy Chief Technology Officer\n\n...\n\nAmy Smith Chief Human Resources Officer\n\n...\n\nBarb Edson Chief Marketing Officer\n\n...\n\n### Brian MacDonald\n\n...\n\n#### President and Chief Executive Officer\n\n...\n\nBrian MacDonald returned to CDK as president and chief executive officer in July 2022. He was previously president and CEO of CDK between 2016 and late 2018, overseeing a successful transformation effort which created a solid foundation for future growth. During that time, Brian successfully increased margins, met or exceeded earnings consensus every quarter, significantly improved customer service levels, oversaw new product designs and increased employee engagement.\n\n...\n\n### Alex Choy\n\n...\n\n#### Chief Technology Officer\n\n...\n\nAlex Choy is the chief technology officer at CDK.\n\n...\n\n### Amy Smith\n\n...\n\n#### Chief Human Resources Officer\n\n...\n\nAmy Smith is the chief human resources officer at CDK. She is responsible for providing strategic and functional human resources leadership across the organization. Amy has more than twenty years of HR experience working in multiple industries and diverse organizations.\n\n...\n\n### Barb Edson\n\n...\n\n#### Chief Marketing Officer\n\n...\n\nBarb Edson is chief marketing officer at CDK. She is responsible for delivering successful marketing and commercial strategies that help strengthen connections across the automotive retail ecosystem through technology for CDK, its dealer and manufacturer customers, and the consumers they serve.\n\n...\n\n### Dan Flynn\n\n...\n\n#### Chief Transformation Officer\n\n...\n\n### Kathy-Anne \"KAM\" McManus\n\n...\n\n#### Chief Customer Officer\n\n...\n\n### Sanjay Almeida\n\n...\n\n#### Chief Product Officer\n\n...\n\n### Scott Herbers\n\n...\n\nScott Herbers was named chief revenue officer at CDK in August 2020, leading the teams that are responsible for the growth and retention of the 9,000+ CDK customers in the automotive and heavy truck markets. Prior to this role, Scott was the leader of the North America Dealership Sales group.\n\n...\n\n### Steve Lifshatz\n\n...\n\n#### Chief Financial Officer\n\n...\n\nSteve Lifshatz is the chief financial officer at CDK. He has nearly four decades of C-Suite experience at technology software and software-as-a-service companies, and extensive experience in operational effectiveness, mergers and acquisitions, public offerings and investor relations."
+          ]
+        },
+        "registryValue": "CDK Global, LLC",
+        "independentSupport": [
+          {
+            "id": "s22",
+            "url": "https://www.crunchbase.com/organization/dealer-services",
+            "title": "CDK Global - Crunchbase Company Profile & Funding",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "CDK Global is an automotive retail company that offers integrated data and technology solutions for\n...\n* HeadquartersRegionsGreater Chicago Area,Great Lakes,Midwestern US\n...\n* FoundedDate1972\n...\n* LegalNameCDK Global, LLC\n...\n* StockSymbolNASDAQ:CDK"
+            ]
+          }
+        ],
+        "independentConflict": [],
+        "status": "corroborated"
+      },
+      {
+        "claim": "CDK has operated \"for over 50 years\" serving dealers",
+        "selfSource": {
+          "id": "s1",
+          "url": "https://www.cdkglobal.com/about",
+          "title": "About CDK Global",
+          "provenance": "self_published",
+          "classifiedBy": "rule",
+          "highlights": [
+            "# Dealer Success Drives Everything We Do\n\n...\n\nFor over 50 years, CDK has been empowering dealers with the tools and technology they need to build deeper relationships with customers.\n\n...\n\nCDK brings together advanced technology, data, and industry expertise to help dealerships operate more efficiently, make smarter decisions, and drive better business outcomes. Our continued investment in innovation is designed to support your growth today — and long term.\n\n...\n\nCDK is a technology company with a singular focus. Our priority is to make it easier for dealerships of all types to excel, and we do it by developing integrated technology that delivers.\n\n...\n\n### Leadership\n\n...\n\nBrian MacDonald President and Chief Executive Officer\n\n...\n\nAlex Choy Chief Technology Officer\n\n...\n\nAmy Smith Chief Human Resources Officer\n\n...\n\nBarb Edson Chief Marketing Officer\n\n...\n\n### Brian MacDonald\n\n...\n\n#### President and Chief Executive Officer\n\n...\n\nBrian MacDonald returned to CDK as president and chief executive officer in July 2022. He was previously president and CEO of CDK between 2016 and late 2018, overseeing a successful transformation effort which created a solid foundation for future growth. During that time, Brian successfully increased margins, met or exceeded earnings consensus every quarter, significantly improved customer service levels, oversaw new product designs and increased employee engagement.\n\n...\n\n### Alex Choy\n\n...\n\n#### Chief Technology Officer\n\n...\n\nAlex Choy is the chief technology officer at CDK.\n\n...\n\n### Amy Smith\n\n...\n\n#### Chief Human Resources Officer\n\n...\n\nAmy Smith is the chief human resources officer at CDK. She is responsible for providing strategic and functional human resources leadership across the organization. Amy has more than twenty years of HR experience working in multiple industries and diverse organizations.\n\n...\n\n### Barb Edson\n\n...\n\n#### Chief Marketing Officer\n\n...\n\nBarb Edson is chief marketing officer at CDK. She is responsible for delivering successful marketing and commercial strategies that help strengthen connections across the automotive retail ecosystem through technology for CDK, its dealer and manufacturer customers, and the consumers they serve.\n\n...\n\n### Dan Flynn\n\n...\n\n#### Chief Transformation Officer\n\n...\n\n### Kathy-Anne \"KAM\" McManus\n\n...\n\n#### Chief Customer Officer\n\n...\n\n### Sanjay Almeida\n\n...\n\n#### Chief Product Officer\n\n...\n\n### Scott Herbers\n\n...\n\nScott Herbers was named chief revenue officer at CDK in August 2020, leading the teams that are responsible for the growth and retention of the 9,000+ CDK customers in the automotive and heavy truck markets. Prior to this role, Scott was the leader of the North America Dealership Sales group.\n\n...\n\n### Steve Lifshatz\n\n...\n\n#### Chief Financial Officer\n\n...\n\nSteve Lifshatz is the chief financial officer at CDK. He has nearly four decades of C-Suite experience at technology software and software-as-a-service companies, and extensive experience in operational effectiveness, mergers and acquisitions, public offerings and investor relations."
+          ]
+        },
+        "registryValue": "Incorporation date 2007-10-10 (Delaware)",
+        "independentSupport": [
+          {
+            "id": "s21",
+            "url": "https://www.sec.gov/Archives/edgar/data/1609702/000160970220000015/cdk-20200630.htm",
+            "title": "cdk-20200630",
+            "provenance": "independent",
+            "classifiedBy": "rule",
+            "highlights": [
+              "1950 Hassell Road, Hoffman Estates\n\nIL, 60169\n\n...\n\n(Address of principal executive offices) (Zip Code)\n\n...\n\nRegistrant’s telephone number, including area code: (847) 397-1700\n\n...\n\nCDK Global, Inc. is the former Dealer Services division of Automatic Data Processing, Inc. (\"ADP\"). We were incorporated in Delaware as a wholly-owned subsidiary of ADP on September 29, 2014 and began operating as an independent public company on September 30, 2014. Our principal corporate offices are located in Hoffman Estates, Illinois. Our common stock is listed on the NASDAQ Global Select Market under the symbol “CDK.”\n\n...\n\nOur purpose is to enable end-to-end automotive commerce across the globe. For over 40 years, CDK Global has served automotive retailers and original equipment manufacturers (\"OEMs\") by providing innovative solutions that allow them to better connect, manage, analyze, and grow their businesses. Our solutions automate and integrate all parts of the buying process, including the acquisition, sale, financing, insuring, parts supply, repair, and maintenance of vehicles, in more than 100 countries around the world, for approximately 30,000 retail locations and most OEMs.\n\n...\n\ncentric solutions that are highly functional, flexible, and fast. Our flagship Dealer Management System (\"DMS\") software solutions are hosted enterprise resource planning applications tailored to the unique requirements of the retail automotive industry. Our DMS products facilitate the sale of new and used vehicles, consumer financing, repair and maintenance services, and vehicle and parts inventory management. Additionally, these solutions enable company-wide accounting, financial reporting, cash flow management, and payroll services. Our DMSs are typically integrated with OEM data processing systems that enable automotive retailers to order vehicles and parts, receive vehicle records, process warranties, and check recall campaigns and service bulletins while helping them to fulfill their franchisee responsibilities to their OEM franchisors."
+            ]
+          }
+        ],
+        "independentConflict": [],
+        "status": "corroborated"
+      },
+      {
+        "claim": "Corporate headquarters is in Austin, Texas",
+        "selfSource": {
+          "id": "s5",
+          "url": "http://cdkglobal.com/us/contact-us",
+          "title": "Contact Us | CDK Global",
+          "publishedDate": "2025-10-31T00:00:00.000Z",
+          "provenance": "self_published",
+          "classifiedBy": "rule",
+          "highlights": [
+            "### Corporate Headquarters\n...\n11809 Domain DrAustin, TX 78758\n...\na question or want more information about CDK Global products? You can fill out the form below to have a sales representative contact you directly, or you can call Sales at 833.620.2129."
+          ]
+        },
+        "independentSupport": [
+          {
+            "id": "s25",
+            "url": "https://www.cbinsights.com/company/cdk-global",
+            "title": "CDK Global - Products, Competitors, Financials, Employees, Headquarters Locations",
+            "publishedDate": "2022-07-07T00:00:00.000Z",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "CDK Global provides automotive dealership software solutions within the automotive industry. The company offers various products including digital retail, customer relationship management, finance and insurance, dealer management systems, fixed operations, and network and communication services. CDK Global serves auto dealerships, original equipment manufacturers, independent software vendors, and the heavy truck sector. It was founded in 2014 and is based in Austin, Texas. In July 2022, CDK Global was acquired by Brookfield Business Partners.3B.\n\n...\n\n## Headquarters Location\n\n...\n\n11809 Domain Drive\n\n...\n\nAustin, Texas, 78758,\n\n...\n\nUnited States"
+            ]
+          },
+          {
+            "id": "s28",
+            "url": "https://en.wikipedia.org/wiki/CDK_Global",
+            "title": "CDK Global - Wikipedia",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "| | |\n| --- | --- |\n| Type | Private |\n| Industry | Software |\n| Founded | 2014; 12 years ago |\n| Headquarters | Austin, Texas, U.S. |\n| Key people | Brian P. MacDonald (president & CEO) [1] [2] |\n| Products | Software for automotive retail |\n| Revenue | US$ 1.67 billion (2021) |\n| Operating income | US$425 million (2021) |\n| Net income | US$1.03 billion (2021) |\n| Total assets | US$2.71 billion (2021) |\n| Total equity | US$495 million (2021) |\n| Owner | Brookfield Business Partners |\n| Number of employees | 6,500 (2021) |\n| Website | cdkglobal.com |\n| Footnotes [3] | |"
+            ]
+          }
+        ],
+        "independentConflict": [],
+        "status": "corroborated"
+      },
+      {
+        "claim": "Named CEO is Sudhakar Ramakrishna (succeeding Brian MacDonald)",
+        "selfSource": {
+          "id": "s3",
+          "url": "https://www.cdkglobal.com/media-center/cdk-global-names-sudhakar-ramakrishna-president-and-ceo",
+          "title": "CDK Global Names Sudhakar Ramakrishna President and CEO",
+          "publishedDate": "2026-08-27T00:00:00.000Z",
+          "provenance": "self_published",
+          "classifiedBy": "rule",
+          "highlights": [
+            "AUSTIN, Texas — Aug. 27, 2026 — CDK, the leading automotive retail software provider, today named Sudhakar Ramakrishna president and CEO and member of the CDK board of directors, effective Oct. 5. He succeeds Brian MacDonald, who will retire and serve as a senior strategic advisor to Brookfield and CDK, providing continuity and perspective through the planned transition.\n\n...\n\nRamakrishna is a seasoned enterprise technology leader with decades of experience building and scaling software businesses across cloud, mobility, networking, security and collaboration markets. He most recently served as president and CEO of SolarWinds, a leading provider of infrastructure management software, and previously led Pulse Secure, where he worked closely with customers and partners in complex, mission-critical environments. He also held senior leadership roles at Citrix, Polycom, Motorola, 3Com and U.S. Robotics.\n\n...\n\nCDK enters this transition positioned for its next phase of growth, supported by more than $500 million invested over several years to evolve its platform from an industry-leading system of record into a system of intelligence and engagement. As technology becomes more central to automotive retail, CDK’s unmatched automotive-specific data—including 257 million unique customer IDs reflecting most U.S. consumers and vehicles on its platform—creates a strong foundation for AI, analytics and customer insights. That advantage allows CDK to embed intelligence directly into the workflows customers already rely on without disruption."
+          ]
+        },
+        "registryValue": "CEO listed as Kenneth James Gladish",
+        "independentSupport": [],
+        "independentConflict": [
+          {
+            "id": "s28",
+            "url": "https://en.wikipedia.org/wiki/CDK_Global",
+            "title": "CDK Global - Wikipedia",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "| | |\n| --- | --- |\n| Type | Private |\n| Industry | Software |\n| Founded | 2014; 12 years ago |\n| Headquarters | Austin, Texas, U.S. |\n| Key people | Brian P. MacDonald (president & CEO) [1] [2] |\n| Products | Software for automotive retail |\n| Revenue | US$ 1.67 billion (2021) |\n| Operating income | US$425 million (2021) |\n| Net income | US$1.03 billion (2021) |\n| Total assets | US$2.71 billion (2021) |\n| Total equity | US$495 million (2021) |\n| Owner | Brookfield Business Partners |\n| Number of employees | 6,500 (2021) |\n| Website | cdkglobal.com |\n| Footnotes [3] | |"
+            ]
+          },
+          {
+            "id": "s29",
+            "url": "https://www.globaldata.com/company-profile/cdk-global-inc/",
+            "title": "Cdk Global Inc Company Profile",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "##### Executives\n\n...\n\n| Name | Position | Board | Since | Age |\n| --- | --- | --- | --- | --- |\n| Brian MacDonald | Chief Executive Officer; President | Senior Management | 2022 | - |\n| Steve Lifshatz | Chief Financial Officer | Senior Management | - | - |\n| Warren Leggett | Chief Information Officer | Senior Management | - | - |\n| Alex Choy | Chief Technology Officer | Senior Management | - | - |\n| Barb Edson | Chief Marketing Officer | Senior Management | - | - |\n| Non Dignissim Eros | Proin vel | Convallis | 2026 | XY |\n| Non Dignissim Eros | Proin vel | Convallis | 2026 | XY |\n| Non Dignissim Eros | Proin vel | Convallis | 2026 | XY |"
+            ]
+          }
+        ],
+        "status": "conflict"
+      },
+      {
+        "claim": "CDK sells cloud-based dealer management, CRM, and digital retail software to auto dealerships and OEMs",
+        "selfSource": {
+          "id": "s4",
+          "url": "https://www.cdkglobal.com/media-center/cdk-global-brings-digital-transformation-automotive-retail-new-category-software-cdk",
+          "title": "CDK GLOBAL BRINGS DIGITAL TRANSFORMATION TO AUTOMOTIVE RETAIL WITH NEW CATEGORY OF SOFTWARE: THE CDK DEALERSHIP XPERIENCE | CDK Global",
+          "publishedDate": "2023-08-14T00:00:00.000Z",
+          "provenance": "self_published",
+          "classifiedBy": "rule",
+          "highlights": [
+            "AUSTIN, Texas – Aug. 14, 2023 – CDK Global Inc., the leading automotive retail software provider, today announced the launch of the CDK Dealership Xperience, an open and integrated platform that transforms how dealers sell and service cars and operate their businesses simply in a modern and digital world. The new platform provides a foundation of proven, built-in functionality that unifies workflows at the dealership into a single experience, resulting in increased employee proficiency and elevated consumer experiences.\n\n...\n\nThe Foundations Suite is at the heart of CDK Dealership Xperience platform, which extends the ability for dealers to operate their entire business on one platform while increasing control over the consumer’s retail journey digitally from start to finish. It includes:\n\n...\n\n- CDK’s industry-leading DMS technology paired with highly sought features that modernize the front office with digital retailing, e-signing, and a desking solution that will shorten the deal process for dealers and consumers.\n- Powerful accounting capabilities, digital document archiving, and AI-assisted business management to strengthen overall dealership operations.\n- Online service scheduling, digital service recommendations and faster, more-accurate receiving with parts scanning to maximize efficiency in Fixed Operations.\n\n...\n\nThe CDK Foundations Suite also seamlessly integrates with three new, additional advanced solution suites—the CDK Modern Retail Suite, the CDK Fixed Operations Suite, and the CDK Intelligence Suite—to expand dealers’ business potential while further accelerating performance.\n\n...\n\nAbout CDK Global, Inc.\n\n...\n\nCDK Global is a leading provider of cloud-based software to dealerships and Original Equipment Manufacturers (“OEMs”) across automotive and related industries. The Company’s cloud-based, software as a service (“SaaS”) platform enables dealerships to manage their end-to-end business operations including the acquisition, sale, financing, insuring, repair, and maintenance of vehicles. By automating and streamlining critical workflows, the integrated platform of modern solutions enables dealers to sell and service more vehicles by creating simple and convenient experiences for customers and improves their financial and operational performance."
+          ]
+        },
+        "independentSupport": [
+          {
+            "id": "s21",
+            "url": "https://www.sec.gov/Archives/edgar/data/1609702/000160970220000015/cdk-20200630.htm",
+            "title": "cdk-20200630",
+            "provenance": "independent",
+            "classifiedBy": "rule",
+            "highlights": [
+              "1950 Hassell Road, Hoffman Estates\n\nIL, 60169\n\n...\n\n(Address of principal executive offices) (Zip Code)\n\n...\n\nRegistrant’s telephone number, including area code: (847) 397-1700\n\n...\n\nCDK Global, Inc. is the former Dealer Services division of Automatic Data Processing, Inc. (\"ADP\"). We were incorporated in Delaware as a wholly-owned subsidiary of ADP on September 29, 2014 and began operating as an independent public company on September 30, 2014. Our principal corporate offices are located in Hoffman Estates, Illinois. Our common stock is listed on the NASDAQ Global Select Market under the symbol “CDK.”\n\n...\n\nOur purpose is to enable end-to-end automotive commerce across the globe. For over 40 years, CDK Global has served automotive retailers and original equipment manufacturers (\"OEMs\") by providing innovative solutions that allow them to better connect, manage, analyze, and grow their businesses. Our solutions automate and integrate all parts of the buying process, including the acquisition, sale, financing, insuring, parts supply, repair, and maintenance of vehicles, in more than 100 countries around the world, for approximately 30,000 retail locations and most OEMs.\n\n...\n\ncentric solutions that are highly functional, flexible, and fast. Our flagship Dealer Management System (\"DMS\") software solutions are hosted enterprise resource planning applications tailored to the unique requirements of the retail automotive industry. Our DMS products facilitate the sale of new and used vehicles, consumer financing, repair and maintenance services, and vehicle and parts inventory management. Additionally, these solutions enable company-wide accounting, financial reporting, cash flow management, and payroll services. Our DMSs are typically integrated with OEM data processing systems that enable automotive retailers to order vehicles and parts, receive vehicle records, process warranties, and check recall campaigns and service bulletins while helping them to fulfill their franchisee responsibilities to their OEM franchisors."
+            ]
+          }
+        ],
+        "independentConflict": [],
+        "status": "corroborated"
+      }
+    ],
+    "footprint": {
+      "incorporationDate": "2007-10-10",
+      "ageMonths": 227,
+      "independentSourceCount": 20,
+      "earliestIndependentMention": "2022-07-07T00:00:00.000Z",
+      "thinRecord": false
+    },
+    "findings": [
+      {
+        "id": "f1",
+        "sourceId": "s14",
+        "sourceProvenance": "independent",
+        "headline": "Ransomware attack on CDK Global exposed dealer and consumer data, spurring lawsuits",
+        "summary": "CBS News reported that CDK Global faced at least eight lawsuits after a 2024 cyberattack that took down its dealer management system, allegedly exposing Social Security numbers and other personal data for tens of thousands of people.",
+        "url": "https://www.cbsnews.com/news/cdk-global-lawsuits-cyberattack/",
+        "publishedDate": "2024-07-03T00:00:00.000Z",
+        "severity": "high",
+        "category": "breach"
+      },
+      {
+        "id": "f2",
+        "sourceId": "s15",
+        "sourceProvenance": "independent",
+        "headline": "Breach-of-contract suits over 2024 cyberattack allowed to proceed",
+        "summary": "Automotive News reported a judge let breach-of-contract lawsuits against CDK Global proceed, with dealerships alleging the cyberattacks cut off access to essential business systems and caused financial losses.",
+        "url": "https://www.autonews.com/retail/an-cdk-cyber-lawsuit-ruling-1111/",
+        "publishedDate": "2025-11-11T00:00:00.000Z",
+        "severity": "medium",
+        "category": "litigation"
+      },
+      {
+        "id": "f3",
+        "sourceId": "s9",
+        "sourceProvenance": "independent",
+        "headline": "$630 million antitrust settlement over dealer data access restrictions",
+        "summary": "Reuters reported CDK Global agreed to pay $630 million to settle antitrust claims that it restricted software vendors' access to dealer data, causing overpayments; CDK denied wrongdoing in the settlement.",
+        "url": "https://www.reuters.com/legal/auto-tech-firm-cdk-reaches-630-million-settlement-us-dealer-data-case-2025-01-28/",
+        "publishedDate": "2025-01-28T00:00:00.000Z",
+        "severity": "medium",
+        "category": "litigation"
+      },
+      {
+        "id": "f4",
+        "sourceId": "s16",
+        "sourceProvenance": "independent",
+        "headline": "Antitrust class action against CDK certified by federal judge",
+        "summary": "Reuters reported a federal judge certified a class action allowing software vendors to sue CDK Global as a group, alleging CDK suppressed competition in violation of antitrust law, with damages estimated near $395 million.",
+        "url": "https://www.reuters.com/legal/transactional/automotive-tech-company-cdk-must-face-antitrust-class-action-judge-says-2024-07-24/",
+        "publishedDate": "2024-07-24T00:00:00.000Z",
+        "severity": "medium",
+        "category": "litigation"
+      },
+      {
+        "id": "f5",
+        "sourceId": "s18",
+        "sourceProvenance": "independent",
+        "headline": "CDK and parent Brookfield did not file SEC breach disclosure despite major operational impact",
+        "summary": "CyberScoop reported that although the 2024 ransomware attack disrupted roughly 15,000 dealerships and Brookfield reportedly paid nearly $25 million in ransom, CDK and Brookfield did not file an SEC breach disclosure, raising questions about materiality determinations.",
+        "url": "https://cyberscoop.com/cdk-ransomware-attack-sec-disclosure-material-impact/",
+        "publishedDate": "2024-07-16T00:00:00.000Z",
+        "severity": "medium",
+        "category": "regulatory"
+      }
+    ],
+    "riskMemo": {
+      "overallRationale": "Independent coverage (20 sources) is substantial and shows a materially adverse record: a major 2024 ransomware attack disrupted roughly 15,000 dealerships and triggered numerous lawsuits alleging inadequate data protection, with some suits still proceeding through 2025 [f1] [f2]. There is also a pattern of significant antitrust litigation, culminating in a $630 million settlement over data-access restrictions, following an earlier class certification [f3] [f4]. Questions were also raised publicly about whether CDK and its parent Brookfield should have disclosed the breach's financial impact to the SEC [f5]. Separately, the company's self-published leadership claims (current CEO Sudhakar Ramakrishna, succeeding Brian MacDonald) conflict with the registry record, which lists Kenneth James Gladish as CEO, an identity discrepancy that warrants clarification. Other self-published claims about heritage, headquarters, and business lines are broadly consistent with independent and registry information.",
+      "recommendation": "escalate_for_review"
+    },
+    "timings": {
+      "verificationMs": 28474,
+      "searchMs": 7030,
+      "synthesisMs": 27640,
+      "totalMs": 56114
+    }
+  }
+}

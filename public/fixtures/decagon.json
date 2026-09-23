@@ -1,0 +1,652 @@
+{
+  "savedAt": "2026-09-23T00:17:23.664Z",
+  "result": {
+    "query": {
+      "companyName": "Decagon",
+      "domain": "decagon.ai"
+    },
+    "verification": {
+      "verified": true,
+      "legalName": "Decagon AI, Inc.",
+      "incorporationState": "DE",
+      "entityStatus": "active",
+      "incorporationDate": "2023-12-19",
+      "website": "decagon.ai",
+      "officers": [
+        {
+          "name": "Jesse Zhang",
+          "title": "Chief Executive Officer"
+        }
+      ],
+      "watchlistHits": [
+        {
+          "list": "OFAC SDN",
+          "match": false
+        }
+      ],
+      "sourceNote": "baselayer"
+    },
+    "resolvedDomain": {
+      "domain": "decagon.ai",
+      "domainSource": "user"
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://decagon.ai/about",
+        "title": "About | Decagon | Conversational AI for CX",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "About | Decagon | Conversational AI for CX\n\n...\n\n# Empower every brand to deliver concierge customer experiences\n\n...\n\n## Our platform enables leading enterprises like Avis Budget Group, Chime, Oura Health, 1-800-FLOWERS.COM, and Hunter Douglas to deploy AI agents that deliver deeply satisfying, tailored experiences across voice, chat, email, SMS, and every other customer channel.\n\n...\n\n## We’re building a future where customer experiences are being redefined from support tickets and hold music to faster resolutions, richer conversations, and deeper relationships. We’re proud to be backed by world-class investors who share that vision, including a16z, Accel, Bain Capital Ventures, Coatue, and Index Ventures, along with many others.\n\n...\n\n## Founders\n\n...\n\nJesse Zhang\n\n...\n\nCo-founder & CEO\n\nAshwin Sreenivas\n\nCo-founder & President"
+        ]
+      },
+      {
+        "id": "s2",
+        "url": "https://decagon.ai/blog/series-a",
+        "title": "Decagon's Series A | Decagon",
+        "publishedDate": "2024-06-17T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "agon\n\n...\n\nPosted on June 17, 2024\n\n...\n\nJesse Zhang Co-founder & CEO\n\n...\n\n‍ SAN FRANCISCO, CALIFORNIA -- June 18, 2024 -- Decagon, a generative AI company powering enterprise customer support, emerged from stealth today and announced its $5M Seed and $30M Series A funding rounds. The Seed round was led by a16z and the Series A was led by Accel with participation from A*, Elad Gil, and notable angels including Aaron Levie (CEO, Box), Howie Liu (CEO, Airtable), Matt MacInnis (COO, Rippling), Aaref Hilaly (Partner, BCV), Mike Vernal (Ex-Sequoia), Frederic Kerrest (Cofounder, Okta), Jack Altman (CEO, Lattice), and Ed Hallen (Cofounder, Klaviyo). Ivan Zhou also joins the Decagon board from Accel. Founded by CEO Jesse Zhang and CTO Ashwin Sreenivas, Decagon provides businesses such as Eventbrite, Bilt, Webflow, Substack, and Rippling with a powerful generative AI platform that mirrors human capabilities, by accurately and autonomously handling complex customer support jobs.\n\n...\n\nWhen starting Decagon, Jesse and Ashwin noticed that enterprise customers felt deep pain with their customer support. While enterprises had previously implemented chatbots, these previous generation solutions eroded customer trust. Incumbent chatbots were a maze of decision trees and canned responses that ultimately did not solve customer issues. Decagon's human-like AI agents, however, were able to solve the vast majority of customer contacts, with only minimal oversight and setup.\n\n...\n\n“Customer support chatbots may seem like a crowded space, but we see more ‘fancy demos’ riding the AI hype than products that can truly win the trust of an enterprise company. Decagon has built an AI agent that gives customers a human-like customer support experience by capturing the business complexity of a large enterprise.” said Jesse Zhang, co-founder and CEO of Decagon. \"Just like a human support agent, our AI agents can do more than just answer customer queries. By integrating with our customers’ existing workflows, we can take tangible action on behalf of the customer, such as processing a refund request or postponing an upcoming shipment.\"\n\n...\n\nAdditionally, Decagon gives customer support leaders the tools to have greater control and visibility into their organizations. Decagon’s AI-powered analytics dashboard automatically reviews and categorizes customer conversations to identify themes and suggests additions to their knowledge base to better address customer inquiries. Customer experience leaders can use Decagon to become proactive in their approach to customer support, rather than reacting to individual customer requests.\n\n...\n\nJesse Zhang — Co-founder & CEO\n\n...\n\nJanelle Sallenave Chief Operating Officer\n\n...\n\nWith Decagon, CX teams don’t have to guess whether a change will improve CSAT or deflection. They can move quickly, measure what matters, and act on what works."
+        ]
+      },
+      {
+        "id": "s3",
+        "url": "https://decagon.ai/",
+        "title": "Decagon | The AI concierge for every customer",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Decagon | The AI concierge for every customer\n\n...\n\n# The AI concierge for every customer\n\n...\n\nBuild, optimize, and scale AI agents that treat every customer like the only one.\n\n...\n\n## Powering concierge experiences for the world’s leading enterprises.\n\n...\n\nSee how leading brands go beyond traditional support with an AI concierge that delivers trusted, personalized experiences across the entire customer lifecycle.\n\n...\n\nWith Decagon Voice, we’re able to combine high performance and seamless brand customization with cross-channel memory, ensuring every interaction is connected and true to Chime’s member-first values.\n\n...\n\nJanelle Sallenave Chief Operating Officer\n\n...\n\nAgent Operating Procedures (AOPs) let you define agent workflows in natural language, so you can refine behavior and optimize performance as fast as your business moves.\n\n...\n\n### Build your agent\n\n...\n\nDefine your workflows with natural-language AOPs that deliver faster time to value, greater transparency, and trusted results at scale.\n\n...\n\n### Optimize your agent\n\n...\n\nValidate and iterate on AI logic with robust testing, observability, and experimentation, so your agent stays reliable as it evolves.\n\n...\n\n### Scale your agent\n\n...\n\nUnlock critical insights with an analytics suite that turns every conversation into an opportunity to better understand your customers.\n\n...\n\nDecagon enables rapid iteration across the entire\n\n...\n\n## Build once. Deploy everywhere.\n\n...\n\nDecagon unifies chat, voice, and email within a single intelligence layer, ensuring customer experiences stay consistent across every channel.\n\n...\n\nVoice\n\n...\n\nFast, intelligent voice AI agents built for natural dialog and fully customizable to your brand.\n\n...\n\nChat\n\n...\n\nFlexible, personalized chat that executes complex workflows reliably and empathetically.\n\n...\n\nEmail\n\n...\n\nAlways-on, intuitive email experiences to resolve issues quickly and accurately."
+        ]
+      },
+      {
+        "id": "s4",
+        "url": "https://decagon.ai/blog/the-ai-agent-engine",
+        "title": "The AI Agent Engine | Decagon",
+        "publishedDate": "2024-11-20T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Bihan Jiang Director of Product\n\n...\n\nAt Decagon, we've built the most comprehensive AI agent platform to enable the future of intelligent, context-aware, and seamless customer support. We've partnered closely with dozens of enterprises across industries, from consumer to fintech, driving significant improvements in customer satisfaction and conversation deflection within weeks of deployment.\n\n...\n\nWe center our vision around the AI Agent Engine — a data flywheel designed to transform how customer support is delivered. Our engine consists of multiple components that work in harmony: the core AI agent, intelligent routing logic, automated insights, and quality assurance. This lifecycle creates a continuous feedback loop that ensures every interaction with Decagon informs and improves the entire support ecosystem.\n\n...\n\nAt the heart of the Engine lies the Decagon Core AI Agent, which serves as the primary point of contact for customer inquiries across various communication channels: chat, email, and voice. This intelligent core agent handles all the complex logic to respond to customers, proactively adapting to customer needs.\n\n...\n\nThe Routing module intelligently determines when an inquiry cannot or should not be handled by an AI agent and selectively routes conversations to the appropriate channel. Agent Assist then serves as a strategic copilot for your human agent, maximizing efficiency and capabilities with real-time suggested responses and insights. Both ensure seamless human-AI collaboration.\n\n...\n\nEvery interaction in Decagon—whether managed by AI, humans, or a combination—flows into the Admin Dashboard, which aggregates insights, identifies patterns across customer interactions, and enables performance reporting. This system acts as our continuous improvement mechanism for customer support, learning from both explicit feedback and human agent interactions. Our QA product also provides an audit layer, offering transparency into AI decision-making and self-serve adjustment options, ensuring you maintain full control over agent behavior.\n\n...\n\nFor businesses looking to get started with the Decagon product suite, Decagon's core AI agent is the natural starting point. In parallel, our Routing and Assist products serve as lightweight entry points into our ecosystem, and allows enterprises to prove ROI before scaling to our full product suite. These options allow businesses to build confidence in our Engine while laying the foundation for what we believe is the future of customer support: fully integrated autonomous AI agents.\n\n...\n\nDecagon's AI Agent product suite is the industry's most comprehensive architecture for effective AI agent deployment in real-world operational workflows. Enterprises attempting to implement AI agents without such an integrated product suite consistently struggle with quality, scalability, and continuous improvement—making a unified system not just beneficial, but essential for the successful implementation of enterprise AI agents. We envision this framework as the endgame for all AI agent systems—customer support is just the beginning.\n\n...\n\nBihan Jiang — Director of Product\n\n...\n\nJanelle Sallenave Chief Operating"
+        ]
+      },
+      {
+        "id": "s5",
+        "url": "https://decagon.ai/blog/series-c-announcement",
+        "title": "Decagon raises series C at $1.5B valuation | Decagon",
+        "publishedDate": "2025-06-22T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Posted on June 22, 2025\n\n...\n\nJesse Zhang Co-founder & CEO\n\n...\n\nWe’re thrilled to share that just one year after emerging from stealth, Decagon has raised a $131M series C at a $1.5B valuation. This milestone reflects not only the relentless dedication of our team, but also the deep belief and support of our incredible customers and partners. They’ve embraced our mission to empower every brand to deliver concierge customer experience, and we’re honored to be their trusted partner on that journey.\n\n...\n\nImagine the next time you want to book a hotel room, upgrade a seat on a flight, reorder a lost credit card, or return a piece of furniture. Instead of waiting on hold for 90 minutes and explaining all the context, you have a personalized AI agent that you can talk to 24/7 that knows everything about you and can take actions on your behalf. It’s a completely new way for consumers to interact with every brand.\n\n...\n\n## The Decagon difference: Agent Operating Procedures (AOPs)\n\n...\n\nRather than relying on the same professional services approach as the rest of the industry, Decagon takes a product-driven approach to build, optimize, and scale AI agents— delivering speed and adaptability without compromising on quality. At the heart of this approach are Agent Operating Procedures (AOPs).\n\n...\n\nAOPs combine the power and flexibility of natural language with the precision and rigor of code. Similar to how humans learn Standard Operating Procedures (SOPs), AOPs let CX teams use natural language to teach AI agents how to handle specific scenarios with the right care and context. These natural language instructions automatically compile into code to dynamically handle complex, real-world situations, without needing custom engineering work for every new use case or iteration.\n\n...\n\nJesse Zhang — Co-founder & CEO\n\n...\n\nJanelle Sallenave Chief Operating Officer"
+        ]
+      },
+      {
+        "id": "s6",
+        "url": "https://decagon.ai/blog/series-b",
+        "title": "Decagon raises $65m Series B led by Bain Capital Ventures to bring total funding to $100m | Decagon",
+        "publishedDate": "2024-10-14T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Jesse Zhang Co-founder & CEO\n\n...\n\nSAN FRANCISCO, CALIFORNIA -- October 15, 2024 -- Decagon, the leading innovator in AI customer support agents, today announced it has raised a total of $100 million, including its latest Series B funding round, quadrupling its valuation in just a few months. The $65 million round was led by Bain Capital Ventures with participation from Elad Gil, A*, Accel, BOND Capital and ACME Capital. This funding will accelerate Decagon’s mission to transform enterprise customer support and unlock new levels of economic productivity.\n\n...\n\nThere’s been so much hype around AI agents, but where are the real use cases? Decagon sets itself apart with an AI agent that drives tangible productivity gains for its customers from the start. Industry leaders like Duolingo, Notion, Rippling, Eventbrite, and Bilt use Decagon’s AI agents to manage customer interactions from start to end, including fetching data, taking actions, and reviewing conversations. Decagon’s customers have seen significant efficiency improvements, enabling them to serve customers better with fewer human resources, while elevating the roles of existing customer support teams.\n\n...\n\nJesse Zhang — Co-founder & CEO\n\n...\n\nJanelle Sallenave Chief Operating Officer"
+        ]
+      },
+      {
+        "id": "s7",
+        "url": "https://decagon.ai/modules/positioning",
+        "title": "Positioning | Decagon",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Kelsey Garvey, Head of Partnerships\n...\nIn the broader market\n...\nnative CX category. Unlike\n...\nSaaS platforms that bolt AI\n...\nbuilds that are slow and hard to\n...\nagon is purpose built for support\n...\ndesigned for rapid innovation."
+        ]
+      },
+      {
+        "id": "s8",
+        "url": "https://decagon.ai/blog/series-d-announcement",
+        "title": "Decagon’s $250 million commitment to the AI concierge future | Decagon",
+        "publishedDate": "2026-01-27T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "has raised a fresh $250\n...\n, led by new\n...\nCoatue Management and Index\n...\n, tripling\n...\nto $4.5 billion\n...\nin which more than 100 new global enterprise customers, like Avis Budget Group, Block, and Deutsche Telekom, joined the Decagon family."
+        ]
+      },
+      {
+        "id": "s9",
+        "url": "https://www.bloomberg.com/news/articles/2026-01-28/ai-customer-support-startup-decagon-valued-at-4-5-billion",
+        "title": "AI Customer Support Startup Decagon Valued at $4.5 Billion",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Decagon AI Inc., a customer support startup, has raised $250 million in a new round of funding that triples its valuation to $4.5 billion, the latest sign of feverish investor demand for artificial intelligence services."
+        ]
+      },
+      {
+        "id": "s10",
+        "url": "https://techcrunch.com/2026/03/04/decagon-completes-first-tender-offer-at-4-5b-valuation/",
+        "title": "Decagon completes first tender offer at $4.5B valuation | TechCrunch",
+        "publishedDate": "2026-03-04T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Decagon, an AI-powered customer support startup, is set to announce the completion of its first tender offer, allowing its more than 300 employees to sell a portion of their vested shares at the company’s latest valuation of $4.5 billion."
+        ]
+      },
+      {
+        "id": "s11",
+        "url": "https://www.forbes.com/sites/rashishrivastava/2024/10/15/this-companys-ai-agents-won-contests-to-secure-big-customers-now-its-raising-65-million/",
+        "title": "This Company’s AI Agents Won Contests To Secure Big Customers. Now It’s Raised $65 Million",
+        "publishedDate": "2024-10-15T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          ". Each time, Decagon’s AI-powered chatbot came out as a winner, Zhang said. Such evaluations are becoming more common as companies test out different AI models. For instance, Intercom recently switched its AI customer service platform from OpenAI’s GPT"
+        ]
+      },
+      {
+        "id": "s12",
+        "url": "https://ai2.work/blog/decagon-s-4-5b-valuation-signals-enterprise-ai-is-scaling-fast",
+        "title": "Decagon's $4.5B Valuation Signals Enterprise AI Is Scaling Fast | AI2Work",
+        "publishedDate": "2026-03-10T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "model",
+        "highlights": [
+          "- Data governance and security posture: AI agents touch sensitive customer data across CRM\n...\npayment, and identity systems.\n...\nSOC 2\n...\ndata residency options, and\n...\non guardrail incidents (Sierra disclosed a jailbreak attempt in Dec\n...\n2025)."
+        ]
+      },
+      {
+        "id": "s13",
+        "url": "https://www.cmswire.com/the-wire/decagons-valuation-triples-to-45-billion-as-it-ushers-in-the-age-of-ai-concierge/",
+        "title": "Decagon’s Valuation Triples to $4.5 Billion as it Ushers in the Age of AI Concierge",
+        "publishedDate": "2026-01-28T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "The round triples\n...\n’s valuation in\n...\nsix months to $4.\n...\n20\n...\n100\n...\nindustries including travel and\n...\n, financial services, health and wellness, and\n...\nticketing tools, or CRM"
+        ]
+      },
+      {
+        "id": "s14",
+        "url": "https://recodenews.com/decagons-ai-support-agent-is-peeling/",
+        "title": "Decagon’s AI Support Agent Is Peeling Clients Away from Salesforce Service Cloud – Recode",
+        "publishedDate": "2026-08-29T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "each client has to tune over time. That tuning process means the first few months of a deployment rarely look like the steady-state performance the sales deck promises, and for enterprise buyers, that gap between the demo and the ramp-up period is still"
+        ]
+      },
+      {
+        "id": "s15",
+        "url": "https://www.forbes.com/sites/rashishrivastava/2025/05/02/ai-startup-decagon-in-talks-to-raise-100-million-at-a-15-billion-valuation/",
+        "title": "AI Startup Decagon In Talks To Raise $100 Million At A $1.5 Billion Valuation",
+        "publishedDate": "2025-05-02T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Another source familiar\n...\nthe talks said\n...\nyet and the\n...\ncould change.\n...\nCEO Jesse Zhang and"
+        ]
+      },
+      {
+        "id": "s16",
+        "url": "https://news.bloomberglaw.com/artificial-intelligence/ai-customer-support-startup-decagon-valued-at-4-5-billion",
+        "title": "AI Customer Support Startup Decagon Valued at $4.5 Billion",
+        "publishedDate": "2026-01-28T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Decagon AI Inc., a customer support startup, has raised $250 million in a new round of funding that triples its valuation to $4.5 billion, the latest sign of feverish investor demand for artificial intelligence services.\n...\nCapital Group."
+        ]
+      },
+      {
+        "id": "s17",
+        "url": "https://www.zwillgen.com/litigation/old-statutes-new-targets-plaintiffs-using-existing-privacy-consumer-laws-against-ai-companies/",
+        "title": "Old Statutes, New Targets: How Plaintiffs Are Using Existing Privacy ...",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "Rather than waiting for AI-specific legislation, plaintiffs are trying to fit AI-related conduct into existing statutes, many containing statutory damages provisions. As a result, companies training, deploying, and monetizing AI systems are facing a heightened risk of wiretap, biometric privacy, employment-discrimination, consumer-protection, and common-law privacy theories.\n\n...\n\nClaims under the federal Wiretap Act, Electronic Communications Privacy Act, and state laws such as the California Invasion of Privacy Act (“CIPA”) have long targeted session-replay vendors and call-recording systems. Plaintiffs are now applying those same theories to AI-powered customer service tools, voice assistants, transcription systems, and conversational analytics platforms.\n\n...\n\nPlaintiffs are alleging that AI vendors used customer communications for their own commercial purposes, such as model training or product improvement – not just to help the business they’re contracting with accomplish its purposes. These claims are meeting mixed results at the motion to dismiss stage.\n\n...\n\nIn Lisota v. Heartland Dental / RingCentral (N.D. Ill., filed July 2025) the court reached a conclusion under the federal Wiretap Act’s “ordinary course of business” exception, holding that internal use doesn’t reach the public and training your own model is different from selling ad targeting. In Riganian v. LiveRamp (N.D. Cal., filed Jan. 2025) CIPA and Wiretap Act claims survived dismissal based on allegations involving large-scale collection and monetization of personal data through tracking technologies.\n\n...\n\nBut other courts have reached the opposite conclusion. In Taylor v. ConverseNow Technologies, Inc. (N.D. Cal., filed Jan. 2025), CIPA claims survived against an AI restaurant-ordering vendor alleged to have used customer calls to improve its conversational AI systems. Tate v. VITAS Healthcare Corp. (E.D. Cal., filed May 2024) similarly permitted claims involving third-party AI conversation software used during healthcare calls to survive dismissal.\n\n...\n\n### 2. Common-Law Privacy, Unfair Competition, and Anti-Hacking Theories for AI Data Scraping and Training\n\n...\n\nUnlike many other categories discussed here, these cases primarily target AI developers rather than downstream deployers. Where developers scrape, aggregate, or monetize personal data to train and improve AI systems, plaintiffs are alleging common-law privacy claims, unfair competition theories, and violations of consumer protection laws and the Computer Fraud and Abuse Act.\n\n...\n\nIn Reddit v. Anthropic (Cal. Super. Ct., filed June 2025), Reddit sued alleging breach of contract, unjust enrichment, trespass to chattels, and unfair competition theories—but not federal copyright law. The case is now embroiled in a removal dispute that may prove as consequential as the merits: Anthropic argues Reddit’s state-law claims are preempted by the Copyright Act, and the court’s resolution of that question will shape how future plaintiffs choose to frame AI scraping cases.\n\n...\n\nAnother case, Reddit v. Perplexity (Cal. Super. Ct., filed Oct. 2025), raises similar theories, framing unauthorized scraping of Reddit’s user-generated content as unjust enrichment through misappropriation of proprietary data assets because there were, allegedly, no licensing agreement, no compensation, no compliance with Reddit’s deletion and access-restriction obligations to its own users.\n\n...\n\n### 3. Right-of-Publicity and Voice-Misappropriation Claims for AI Cloning\n\n...\n\nRight-of-publicity laws protect individuals’ ability to control the commercial use of their name, voice, likeness, and identity. Plaintiffs have asserted that those protections apply when AI systems generate digital replicas without meaningful consent.\n\n...\n\nThe central issue in these cases is often scope of consent. For example, in Lehrman & Sage v. Lovo, Inc. (S.D.N.Y., filed May 2024), professional voice actors alleged recordings obtained for limited purposes were later used to create commercial AI voice clones. The court allowed right-of-publicity, breach-of-contract, and consumer-protection claims to proceed, while dismissing copyright and trademark claims.\n\n...\n\nStates vary significantly in their treatment of publicity rights, but recent legislation reflects increasing focus on AI-generated replicas. California’s AB 1836 and AB 2602 target unauthorized digital replicas of performers, while the proposed federal No Fakes Act would create a national framework governing unauthorized synthetic likenesses. Tennessee’s ELVIS Act (effective July 2024), the first state law directly targeting AI voice cloning, goes further still by creating liability both for unauthorized use of a person’s voice, and for developers and distributors of the AI tools used to produce it.\n\n...\n\nIllinois’ Biometric Information Privacy Act (“BIPA”) remains a significant statutory risk facing AI-enabled facial, voice, and identity analytics. BIPA broadly requires notice, written consent, and retention limitations before collecting or using biometric identifiers, like face scans or voiceprints. And AI systems can increase exposure because biometric collection, processing, and retention can occur continuously and at scale.\n\n...\n\nThe In re Clearview AI MDL settlement (N.D. Ill., first suits filed 2020) is illustrative. Clearview allegedly scraped publicly available photos across the Internet to build a facial recognition database sold to law enforcement and private clients but didn’t comply with BIPA’s notice, consent, or data-destruction mandates. With a potential class covering virtually anyone whose face appeared online, statutory damages threatened to exceed the company’s total value. The parties ultimately settled for a 23% equity stake in Clearview, valued at approximately $51.75 million — the first settlement of its kind in BIPA litigation\n\n...\n\nSome plaintiffs are testing a new theory that AI hiring and applicant-scoring tools function as employment-related consumer reporting systems governed by the Fair Credit Reporting Act (“FCRA”).\n\n...\n\nThus far, this theory has targeted AI-generated suitability or eligibility scores\n\n...\n\n### 6. Copyright Infringement and DMCA Theories for AI Training and Output Generation\n\n...\n\nA growing wave of litigation argues that AI developers infringed copyrights at scale by ingesting copyrighted material to train their models, and that AI-generated outputs can themselves infringe by reproducing or closely deriving from protected expression. Fair use is the central defense across these cases; three courts have issued early rulings with mixed results, and no definitive resolution is expected before mid-2026.\n\n...\n\nAndersen v. Stability AI (N.D. Cal., filed Jan. 2023) is the leading case. Visual artists alleged image-generation models were trained on billions of copyrighted images scraped without authorization, and that outputs could reproduce their distinctive styles. Direct infringement claims survived early dismissal; the case is now in discovery with trial set for September 2026. Getty Images has pursued parallel U.S. and U.K. proceedings alleging large-scale copying of approximately 12 million images, including outputs allegedly reproducing Getty watermarks.\n\n...\n\nIn Doe 1 v. GitHub / Microsoft (N.D. Cal., filed Nov. 2022), developers alleged AI-assisted coding tools reproduced licensed code without preserving attribution; the district court dismissed the DMCA copyright-management-information claims for insufficient similarity, and that ruling is now on interlocutory appeal at the Ninth Circuit.\n\n...\n\nFor companies deploying third-party AI rather than training foundational models, direct copyright exposure is more limited, but not absent. Risk arises where generated outputs reproduce protected material, where businesses fine-tune models on datasets without sufficient rights, or where vendor agreements fail to address training-data provenance.\n\n...\n\n### 7. Employment and Anti-Discrimination Statutes Applied to Automated Decision-Making\n\n...\n\nFederal and state anti-discrimination laws prohibit hiring systems that screen out applicants based on protected characteristics like age, race, or disability. Plaintiffs are now asserting that employers using AI hiring tools and the vendors who built them can face direct liability when those tools produce discriminatory outcomes.\n\n...\n\nMobley v. Workday (N.D. Cal., filed Feb. 2023) is illustrative. The court allowed claims to proceed on an “agent” theory — i.e., the AI vendors were subject to direct liability under Title VII and the ADEA because they functioned as agents of the employer — and in May 2025 granted preliminary collective certification potentially covering hundreds of millions of applicants rejected through Workday’s platform. Harper v. Sirius XM Radio (E.D. Mich., filed Aug. 2025) seeks to extend the same theory to employers using third-party AI tools internally, alleging that reliance on inputs like zip codes and educational history as screening criteria functions as a proxy for race. These claims are distinct from the FCRA theories discussed above, but the same AI hiring tool can trigger both frameworks simultaneously.\n\n...\n\n### 8. Deceptive Trade Practices and “AI Washing” Claims\n\n...\n\nThese cases generally focus on claims that companies overstated AI capabilities, inaccurately described how AI systems functioned, or misrepresented how user data was collected, processed, or protected. Similar theories are increasingly appearing in both regulatory enforcement actions and private litigation.\n\n...\n\nThe FTC’s “ Operation AI Comply” initiative in 2024 emphasized that AI products remain fully subject to existing consumer-protection laws. Regulators have also increasingly warned companies against overstating whether products are truly “AI-powered” or making unsupported claims about AI functionality.\n\n...\n\nState attorneys general have taken similar positions. The Texas AG’s 2024 settlement with Pieces Technologies — a healthcare AI company that marketed its clinical-summarization product to hospitals with a claimed hallucination rate of less than one in 100,000, which the AG found likely inaccurate — is one example of UDAP enforcement reaching AI accuracy claims specifically. And California’s Attorney General issued guidance emphasizing that California’s Unfair Competition Law applies to AI-related representations involving capabilities, privacy practices, and AI-generated content disclosures.\n\n...\n\nFor public companies, these theories may also overlap with securities-fraud exposure where AI-related statements allegedly influence investor decision-making."
+        ]
+      },
+      {
+        "id": "s18",
+        "url": "https://pulse2.com/decagon-announces-commercial-pilot-with-deutsche-telekom-and-strategic-investment-from-t-capital/",
+        "title": "Decagon Announces Commercial Pilot With Deutsche Telekom And Strategic Investment from T.Capital",
+        "publishedDate": "2025-11-10T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "model",
+        "highlights": [
+          "the world’s largest tele\n...\nby revenue,\n...\narm, T\n...\n, invests in\n...\nThe investment is intended to support Dec\n...\n’s ongoing\n...\nAI-driven\n...\nto large-scale commercial environments."
+        ]
+      },
+      {
+        "id": "s19",
+        "url": "https://www.newcomer.co/p/decagon-hit-100-million-betting-against",
+        "title": "Decagon Hit $100 Million Betting Against Forward Deployed Engineers",
+        "publishedDate": "2026-08-11T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "(FDEs), whom vendors embed inside customers to customize and manage software for them. Despite the rising popularity of the role across tech, Zhang sees reliance on it as a sign of a weak product — and as a place where Decagon stands out from its bigger"
+        ]
+      },
+      {
+        "id": "s20",
+        "url": "https://news.quantixmind.com/article/decagon-250m-series-d",
+        "title": "Decagon triples to $4.5 billion: the case for and against application-layer agents · QuantixNews",
+        "publishedDate": "2026-01-29T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "model",
+        "highlights": [
+          "The strongest argument against the valuation is that the moat is thinner than the price implies. Decagon's core capability, turning a large language model into a competent support agent, is precisely the kind of workflow that foundation-model providers are moving to offer directly. 2 Pulse 2.0 2026-01-28 Decagon's conversational AI customer-service agents report deflection rates exceeding 80% across voice, chat, email and SMS, serving customers including Block, Affirm, Chime, Hertz and Duolingo, after signing over 100 new enterprise customers in 2025. Open source If OpenAI, Anthropic, or Google package customer-service agents as a first-party feature, an application-layer specialist could see its margin squeezed from above even as demand for the underlying capability grows. The deflection-rate figure also merits caution: above 80 percent is the company's own reported metric, and deflection is not the same as resolution. 2 Pulse 2.0 2026-01-28 Decagon's conversational AI customer-service agents report deflection rates exceeding 80% across voice, chat, email and SMS, serving customers including Block, Affirm, Chime, Hertz and Duolingo, after signing over 100 new enterprise customers in 2025. Open source A customer counted as deflected who later escalates or churns is a cost, not a saving. For the"
+        ]
+      },
+      {
+        "id": "s21",
+        "url": "https://pitchbook.com/profiles/company/539828-92",
+        "title": "Decagon 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "### Decagon General Information\n#### Description\nDeveloper of an AI concierge platform designed to build, optimize and scale AI agents. The company's platform specializes in moving past complex configuration languages and defines agent workflows in natural language to refine behavior and optimize performance as quickly, enabling businesses to improve customer support.\n#### Contact Information\n##### Website\nwww.decagon.ai\nOwnership Status\nPrivately Held (backing)\nFinancing Status\nVenture Capital-Backed\n##### Corporate Office\n* 2261 Market Street\n* Suite 5378\n* San Francisco, CA 94114\n* United States\n+1 (510) ****************\n\n\n\nPrimary Industry\nBusiness/Productivity Software\nOther Industries\nMedia and Information Services (B2B)\nVertical(s)\nSaaS,\nArtificial Intelligence & Machine Learning\n##### Corporate Office\n* 2261 Market Street\n* Suite 5378\n* San Francisco, CA 94114\n* United States\n+1 (510) ****************\n"
+        ]
+      },
+      {
+        "id": "s22",
+        "url": "https://www.crunchbase.com/organization/decagon-485e",
+        "title": "Decagon - Crunchbase Company Profile & Funding",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "* HeadquartersRegionsSan Francisco Bay Area,West Coast,Western US\n* FoundedDate2023\n* FoundersAshwin Sreenivas,Jesse Zhang\n* OperatingStatusActive\n* Last FundingTypeSeries B\n* LegalNameDecagon AI, Inc.\n* CompanyTypeFor Profit\n* ContactEmailprivacy@decagon.ai.\nDecagon offers AI customer support agents designed for enterprises. It is trusted by leading companies and startups, their generative AI delivers exceptional customer experiences. It provides auto-resolve issues, streamlines workflows, assists agents and gains powerful insights with seamless integrations tailored for success.\n* \n* \n## Lists Featuring This Company\nEdit Lists Featuring This Company Section"
+        ]
+      },
+      {
+        "id": "s23",
+        "url": "https://linkedin.com/company/decagon-ai",
+        "title": "Decagon",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Decagon is a Software Development company. Decagon is an AI concierge that builds, optimizes, and scales AI agents to treat every customer like the only one. Decagon employs 571 people (+291.1% YoY, +425 people), founded in 2023. Headquartered in San Francisco, California, United States, with presence in United Kingdom. Its workforce is distributed across 10 countries (including United States, United Kingdom, Australia, Canada, and Ireland).\n\n...\n\nDecagon is the leading conversational AI platform empowering every brand to deliver concierge customer experiences.\n\n...\n\nOur technology enables industry-defining enterprises like Avis Budget Group, Chime, Oura Health, 1-800-FLOWERS.COM, and Hunter Douglas to deploy AI agents that power personalized, deeply satisfying interactions across voice, chat, email, SMS, and every other channel.\n\n...\n\nWe’re building a future where customer experiences are being redefined from support tickets and hold music to faster resolutions, richer conversations, and deeper relationships.\n\n...\n\n## Company Details\n- Industry: Software Development\n- Type: Privately held\n- Headquarters: San Francisco, United States\n- Founded Year: 2023\n- Homepage: decagon.ai\n- Aliases: decagon, decagon ai, inc.\n- LinkedIn: linkedin.com/company/decagon-ai\n- Linkedin Followers: 74,345\n- Emails: support@decagon.ai\n\n...\n\n## Workforce\n- Employees: 571\n- Company Size: 501-1000 employees\n  - Monthly Growth: +13.5%\n  - Yearly Growth: +291.1%\n- Key Executives:\n  - Aaron Dodgson: Strategic Account Director\n  - Adam Warshaw: Sales Director, Strategic Accounts\n  - Akaash Mungale: Data Lead\n  - Alan Yiu: VP Product\n  - Alexander Whyte: Director, Strategic Accounts\n  - Ashlee Christoffersen: Strategic Account Director\n  - Ashwin Sreenivas: President Co-Founder\n  - Basia Sudol: Head of Enterprise Solutions\n  - Becca Izikson: Head of GTM Talent\n  - Ben Draffin: Director of Security\n- Breakdown:\n  - By Country: United States: 421 (74%), United Kingdom: 43 (8%), Australia: 5 (1%), Canada: 2, Ireland: 2, Mexico: 2, Netherlands: 2, Philippines: 2, Germany: 1, Nigeria: 1\n  - By Department: Technical: 149 (26%), Sales: 91 (16%), Product: 54 (9%), Hr: 35 (6%), Marketing: 27 (5%), Other Department: 21 (4%), Consulting: 20 (4%), General Management: 16 (3%), Customer Service: 13 (2%), Operations: 11 (2%) (+8 more)\n  - By Seniority: Specialist: 203 (36%), Manager: 90 (16%), Other Management: 56 (10%), Director: 50 (9%), Senior: 39 (7%), Head: 15 (3%), Vp: 12 (2%), Founder: 7 (1%), Intern: 7 (1%), Partner: 3 (1%) (+1 more)\n\n...\n\n## Locations\n- Headquarters: san francisco, california, united states (US)\n- Offices: san francisco, california, united states (US), new york, new york, united states (US), london, england, united kingdom (GB)"
+        ]
+      },
+      {
+        "id": "s24",
+        "url": "https://siliconvalleyinvestclub.com/pl/companies/decagon/tear-sheet.pdf",
+        "title": "Decagon AI, Inc.",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "| Enterprise conversational AI for customer support and CX FOUNDED August 2023 HQ San Francisco, California EMPLOYEES 128 WEBSITE decagon.ai ENTERPRISE AI CONVERSATIONAL AI LATEST VALUATION (JAN FOUNDED 2026) 2023 $4.5B OVERVIEW | CUSTOMER SUPPORT CUSTOMER EXPERIENCE AI AGENTS TOTAL RAISED TO DATE HEADQUARTERS EMPLOYEES San Francisco, $506M 128 California |\n| --- | --- |\n| Decagon is an enterprise conversational AI company that builds AI agents for customer support and customer experience, with its site describing the product as “The AI concierge for every customer.” Founded in August 2023 by Jesse Zhang and Ashwin Sreenivas, the company sells a unified platform that handles customer interactions across chat, voice, email, SMS, and other channels while integrating with enterprise systems to take actions such as refunds, subscription changes, and account updates. Decagon’s public materials and third-party coverage describe it as an AI-native customer experience platform used by leading enterprises. COMPANY DETAILS | |\n| LEGAL NAME WEBSITE FOUNDED HEADCOUNT HQ INCORPORATED STRUCTURE HEADQUARTERS OFFICES LEADERSHIP | Decagon AI, Inc. decagon.ai — decagon.ai August 2023 128 San Francisco, California Delaware corporation 2261 Market Street #5378, San Francisco, CA 94114 New York City; London |\n| Jesse Zhang Co-founder & CEO PRODUCTS & SERVICES | Ashwin Sreenivas Co-founder & President |\n| Products for Conversational AI Unified platform for building, optimizing, and scaling AI agents across chat, voice, email, SMS, and other customer channels. HIGHLIGHTS | |\n| Decagon positioned itself as “The AI concierge for every customer.” (Aug 2026) The company said its platform serves enterprise customers including Avis Budget Group, Chime, Oura Health, 1-800-FLOWERS.COM, and Hunter Douglas. (Aug 2026) Forbes listed customers including Duolingo, Hertz, Notion, Bilt, and Rippling. (Aug 2026) Revelio Labs estimated Decagon had 405 employees in 2026. (Mar 2026) | |"
+        ]
+      },
+      {
+        "id": "s25",
+        "url": "https://tracxn.com/d/companies/decagon/__olYF07yDINmnEYN1sXz7oaGNvyUoHt9yehLP3T7iuYc",
+        "title": "Decagon - 2026 Company Profile, Team, Funding & Competitors",
+        "publishedDate": "2024-01-25T06:26:40.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "Decagon is a series D company based in San Francisco (United States), founded in 2023 by Ashwin Sreenivas and Jesse Zhang. It operates as an AI-powered customer experience platform. Decagon has raised $476M in funding from investors like Accel, Andreessen Horowitz and Index Ventures, with a current valuation of $4.5B. The company has 3374 active competitors, including 361 funded and 130 that have exited. Its top competitors include companies like HubSpot, Dial\n\n...\n\nAI-powered customer experience platform. It enables businesses to build, manage, and optimize intelligent virtual agents across voice, chat, and email channels to deliver personalized, scalable customer support and concierge-style interactions. It enables organizations to create AI-driven concierge experiences that can handle customer interactions across multiple communication channels, including voice, chat, and email, while maintaining consistent and personalized experiences.\n\n...\n\nRegistered Address2261 Market Street STE 5378 San Francisco, CA 94114 USA\n\n...\n\n## Decagon's founders and board of directors\n\n...\n\nThe founders of Decagon are Ashwin Sreenivas and Jesse Zhang. Jesse Zhang is the CEO of Decagon.\n\n...\n\nHere are the details of Decagon's key team members:\n\n...\n\nAshwin Sreenivas: Co-Founder & CTO of Decagon. They serve on the board of 1 company.\n\n...\n\nJesse Zhang: Co-Founder & CEO of Decagon.\n\n...\n\nDecagon is headquartered in San Francisco, United States. It is registered at 2261 Market Street STE 5378 San Francisco, CA 94114 USA.\n\n...\n\nAI-powered customer experience platform. It enables businesses to build, manage, and optimize intelligent virtual agents across voice, chat, and email channels to deliver personalized, scalable customer support and concierge-style interactions. It enables organizations to create AI-driven concierge experiences that can handle customer interactions across multiple communication channels, including voice, chat, and email, while maintaining consistent and personalized experiences."
+        ]
+      },
+      {
+        "id": "s26",
+        "url": "https://dealroom.co/companies/decagon/",
+        "title": "Decagon — Unicorn company profile | Dealroom",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "AI · San Francisco, United States · Founded 2023\n...\nGenerative AI optimizing customer support and operations\n...\n- FoundersAshwin Sreenivas, Jesse Zhang 35%\n- Accel 14.5%\n- 14%\n- ESOP 11.5%\n- 8%\n- 4.5%\n...\n- Other InvestorsForerunner, Ribbit"
+        ]
+      },
+      {
+        "id": "s27",
+        "url": "https://siliconangle.com/2026/01/28/decagon-ai-raises-250m-4-5b-valuation-scale-ai-concierge-platform/",
+        "title": "Decagon AI raises $250M at $4.5B valuation to scale AI concierge ...",
+        "publishedDate": "2026-01-28T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "Artificial intelligence concierge for every customer company Decagon AI Inc., which offers an artificial intelligence “concierge” for customers, today revealed that it has raised $250 million in new late-stage funding on a $4.5 billion valuation.\n\n...\n\nFounded in 2023, Decagon offers advanced conversational AI agents that are designed to transform how businesses interact with their customers at scale. The platform uses large language models and machine learning to power AI “concierge” agents that can understand natural language and respond in a way that feels fluid, contextual and human-like, rather than offering simple scripted chats.\n\n...\n\nThe new funding is intended to help it expand its conversational AI platform and accelerate growth as it scales up deployment of its AI concierge technology to more enterprises across industries. Decagon’s offering is powered by a unified AI agent engine that operates across multiple communication channels, such as chat, email and voice, to allow companies to deliver consistent support experiences regardless of how a customer chooses to reach out.\n\n...\n\nDiffering from other solutions, the AI agents do more than answer basic FAQs by being able to navigate complex workflows, access backend systems like customer relationship management or billing and execute customer-centric tasks such as processing refunds or managing subscriptions\n\n...\n\nThe platform allows both technical teams and nontechnical business users to configure and optimize AI agents without heavy engineering support. Decagon offers tools that help organizations customize how agents handle specific scenarios, define business logic and incorporate guardrails so interactions remain safe and reliable.\n\n...\n\nDecagon’s technology is also able to learn from interactions by gathering context from past conversations and feeding that data back into the system. The AI agents improve their performance over time to make future customer engagements smoother and more accurate. By making concierge experiences possible at both the individualized level and at global scale, Decagon says, it’s restoring alignment between businesses and customers.\n\n...\n\n“We believe every customer deserves concierge treatment,” explain Jesse Zhang and Ashwin Sreenivas, Decagon’s cofounders. “And every business deserves the technology to make it possible.”\n\n...\n\nAcross the platform, Decagon achieves average\n\n...\n\nThe technology is already being used to power AI concierge experiences for leading consumer and enterprise brands across daily life. Notable Decagon customers include Avis Budget Group Inc., The Hertz Corporation, Block Inc., Affirm Holdings Inc., Chime Financial Inc., Varo Bank N.A., Deutsche Telekom AG and Grubhub Holdings Inc."
+        ]
+      },
+      {
+        "id": "s28",
+        "url": "https://www.cbinsights.com/company/decagon/financials",
+        "title": "Decagon Stock Price, Funding, Valuation, Revenue & Financial Statements",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "# Decagon\n...\ndecagon.ai\n...\n's\n...\n## Decagon Investors\n...\nDecagon has 40 investors. Andreessen Horowitz invested in Decagon's Secondary Market funding round.\n...\n| | | |\n...\n| California |\n...\n498 Seventh Avenue 12th floor New York, NY 10018"
+        ]
+      },
+      {
+        "id": "s29",
+        "url": "https://yardstickresearch.app/tear-sheet/decagon-ai/",
+        "title": "Decagon AI tear-sheet - Yardstick Research",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "- Name: Decagon (legal entity: Decagon AI, Inc., a Delaware/California stock corporation).​ The product brand is \"Decagon\" and the tagline is \"The AI concierge for every customer.\" Decagon homepage\n- Founded: 2023.​ Decagon about page, TechCrunch tender-offer coverage The article is dated March 2026 and describes Decagon as \"less-than-three-year-old,\" consistent with a 2023 founding.\n- HQ: San Francisco, California.‌ Index Ventures investment perspective The vendor's own /about page does not state a headquarters city; the investor memo and funding press place the company in San Francisco.\n- Founders / leadership (recency-swept, trailing 12 mo): Jesse Zhang, co-founder and CEO (previously founded Lowkey, acquired by Niantic; CS degree, Harvard).​ Ashwin Sreenivas, co-founder and President (previously founded Helia, acquired by Scale AI).​ Both co-founders remain in their roles as of the January"
+        ]
+      },
+      {
+        "id": "s30",
+        "url": "https://sterlingcharts.com/companies/decagon",
+        "title": "Decagon: Valuation, Funding & Metrics | Sterling",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "PRIVATE San Francisco, CA~200 Founded 2023~$481M raised$4.5B valuation decagon.ai\n...\n, Klarna, Rippling. Series B raised $65M at a $650M valuation in 2024 led by Bain Capital Ventures; later marks at over $1.5B reported. Decagon was founded in 2023, is"
+        ]
+      }
+    ],
+    "corroboration": [
+      {
+        "claim": "Legal name is Decagon AI, Inc.",
+        "selfSource": {
+          "id": "s2",
+          "url": "https://decagon.ai/blog/series-a",
+          "title": "Decagon's Series A | Decagon",
+          "publishedDate": "2024-06-17T00:00:00.000Z",
+          "provenance": "self_published",
+          "classifiedBy": "rule",
+          "highlights": [
+            "agon\n\n...\n\nPosted on June 17, 2024\n\n...\n\nJesse Zhang Co-founder & CEO\n\n...\n\n‍ SAN FRANCISCO, CALIFORNIA -- June 18, 2024 -- Decagon, a generative AI company powering enterprise customer support, emerged from stealth today and announced its $5M Seed and $30M Series A funding rounds. The Seed round was led by a16z and the Series A was led by Accel with participation from A*, Elad Gil, and notable angels including Aaron Levie (CEO, Box), Howie Liu (CEO, Airtable), Matt MacInnis (COO, Rippling), Aaref Hilaly (Partner, BCV), Mike Vernal (Ex-Sequoia), Frederic Kerrest (Cofounder, Okta), Jack Altman (CEO, Lattice), and Ed Hallen (Cofounder, Klaviyo). Ivan Zhou also joins the Decagon board from Accel. Founded by CEO Jesse Zhang and CTO Ashwin Sreenivas, Decagon provides businesses such as Eventbrite, Bilt, Webflow, Substack, and Rippling with a powerful generative AI platform that mirrors human capabilities, by accurately and autonomously handling complex customer support jobs.\n\n...\n\nWhen starting Decagon, Jesse and Ashwin noticed that enterprise customers felt deep pain with their customer support. While enterprises had previously implemented chatbots, these previous generation solutions eroded customer trust. Incumbent chatbots were a maze of decision trees and canned responses that ultimately did not solve customer issues. Decagon's human-like AI agents, however, were able to solve the vast majority of customer contacts, with only minimal oversight and setup.\n\n...\n\n“Customer support chatbots may seem like a crowded space, but we see more ‘fancy demos’ riding the AI hype than products that can truly win the trust of an enterprise company. Decagon has built an AI agent that gives customers a human-like customer support experience by capturing the business complexity of a large enterprise.” said Jesse Zhang, co-founder and CEO of Decagon. \"Just like a human support agent, our AI agents can do more than just answer customer queries. By integrating with our customers’ existing workflows, we can take tangible action on behalf of the customer, such as processing a refund request or postponing an upcoming shipment.\"\n\n...\n\nAdditionally, Decagon gives customer support leaders the tools to have greater control and visibility into their organizations. Decagon’s AI-powered analytics dashboard automatically reviews and categorizes customer conversations to identify themes and suggests additions to their knowledge base to better address customer inquiries. Customer experience leaders can use Decagon to become proactive in their approach to customer support, rather than reacting to individual customer requests.\n\n...\n\nJesse Zhang — Co-founder & CEO\n\n...\n\nJanelle Sallenave Chief Operating Officer\n\n...\n\nWith Decagon, CX teams don’t have to guess whether a change will improve CSAT or deflection. They can move quickly, measure what matters, and act on what works."
+          ]
+        },
+        "registryValue": "Decagon AI, Inc.",
+        "independentSupport": [
+          {
+            "id": "s9",
+            "url": "https://www.bloomberg.com/news/articles/2026-01-28/ai-customer-support-startup-decagon-valued-at-4-5-billion",
+            "title": "AI Customer Support Startup Decagon Valued at $4.5 Billion",
+            "provenance": "independent",
+            "classifiedBy": "rule",
+            "highlights": [
+              "Decagon AI Inc., a customer support startup, has raised $250 million in a new round of funding that triples its valuation to $4.5 billion, the latest sign of feverish investor demand for artificial intelligence services."
+            ]
+          },
+          {
+            "id": "s16",
+            "url": "https://news.bloomberglaw.com/artificial-intelligence/ai-customer-support-startup-decagon-valued-at-4-5-billion",
+            "title": "AI Customer Support Startup Decagon Valued at $4.5 Billion",
+            "publishedDate": "2026-01-28T00:00:00.000Z",
+            "provenance": "independent",
+            "classifiedBy": "rule",
+            "highlights": [
+              "Decagon AI Inc., a customer support startup, has raised $250 million in a new round of funding that triples its valuation to $4.5 billion, the latest sign of feverish investor demand for artificial intelligence services.\n...\nCapital Group."
+            ]
+          },
+          {
+            "id": "s22",
+            "url": "https://www.crunchbase.com/organization/decagon-485e",
+            "title": "Decagon - Crunchbase Company Profile & Funding",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "* HeadquartersRegionsSan Francisco Bay Area,West Coast,Western US\n* FoundedDate2023\n* FoundersAshwin Sreenivas,Jesse Zhang\n* OperatingStatusActive\n* Last FundingTypeSeries B\n* LegalNameDecagon AI, Inc.\n* CompanyTypeFor Profit\n* ContactEmailprivacy@decagon.ai.\nDecagon offers AI customer support agents designed for enterprises. It is trusted by leading companies and startups, their generative AI delivers exceptional customer experiences. It provides auto-resolve issues, streamlines workflows, assists agents and gains powerful insights with seamless integrations tailored for success.\n* \n* \n## Lists Featuring This Company\nEdit Lists Featuring This Company Section"
+            ]
+          }
+        ],
+        "independentConflict": [],
+        "status": "corroborated"
+      },
+      {
+        "claim": "Founded in 2023 (some self-published materials cite August 2023)",
+        "selfSource": {
+          "id": "s1",
+          "url": "https://decagon.ai/about",
+          "title": "About | Decagon | Conversational AI for CX",
+          "provenance": "self_published",
+          "classifiedBy": "rule",
+          "highlights": [
+            "About | Decagon | Conversational AI for CX\n\n...\n\n# Empower every brand to deliver concierge customer experiences\n\n...\n\n## Our platform enables leading enterprises like Avis Budget Group, Chime, Oura Health, 1-800-FLOWERS.COM, and Hunter Douglas to deploy AI agents that deliver deeply satisfying, tailored experiences across voice, chat, email, SMS, and every other customer channel.\n\n...\n\n## We’re building a future where customer experiences are being redefined from support tickets and hold music to faster resolutions, richer conversations, and deeper relationships. We’re proud to be backed by world-class investors who share that vision, including a16z, Accel, Bain Capital Ventures, Coatue, and Index Ventures, along with many others.\n\n...\n\n## Founders\n\n...\n\nJesse Zhang\n\n...\n\nCo-founder & CEO\n\nAshwin Sreenivas\n\nCo-founder & President"
+          ]
+        },
+        "registryValue": "Incorporated 2023-12-19",
+        "independentSupport": [
+          {
+            "id": "s22",
+            "url": "https://www.crunchbase.com/organization/decagon-485e",
+            "title": "Decagon - Crunchbase Company Profile & Funding",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "* HeadquartersRegionsSan Francisco Bay Area,West Coast,Western US\n* FoundedDate2023\n* FoundersAshwin Sreenivas,Jesse Zhang\n* OperatingStatusActive\n* Last FundingTypeSeries B\n* LegalNameDecagon AI, Inc.\n* CompanyTypeFor Profit\n* ContactEmailprivacy@decagon.ai.\nDecagon offers AI customer support agents designed for enterprises. It is trusted by leading companies and startups, their generative AI delivers exceptional customer experiences. It provides auto-resolve issues, streamlines workflows, assists agents and gains powerful insights with seamless integrations tailored for success.\n* \n* \n## Lists Featuring This Company\nEdit Lists Featuring This Company Section"
+            ]
+          },
+          {
+            "id": "s25",
+            "url": "https://tracxn.com/d/companies/decagon/__olYF07yDINmnEYN1sXz7oaGNvyUoHt9yehLP3T7iuYc",
+            "title": "Decagon - 2026 Company Profile, Team, Funding & Competitors",
+            "publishedDate": "2024-01-25T06:26:40.000Z",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "Decagon is a series D company based in San Francisco (United States), founded in 2023 by Ashwin Sreenivas and Jesse Zhang. It operates as an AI-powered customer experience platform. Decagon has raised $476M in funding from investors like Accel, Andreessen Horowitz and Index Ventures, with a current valuation of $4.5B. The company has 3374 active competitors, including 361 funded and 130 that have exited. Its top competitors include companies like HubSpot, Dial\n\n...\n\nAI-powered customer experience platform. It enables businesses to build, manage, and optimize intelligent virtual agents across voice, chat, and email channels to deliver personalized, scalable customer support and concierge-style interactions. It enables organizations to create AI-driven concierge experiences that can handle customer interactions across multiple communication channels, including voice, chat, and email, while maintaining consistent and personalized experiences.\n\n...\n\nRegistered Address2261 Market Street STE 5378 San Francisco, CA 94114 USA\n\n...\n\n## Decagon's founders and board of directors\n\n...\n\nThe founders of Decagon are Ashwin Sreenivas and Jesse Zhang. Jesse Zhang is the CEO of Decagon.\n\n...\n\nHere are the details of Decagon's key team members:\n\n...\n\nAshwin Sreenivas: Co-Founder & CTO of Decagon. They serve on the board of 1 company.\n\n...\n\nJesse Zhang: Co-Founder & CEO of Decagon.\n\n...\n\nDecagon is headquartered in San Francisco, United States. It is registered at 2261 Market Street STE 5378 San Francisco, CA 94114 USA.\n\n...\n\nAI-powered customer experience platform. It enables businesses to build, manage, and optimize intelligent virtual agents across voice, chat, and email channels to deliver personalized, scalable customer support and concierge-style interactions. It enables organizations to create AI-driven concierge experiences that can handle customer interactions across multiple communication channels, including voice, chat, and email, while maintaining consistent and personalized experiences."
+            ]
+          },
+          {
+            "id": "s26",
+            "url": "https://dealroom.co/companies/decagon/",
+            "title": "Decagon — Unicorn company profile | Dealroom",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "AI · San Francisco, United States · Founded 2023\n...\nGenerative AI optimizing customer support and operations\n...\n- FoundersAshwin Sreenivas, Jesse Zhang 35%\n- Accel 14.5%\n- 14%\n- ESOP 11.5%\n- 8%\n- 4.5%\n...\n- Other InvestorsForerunner, Ribbit"
+            ]
+          },
+          {
+            "id": "s27",
+            "url": "https://siliconangle.com/2026/01/28/decagon-ai-raises-250m-4-5b-valuation-scale-ai-concierge-platform/",
+            "title": "Decagon AI raises $250M at $4.5B valuation to scale AI concierge ...",
+            "publishedDate": "2026-01-28T00:00:00.000Z",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "Artificial intelligence concierge for every customer company Decagon AI Inc., which offers an artificial intelligence “concierge” for customers, today revealed that it has raised $250 million in new late-stage funding on a $4.5 billion valuation.\n\n...\n\nFounded in 2023, Decagon offers advanced conversational AI agents that are designed to transform how businesses interact with their customers at scale. The platform uses large language models and machine learning to power AI “concierge” agents that can understand natural language and respond in a way that feels fluid, contextual and human-like, rather than offering simple scripted chats.\n\n...\n\nThe new funding is intended to help it expand its conversational AI platform and accelerate growth as it scales up deployment of its AI concierge technology to more enterprises across industries. Decagon’s offering is powered by a unified AI agent engine that operates across multiple communication channels, such as chat, email and voice, to allow companies to deliver consistent support experiences regardless of how a customer chooses to reach out.\n\n...\n\nDiffering from other solutions, the AI agents do more than answer basic FAQs by being able to navigate complex workflows, access backend systems like customer relationship management or billing and execute customer-centric tasks such as processing refunds or managing subscriptions\n\n...\n\nThe platform allows both technical teams and nontechnical business users to configure and optimize AI agents without heavy engineering support. Decagon offers tools that help organizations customize how agents handle specific scenarios, define business logic and incorporate guardrails so interactions remain safe and reliable.\n\n...\n\nDecagon’s technology is also able to learn from interactions by gathering context from past conversations and feeding that data back into the system. The AI agents improve their performance over time to make future customer engagements smoother and more accurate. By making concierge experiences possible at both the individualized level and at global scale, Decagon says, it’s restoring alignment between businesses and customers.\n\n...\n\n“We believe every customer deserves concierge treatment,” explain Jesse Zhang and Ashwin Sreenivas, Decagon’s cofounders. “And every business deserves the technology to make it possible.”\n\n...\n\nAcross the platform, Decagon achieves average\n\n...\n\nThe technology is already being used to power AI concierge experiences for leading consumer and enterprise brands across daily life. Notable Decagon customers include Avis Budget Group Inc., The Hertz Corporation, Block Inc., Affirm Holdings Inc., Chime Financial Inc., Varo Bank N.A., Deutsche Telekom AG and Grubhub Holdings Inc."
+            ]
+          }
+        ],
+        "independentConflict": [],
+        "status": "corroborated"
+      },
+      {
+        "claim": "Headquartered in San Francisco, California",
+        "selfSource": {
+          "id": "s2",
+          "url": "https://decagon.ai/blog/series-a",
+          "title": "Decagon's Series A | Decagon",
+          "publishedDate": "2024-06-17T00:00:00.000Z",
+          "provenance": "self_published",
+          "classifiedBy": "rule",
+          "highlights": [
+            "agon\n\n...\n\nPosted on June 17, 2024\n\n...\n\nJesse Zhang Co-founder & CEO\n\n...\n\n‍ SAN FRANCISCO, CALIFORNIA -- June 18, 2024 -- Decagon, a generative AI company powering enterprise customer support, emerged from stealth today and announced its $5M Seed and $30M Series A funding rounds. The Seed round was led by a16z and the Series A was led by Accel with participation from A*, Elad Gil, and notable angels including Aaron Levie (CEO, Box), Howie Liu (CEO, Airtable), Matt MacInnis (COO, Rippling), Aaref Hilaly (Partner, BCV), Mike Vernal (Ex-Sequoia), Frederic Kerrest (Cofounder, Okta), Jack Altman (CEO, Lattice), and Ed Hallen (Cofounder, Klaviyo). Ivan Zhou also joins the Decagon board from Accel. Founded by CEO Jesse Zhang and CTO Ashwin Sreenivas, Decagon provides businesses such as Eventbrite, Bilt, Webflow, Substack, and Rippling with a powerful generative AI platform that mirrors human capabilities, by accurately and autonomously handling complex customer support jobs.\n\n...\n\nWhen starting Decagon, Jesse and Ashwin noticed that enterprise customers felt deep pain with their customer support. While enterprises had previously implemented chatbots, these previous generation solutions eroded customer trust. Incumbent chatbots were a maze of decision trees and canned responses that ultimately did not solve customer issues. Decagon's human-like AI agents, however, were able to solve the vast majority of customer contacts, with only minimal oversight and setup.\n\n...\n\n“Customer support chatbots may seem like a crowded space, but we see more ‘fancy demos’ riding the AI hype than products that can truly win the trust of an enterprise company. Decagon has built an AI agent that gives customers a human-like customer support experience by capturing the business complexity of a large enterprise.” said Jesse Zhang, co-founder and CEO of Decagon. \"Just like a human support agent, our AI agents can do more than just answer customer queries. By integrating with our customers’ existing workflows, we can take tangible action on behalf of the customer, such as processing a refund request or postponing an upcoming shipment.\"\n\n...\n\nAdditionally, Decagon gives customer support leaders the tools to have greater control and visibility into their organizations. Decagon’s AI-powered analytics dashboard automatically reviews and categorizes customer conversations to identify themes and suggests additions to their knowledge base to better address customer inquiries. Customer experience leaders can use Decagon to become proactive in their approach to customer support, rather than reacting to individual customer requests.\n\n...\n\nJesse Zhang — Co-founder & CEO\n\n...\n\nJanelle Sallenave Chief Operating Officer\n\n...\n\nWith Decagon, CX teams don’t have to guess whether a change will improve CSAT or deflection. They can move quickly, measure what matters, and act on what works."
+          ]
+        },
+        "independentSupport": [
+          {
+            "id": "s21",
+            "url": "https://pitchbook.com/profiles/company/539828-92",
+            "title": "Decagon 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "### Decagon General Information\n#### Description\nDeveloper of an AI concierge platform designed to build, optimize and scale AI agents. The company's platform specializes in moving past complex configuration languages and defines agent workflows in natural language to refine behavior and optimize performance as quickly, enabling businesses to improve customer support.\n#### Contact Information\n##### Website\nwww.decagon.ai\nOwnership Status\nPrivately Held (backing)\nFinancing Status\nVenture Capital-Backed\n##### Corporate Office\n* 2261 Market Street\n* Suite 5378\n* San Francisco, CA 94114\n* United States\n+1 (510) ****************\n\n\n\nPrimary Industry\nBusiness/Productivity Software\nOther Industries\nMedia and Information Services (B2B)\nVertical(s)\nSaaS,\nArtificial Intelligence & Machine Learning\n##### Corporate Office\n* 2261 Market Street\n* Suite 5378\n* San Francisco, CA 94114\n* United States\n+1 (510) ****************\n"
+            ]
+          },
+          {
+            "id": "s22",
+            "url": "https://www.crunchbase.com/organization/decagon-485e",
+            "title": "Decagon - Crunchbase Company Profile & Funding",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "* HeadquartersRegionsSan Francisco Bay Area,West Coast,Western US\n* FoundedDate2023\n* FoundersAshwin Sreenivas,Jesse Zhang\n* OperatingStatusActive\n* Last FundingTypeSeries B\n* LegalNameDecagon AI, Inc.\n* CompanyTypeFor Profit\n* ContactEmailprivacy@decagon.ai.\nDecagon offers AI customer support agents designed for enterprises. It is trusted by leading companies and startups, their generative AI delivers exceptional customer experiences. It provides auto-resolve issues, streamlines workflows, assists agents and gains powerful insights with seamless integrations tailored for success.\n* \n* \n## Lists Featuring This Company\nEdit Lists Featuring This Company Section"
+            ]
+          },
+          {
+            "id": "s25",
+            "url": "https://tracxn.com/d/companies/decagon/__olYF07yDINmnEYN1sXz7oaGNvyUoHt9yehLP3T7iuYc",
+            "title": "Decagon - 2026 Company Profile, Team, Funding & Competitors",
+            "publishedDate": "2024-01-25T06:26:40.000Z",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "Decagon is a series D company based in San Francisco (United States), founded in 2023 by Ashwin Sreenivas and Jesse Zhang. It operates as an AI-powered customer experience platform. Decagon has raised $476M in funding from investors like Accel, Andreessen Horowitz and Index Ventures, with a current valuation of $4.5B. The company has 3374 active competitors, including 361 funded and 130 that have exited. Its top competitors include companies like HubSpot, Dial\n\n...\n\nAI-powered customer experience platform. It enables businesses to build, manage, and optimize intelligent virtual agents across voice, chat, and email channels to deliver personalized, scalable customer support and concierge-style interactions. It enables organizations to create AI-driven concierge experiences that can handle customer interactions across multiple communication channels, including voice, chat, and email, while maintaining consistent and personalized experiences.\n\n...\n\nRegistered Address2261 Market Street STE 5378 San Francisco, CA 94114 USA\n\n...\n\n## Decagon's founders and board of directors\n\n...\n\nThe founders of Decagon are Ashwin Sreenivas and Jesse Zhang. Jesse Zhang is the CEO of Decagon.\n\n...\n\nHere are the details of Decagon's key team members:\n\n...\n\nAshwin Sreenivas: Co-Founder & CTO of Decagon. They serve on the board of 1 company.\n\n...\n\nJesse Zhang: Co-Founder & CEO of Decagon.\n\n...\n\nDecagon is headquartered in San Francisco, United States. It is registered at 2261 Market Street STE 5378 San Francisco, CA 94114 USA.\n\n...\n\nAI-powered customer experience platform. It enables businesses to build, manage, and optimize intelligent virtual agents across voice, chat, and email channels to deliver personalized, scalable customer support and concierge-style interactions. It enables organizations to create AI-driven concierge experiences that can handle customer interactions across multiple communication channels, including voice, chat, and email, while maintaining consistent and personalized experiences."
+            ]
+          }
+        ],
+        "independentConflict": [],
+        "status": "corroborated"
+      },
+      {
+        "claim": "Jesse Zhang is Co-founder & CEO; Ashwin Sreenivas is Co-founder & President",
+        "selfSource": {
+          "id": "s1",
+          "url": "https://decagon.ai/about",
+          "title": "About | Decagon | Conversational AI for CX",
+          "provenance": "self_published",
+          "classifiedBy": "rule",
+          "highlights": [
+            "About | Decagon | Conversational AI for CX\n\n...\n\n# Empower every brand to deliver concierge customer experiences\n\n...\n\n## Our platform enables leading enterprises like Avis Budget Group, Chime, Oura Health, 1-800-FLOWERS.COM, and Hunter Douglas to deploy AI agents that deliver deeply satisfying, tailored experiences across voice, chat, email, SMS, and every other customer channel.\n\n...\n\n## We’re building a future where customer experiences are being redefined from support tickets and hold music to faster resolutions, richer conversations, and deeper relationships. We’re proud to be backed by world-class investors who share that vision, including a16z, Accel, Bain Capital Ventures, Coatue, and Index Ventures, along with many others.\n\n...\n\n## Founders\n\n...\n\nJesse Zhang\n\n...\n\nCo-founder & CEO\n\nAshwin Sreenivas\n\nCo-founder & President"
+          ]
+        },
+        "registryValue": "Jesse Zhang, Chief Executive Officer",
+        "independentSupport": [
+          {
+            "id": "s22",
+            "url": "https://www.crunchbase.com/organization/decagon-485e",
+            "title": "Decagon - Crunchbase Company Profile & Funding",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "* HeadquartersRegionsSan Francisco Bay Area,West Coast,Western US\n* FoundedDate2023\n* FoundersAshwin Sreenivas,Jesse Zhang\n* OperatingStatusActive\n* Last FundingTypeSeries B\n* LegalNameDecagon AI, Inc.\n* CompanyTypeFor Profit\n* ContactEmailprivacy@decagon.ai.\nDecagon offers AI customer support agents designed for enterprises. It is trusted by leading companies and startups, their generative AI delivers exceptional customer experiences. It provides auto-resolve issues, streamlines workflows, assists agents and gains powerful insights with seamless integrations tailored for success.\n* \n* \n## Lists Featuring This Company\nEdit Lists Featuring This Company Section"
+            ]
+          },
+          {
+            "id": "s25",
+            "url": "https://tracxn.com/d/companies/decagon/__olYF07yDINmnEYN1sXz7oaGNvyUoHt9yehLP3T7iuYc",
+            "title": "Decagon - 2026 Company Profile, Team, Funding & Competitors",
+            "publishedDate": "2024-01-25T06:26:40.000Z",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "Decagon is a series D company based in San Francisco (United States), founded in 2023 by Ashwin Sreenivas and Jesse Zhang. It operates as an AI-powered customer experience platform. Decagon has raised $476M in funding from investors like Accel, Andreessen Horowitz and Index Ventures, with a current valuation of $4.5B. The company has 3374 active competitors, including 361 funded and 130 that have exited. Its top competitors include companies like HubSpot, Dial\n\n...\n\nAI-powered customer experience platform. It enables businesses to build, manage, and optimize intelligent virtual agents across voice, chat, and email channels to deliver personalized, scalable customer support and concierge-style interactions. It enables organizations to create AI-driven concierge experiences that can handle customer interactions across multiple communication channels, including voice, chat, and email, while maintaining consistent and personalized experiences.\n\n...\n\nRegistered Address2261 Market Street STE 5378 San Francisco, CA 94114 USA\n\n...\n\n## Decagon's founders and board of directors\n\n...\n\nThe founders of Decagon are Ashwin Sreenivas and Jesse Zhang. Jesse Zhang is the CEO of Decagon.\n\n...\n\nHere are the details of Decagon's key team members:\n\n...\n\nAshwin Sreenivas: Co-Founder & CTO of Decagon. They serve on the board of 1 company.\n\n...\n\nJesse Zhang: Co-Founder & CEO of Decagon.\n\n...\n\nDecagon is headquartered in San Francisco, United States. It is registered at 2261 Market Street STE 5378 San Francisco, CA 94114 USA.\n\n...\n\nAI-powered customer experience platform. It enables businesses to build, manage, and optimize intelligent virtual agents across voice, chat, and email channels to deliver personalized, scalable customer support and concierge-style interactions. It enables organizations to create AI-driven concierge experiences that can handle customer interactions across multiple communication channels, including voice, chat, and email, while maintaining consistent and personalized experiences."
+            ]
+          },
+          {
+            "id": "s29",
+            "url": "https://yardstickresearch.app/tear-sheet/decagon-ai/",
+            "title": "Decagon AI tear-sheet - Yardstick Research",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "- Name: Decagon (legal entity: Decagon AI, Inc., a Delaware/California stock corporation).​ The product brand is \"Decagon\" and the tagline is \"The AI concierge for every customer.\" Decagon homepage\n- Founded: 2023.​ Decagon about page, TechCrunch tender-offer coverage The article is dated March 2026 and describes Decagon as \"less-than-three-year-old,\" consistent with a 2023 founding.\n- HQ: San Francisco, California.‌ Index Ventures investment perspective The vendor's own /about page does not state a headquarters city; the investor memo and funding press place the company in San Francisco.\n- Founders / leadership (recency-swept, trailing 12 mo): Jesse Zhang, co-founder and CEO (previously founded Lowkey, acquired by Niantic; CS degree, Harvard).​ Ashwin Sreenivas, co-founder and President (previously founded Helia, acquired by Scale AI).​ Both co-founders remain in their roles as of the January"
+            ]
+          }
+        ],
+        "independentConflict": [],
+        "status": "corroborated"
+      },
+      {
+        "claim": "Decagon sells an AI concierge / conversational AI platform for enterprise customer support across chat, voice, email, SMS",
+        "selfSource": {
+          "id": "s3",
+          "url": "https://decagon.ai/",
+          "title": "Decagon | The AI concierge for every customer",
+          "provenance": "self_published",
+          "classifiedBy": "rule",
+          "highlights": [
+            "Decagon | The AI concierge for every customer\n\n...\n\n# The AI concierge for every customer\n\n...\n\nBuild, optimize, and scale AI agents that treat every customer like the only one.\n\n...\n\n## Powering concierge experiences for the world’s leading enterprises.\n\n...\n\nSee how leading brands go beyond traditional support with an AI concierge that delivers trusted, personalized experiences across the entire customer lifecycle.\n\n...\n\nWith Decagon Voice, we’re able to combine high performance and seamless brand customization with cross-channel memory, ensuring every interaction is connected and true to Chime’s member-first values.\n\n...\n\nJanelle Sallenave Chief Operating Officer\n\n...\n\nAgent Operating Procedures (AOPs) let you define agent workflows in natural language, so you can refine behavior and optimize performance as fast as your business moves.\n\n...\n\n### Build your agent\n\n...\n\nDefine your workflows with natural-language AOPs that deliver faster time to value, greater transparency, and trusted results at scale.\n\n...\n\n### Optimize your agent\n\n...\n\nValidate and iterate on AI logic with robust testing, observability, and experimentation, so your agent stays reliable as it evolves.\n\n...\n\n### Scale your agent\n\n...\n\nUnlock critical insights with an analytics suite that turns every conversation into an opportunity to better understand your customers.\n\n...\n\nDecagon enables rapid iteration across the entire\n\n...\n\n## Build once. Deploy everywhere.\n\n...\n\nDecagon unifies chat, voice, and email within a single intelligence layer, ensuring customer experiences stay consistent across every channel.\n\n...\n\nVoice\n\n...\n\nFast, intelligent voice AI agents built for natural dialog and fully customizable to your brand.\n\n...\n\nChat\n\n...\n\nFlexible, personalized chat that executes complex workflows reliably and empathetically.\n\n...\n\nEmail\n\n...\n\nAlways-on, intuitive email experiences to resolve issues quickly and accurately."
+          ]
+        },
+        "independentSupport": [
+          {
+            "id": "s21",
+            "url": "https://pitchbook.com/profiles/company/539828-92",
+            "title": "Decagon 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "### Decagon General Information\n#### Description\nDeveloper of an AI concierge platform designed to build, optimize and scale AI agents. The company's platform specializes in moving past complex configuration languages and defines agent workflows in natural language to refine behavior and optimize performance as quickly, enabling businesses to improve customer support.\n#### Contact Information\n##### Website\nwww.decagon.ai\nOwnership Status\nPrivately Held (backing)\nFinancing Status\nVenture Capital-Backed\n##### Corporate Office\n* 2261 Market Street\n* Suite 5378\n* San Francisco, CA 94114\n* United States\n+1 (510) ****************\n\n\n\nPrimary Industry\nBusiness/Productivity Software\nOther Industries\nMedia and Information Services (B2B)\nVertical(s)\nSaaS,\nArtificial Intelligence & Machine Learning\n##### Corporate Office\n* 2261 Market Street\n* Suite 5378\n* San Francisco, CA 94114\n* United States\n+1 (510) ****************\n"
+            ]
+          },
+          {
+            "id": "s22",
+            "url": "https://www.crunchbase.com/organization/decagon-485e",
+            "title": "Decagon - Crunchbase Company Profile & Funding",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "* HeadquartersRegionsSan Francisco Bay Area,West Coast,Western US\n* FoundedDate2023\n* FoundersAshwin Sreenivas,Jesse Zhang\n* OperatingStatusActive\n* Last FundingTypeSeries B\n* LegalNameDecagon AI, Inc.\n* CompanyTypeFor Profit\n* ContactEmailprivacy@decagon.ai.\nDecagon offers AI customer support agents designed for enterprises. It is trusted by leading companies and startups, their generative AI delivers exceptional customer experiences. It provides auto-resolve issues, streamlines workflows, assists agents and gains powerful insights with seamless integrations tailored for success.\n* \n* \n## Lists Featuring This Company\nEdit Lists Featuring This Company Section"
+            ]
+          },
+          {
+            "id": "s27",
+            "url": "https://siliconangle.com/2026/01/28/decagon-ai-raises-250m-4-5b-valuation-scale-ai-concierge-platform/",
+            "title": "Decagon AI raises $250M at $4.5B valuation to scale AI concierge ...",
+            "publishedDate": "2026-01-28T00:00:00.000Z",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "Artificial intelligence concierge for every customer company Decagon AI Inc., which offers an artificial intelligence “concierge” for customers, today revealed that it has raised $250 million in new late-stage funding on a $4.5 billion valuation.\n\n...\n\nFounded in 2023, Decagon offers advanced conversational AI agents that are designed to transform how businesses interact with their customers at scale. The platform uses large language models and machine learning to power AI “concierge” agents that can understand natural language and respond in a way that feels fluid, contextual and human-like, rather than offering simple scripted chats.\n\n...\n\nThe new funding is intended to help it expand its conversational AI platform and accelerate growth as it scales up deployment of its AI concierge technology to more enterprises across industries. Decagon’s offering is powered by a unified AI agent engine that operates across multiple communication channels, such as chat, email and voice, to allow companies to deliver consistent support experiences regardless of how a customer chooses to reach out.\n\n...\n\nDiffering from other solutions, the AI agents do more than answer basic FAQs by being able to navigate complex workflows, access backend systems like customer relationship management or billing and execute customer-centric tasks such as processing refunds or managing subscriptions\n\n...\n\nThe platform allows both technical teams and nontechnical business users to configure and optimize AI agents without heavy engineering support. Decagon offers tools that help organizations customize how agents handle specific scenarios, define business logic and incorporate guardrails so interactions remain safe and reliable.\n\n...\n\nDecagon’s technology is also able to learn from interactions by gathering context from past conversations and feeding that data back into the system. The AI agents improve their performance over time to make future customer engagements smoother and more accurate. By making concierge experiences possible at both the individualized level and at global scale, Decagon says, it’s restoring alignment between businesses and customers.\n\n...\n\n“We believe every customer deserves concierge treatment,” explain Jesse Zhang and Ashwin Sreenivas, Decagon’s cofounders. “And every business deserves the technology to make it possible.”\n\n...\n\nAcross the platform, Decagon achieves average\n\n...\n\nThe technology is already being used to power AI concierge experiences for leading consumer and enterprise brands across daily life. Notable Decagon customers include Avis Budget Group Inc., The Hertz Corporation, Block Inc., Affirm Holdings Inc., Chime Financial Inc., Varo Bank N.A., Deutsche Telekom AG and Grubhub Holdings Inc."
+            ]
+          }
+        ],
+        "independentConflict": [],
+        "status": "corroborated"
+      }
+    ],
+    "footprint": {
+      "incorporationDate": "2023-12-19",
+      "ageMonths": 33,
+      "independentSourceCount": 18,
+      "earliestIndependentMention": "2024-01-25T06:26:40.000Z",
+      "thinRecord": false
+    },
+    "findings": [
+      {
+        "id": "f1",
+        "sourceId": "s14",
+        "sourceProvenance": "independent",
+        "headline": "Recode reports gap between Decagon's sales demos and real-world ramp-up performance",
+        "summary": "Recode reported that client deployments typically require a tuning period, and that early performance often falls short of what sales demos promise.",
+        "url": "https://recodenews.com/decagons-ai-support-agent-is-peeling/",
+        "publishedDate": "2026-08-29T00:00:00.000Z",
+        "severity": "low",
+        "category": "other"
+      },
+      {
+        "id": "f2",
+        "sourceId": "s20",
+        "sourceProvenance": "self_published",
+        "headline": "Analyst outlet flags Decagon's deflection-rate metric as self-reported and possibly overstated",
+        "summary": "QuantixNews reported that Decagon's above-80% deflection-rate figure is the company's own reported metric and cautioned that deflection is not the same as resolution.",
+        "url": "https://news.quantixmind.com/article/decagon-250m-series-d",
+        "publishedDate": "2026-01-29T00:00:00.000Z",
+        "severity": "low",
+        "category": "other"
+      }
+    ],
+    "riskMemo": {
+      "overallRationale": "Verification confirms Decagon AI, Inc. is an active Delaware entity with no OFAC watchlist hits, and its core identity claims (legal name, founding period, San Francisco HQ, and CEO Jesse Zhang) are corroborated by the registry and multiple independent sources with no conflicts. Independent coverage is extensive (18 sources) and consists overwhelmingly of routine funding, valuation, and product coverage; no breach, litigation, regulatory action, or executive misconduct specific to Decagon was found. Two minor, low-severity items surfaced: one outlet cautioned that Decagon's headline deflection-rate metric is self-reported rather than independently verified [f2], and another reported a gap between demo performance and real-world ramp-up for some deployments [f1]. A broader legal-industry analysis on AI-related privacy litigation theories was reviewed but did not name Decagon and was excluded as not specific to this company. Given the absence of material adverse findings and confirmed identity, this presents as a low-risk profile suitable for standard due diligence.",
+      "recommendation": "proceed"
+    },
+    "timings": {
+      "verificationMs": 21954,
+      "searchMs": 5193,
+      "synthesisMs": 16774,
+      "totalMs": 38729
+    }
+  }
+}

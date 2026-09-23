@@ -3,7 +3,7 @@
 import { useState } from "react";
 import type { ScreenEvent, ScreenRequest, ScreenResponse, ScreenStep } from "@/lib/types";
 import { CorroborationTable } from "./components/CorroborationTable";
-import { FindingsList } from "./components/FindingsList";
+import { FindingsList, formatDate } from "./components/FindingsList";
 import { FootprintBanner } from "./components/FootprintBanner";
 import { MonitorButton } from "./components/MonitorButton";
 import { RiskMemo } from "./components/RiskMemo";
@@ -24,13 +24,43 @@ const PENDING: Steps = {
 type View =
   | { kind: "idle" }
   | { kind: "loading"; query: ScreenRequest; steps: Steps }
-  | { kind: "done"; result: ScreenResponse }
+  | { kind: "done"; result: ScreenResponse; replayedAt?: string }
   | { kind: "error"; query: ScreenRequest; message: string };
+
+// ?demo=cached replays screenings saved by `npm run fixture`, for when the network
+// or an API is too slow to run live.
+function cachedMode(): boolean {
+  return new URLSearchParams(window.location.search).get("demo") === "cached";
+}
+
+// Returns a saved screening for this company, or null to fall through to a live run.
+async function loadFixture(companyName: string) {
+  try {
+    const index: { companyName: string; file: string }[] = await fetch("/fixtures/index.json").then(
+      (r) => r.json(),
+    );
+    const name = companyName.trim().toLowerCase();
+    const match = index.find((e) => e.companyName.trim().toLowerCase() === name);
+    if (!match) return null;
+    const saved = await fetch(`/fixtures/${match.file}`).then((r) => r.json());
+    return { result: saved.result as ScreenResponse, savedAt: saved.savedAt as string };
+  } catch {
+    return null;
+  }
+}
 
 export default function Home() {
   const [view, setView] = useState<View>({ kind: "idle" });
 
   async function screen(query: ScreenRequest) {
+    if (cachedMode()) {
+      const fixture = await loadFixture(query.companyName);
+      if (fixture) {
+        setView({ kind: "done", result: fixture.result, replayedAt: fixture.savedAt });
+        return;
+      }
+    }
+
     let steps = PENDING;
     setView({ kind: "loading", query, steps });
 
@@ -101,18 +131,30 @@ export default function Home() {
           </p>
         )}
 
-        {view.kind === "done" && <Results key={JSON.stringify(view.result.query)} result={view.result} />}
+        {view.kind === "done" && (
+          <Results
+            key={JSON.stringify(view.result.query)}
+            result={view.result}
+            replayedAt={view.replayedAt}
+          />
+        )}
       </div>
     </main>
   );
 }
 
-function Results({ result }: { result: ScreenResponse }) {
+function Results({ result, replayedAt }: { result: ScreenResponse; replayedAt?: string }) {
   const searchFailed =
     result.warnings?.some((w) => /^(Independent-coverage|Web research)/.test(w)) ?? false;
 
   return (
     <div className="grid gap-12">
+      {replayedAt && (
+        <p className="rounded-lg border border-rule bg-sheet p-3 text-sm text-muted">
+          Replaying a screening saved on {formatDate(replayedAt)}. Remove{" "}
+          <code>?demo=cached</code> from the URL to run live.
+        </p>
+      )}
       {result.warnings && result.warnings.length > 0 && (
         <div className="rounded-lg border border-caution/40 bg-sheet p-4 text-sm">
           <p className="font-medium text-caution">Part of this screening is incomplete</p>
