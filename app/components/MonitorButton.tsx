@@ -54,7 +54,7 @@ export function MonitorButton({
         <button
           onClick={subscribe}
           disabled={state.kind === "creating"}
-          className="h-11 rounded-md border border-accent px-5 font-medium text-accent transition-colors hover:bg-accent hover:text-white disabled:opacity-50"
+          className="h-11 rounded-lg border border-accent px-5 font-medium text-accent transition-colors hover:bg-accent hover:text-white disabled:opacity-50"
         >
           {state.kind === "creating" ? "Setting up monitoring…" : "Monitor this vendor"}
         </button>
@@ -130,7 +130,7 @@ function AlertPreview({ companyName, headline }: { companyName: string; headline
   return (
     <figure className="max-w-md">
       <figcaption className="mb-2 text-sm text-muted">Preview of an alert</figcaption>
-      <div className="rounded-lg border border-dashed border-rule bg-sheet p-4 text-sm">
+      <div className="rounded-xl border border-dashed border-rule p-4 text-sm">
         <p className="font-medium">New coverage for {companyName}</p>
         <p className="mt-1 text-muted">
           {headline

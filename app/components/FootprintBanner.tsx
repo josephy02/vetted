@@ -17,7 +17,7 @@ export function FootprintBanner({ footprint }: { footprint: FootprintContext }) 
     .join(" · ");
 
   return (
-    <section className="rounded-lg border border-rule bg-sheet p-4">
+    <section className="rounded-xl border border-rule p-5">
       <p className="font-medium">
         {footprintHeadline(footprint)} This review leans on registry data and cross-checks.
       </p>

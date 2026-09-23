@@ -4,12 +4,12 @@
   --font-sans: var(--font-public-sans), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
 
-  --color-paper: #f5f6f7;
+  --color-paper: #ffffff;
   --color-sheet: #ffffff;
   --color-ink: #18202b;
   --color-muted: #5a6472;
-  --color-rule: #d9dee4;
-  --color-accent: #1d4870;
+  --color-rule: #e6e8eb;
+  --color-accent: #5b5bd6;
 
   --color-proceed: #2f6a4f;
   --color-caution: #8c6412;

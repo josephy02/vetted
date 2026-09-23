@@ -11,10 +11,10 @@ export function RiskMemo({ memo, findings }: { memo: Memo; findings: Finding[] }
   const known = new Set(findings.map((f) => f.id));
 
   return (
-    <section className={`border-l-4 ${v.rule} pl-6`}>
+    <section className={`border-l-2 ${v.rule} pl-6`}>
       <p className="text-sm text-muted">Recommendation</p>
-      <p className={`mt-1 text-4xl font-semibold tracking-tight ${v.text}`}>{v.label}</p>
-      <p className="mt-4 max-w-[68ch] font-serif text-lg leading-relaxed">
+      <p className={`mt-1 font-serif text-4xl tracking-tight ${v.text}`}>{v.label}</p>
+      <p className="mt-4 max-w-[68ch] leading-7">
         {withCitations(memo.overallRationale, known)}
       </p>
       <p className="mt-3 text-xs text-muted">

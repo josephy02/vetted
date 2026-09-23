@@ -32,52 +32,65 @@ export function SearchForm({
         });
       }}
     >
-      <Field label="Company name" className="sm:col-span-4">
+      <Field label="Company name" className="relative sm:col-span-4">
+        <svg
+          viewBox="0 0 16 16"
+          className="pointer-events-none absolute top-1/2 left-3.5 size-4 -translate-y-1/2 text-muted"
+          aria-hidden
+        >
+          <circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+          <path d="M10.5 10.5L14 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        </svg>
         <input
           autoFocus
           required
           value={companyName}
           onChange={(e) => setCompanyName(e.target.value)}
-          placeholder="e.g. Acme Logistics, Inc."
-          className={inputClass}
+          placeholder="Company name, e.g. Acme Logistics, Inc."
+          className={`${inputClass} pl-10`}
         />
       </Field>
       <Field label="Domain" className="sm:col-span-2">
         <input
           value={domain}
           onChange={(e) => setDomain(e.target.value)}
-          placeholder="acme.ai"
+          placeholder="Domain, e.g. acme.ai"
           className={inputClass}
         />
       </Field>
       <Field label="City" className="sm:col-span-3">
-        <input value={city} onChange={(e) => setCity(e.target.value)} className={inputClass} />
+        <input
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+          placeholder="City"
+          className={inputClass}
+        />
       </Field>
       <Field label="State" className="sm:col-span-1">
         <input
           value={state}
           onChange={(e) => setState(e.target.value.slice(0, 2))}
-          placeholder="CA"
+          placeholder="State"
           maxLength={2}
-          className={`${inputClass} uppercase`}
+          className={`${inputClass} uppercase placeholder:normal-case`}
         />
       </Field>
       <button
         type="submit"
         disabled={disabled || !companyName.trim()}
-        className="h-11 rounded-md bg-accent px-5 font-medium whitespace-nowrap text-white sm:col-span-2 transition-colors hover:bg-[#163a5b] disabled:cursor-not-allowed disabled:opacity-50"
+        className="h-11 rounded-lg bg-accent px-5 font-medium whitespace-nowrap text-white sm:col-span-2 transition-colors hover:bg-accent/90 disabled:cursor-not-allowed disabled:opacity-50"
       >
         {disabled ? "Screening…" : "Screen this vendor"}
       </button>
       <p id="search-hint" className="text-sm text-muted sm:col-span-6">
-        Domain, city and state are optional. Add the domain when the name is common: it anchors the registry match and tells the brief which sources the company controls.
+        Only the name is required. Add the domain when the name is common.
       </p>
     </form>
   );
 }
 
 const inputClass =
-  "h-11 w-full rounded-md border border-rule bg-sheet px-3 text-ink placeholder:text-muted/60 focus:border-accent focus:outline-none";
+  "h-11 w-full rounded-lg border border-rule bg-sheet px-3 text-ink placeholder:text-muted/70 focus:border-accent focus:outline-none";
 
 function Field({
   label,
@@ -89,8 +102,8 @@ function Field({
   children: React.ReactNode;
 }) {
   return (
-    <label className={`grid gap-1.5 text-sm ${className ?? ""}`}>
-      <span className="text-muted">{label}</span>
+    <label className={`grid ${className ?? ""}`}>
+      <span className="sr-only">{label}</span>
       {children}
     </label>
   );

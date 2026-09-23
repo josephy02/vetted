@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import type { ScreenRequest, Verification } from "@/lib/types";
 import { formatDate } from "./FindingsList";
 
@@ -26,7 +29,7 @@ export function VerificationCard({
   if (!verification.verified) {
     const copy = UNVERIFIED_COPY[verification.reason];
     return (
-      <section className="rounded-lg border border-rule bg-sheet p-6">
+      <section className="rounded-xl border border-rule p-6">
         <p className="flex items-center gap-2 font-medium text-caution">
           <span className="size-2 rounded-full bg-caution" aria-hidden />
           {copy.title}
@@ -51,7 +54,7 @@ export function VerificationCard({
   const watchlistMatches = verification.watchlistHits?.filter((h) => h.match) ?? [];
 
   return (
-    <section className="rounded-lg border border-rule bg-sheet p-6">
+    <section className="rounded-xl border border-rule p-6">
       <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
         <h2 className="text-2xl font-semibold tracking-tight">
           {verification.legalName ?? query.companyName}
@@ -100,16 +103,7 @@ export function VerificationCard({
       </dl>
 
       {verification.officers && verification.officers.length > 0 && (
-        <div className="mt-5 border-t border-rule pt-4">
-          <p className="text-sm text-muted">Officers on record</p>
-          <ul className="mt-2 grid gap-x-8 gap-y-1 sm:grid-cols-2">
-            {verification.officers.map((o) => (
-              <li key={`${o.name}-${o.title}`}>
-                {o.name} <span className="text-muted">{o.title}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <Officers officers={verification.officers} />
       )}
 
       <p className="mt-5 text-xs text-muted">Source: Baselayer KYB registry data, via Exa Connect</p>
@@ -122,6 +116,36 @@ function Item({ label, children }: { label: string; children: React.ReactNode })
     <div>
       <dt className="text-sm text-muted">{label}</dt>
       <dd className="mt-0.5">{children}</dd>
+    </div>
+  );
+}
+
+const OFFICERS_SHOWN = 6;
+
+// Registry filings can list a dozen or more people; show the first few by default.
+function Officers({ officers }: { officers: { name: string; title: string }[] }) {
+  const [expanded, setExpanded] = useState(false);
+  const shown = expanded ? officers : officers.slice(0, OFFICERS_SHOWN);
+
+  return (
+    <div className="mt-5 border-t border-rule pt-4">
+      <p className="text-sm text-muted">Officers on record</p>
+      <ul className="mt-2 grid gap-x-8 gap-y-1 sm:grid-cols-2">
+        {shown.map((o) => (
+          <li key={`${o.name}-${o.title}`}>
+            {o.name} <span className="text-muted">{o.title}</span>
+          </li>
+        ))}
+      </ul>
+      {officers.length > OFFICERS_SHOWN && (
+        <button
+          type="button"
+          onClick={() => setExpanded(!expanded)}
+          className="mt-2 text-sm text-accent hover:underline"
+        >
+          {expanded ? "Show fewer" : `Show all ${officers.length} officers`}
+        </button>
+      )}
     </div>
   );
 }

@@ -108,10 +108,9 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-[760px] px-4 py-12 sm:px-6 sm:py-16">
       <header className="mb-10">
-        <h1 className="text-xl font-semibold tracking-tight">Vetted</h1>
-        <p className="mt-1 max-w-prose text-muted">
-          Enter a US company to confirm it is a registered business and see cited news on
-          lawsuits, breaches, and regulatory actions before you sign.
+        <h1 className="font-serif text-5xl tracking-tight">Vetted</h1>
+        <p className="mt-3 max-w-prose text-muted">
+          Check that a US vendor is real, and what independent sources say about it.
         </p>
       </header>
 
@@ -126,7 +125,7 @@ export default function Home() {
         {view.kind === "loading" && <ScreenProgress steps={view.steps} />}
 
         {view.kind === "error" && (
-          <p className="rounded-lg border border-escalate/30 bg-sheet p-4 text-escalate">
+          <p className="rounded-xl border border-escalate/30 p-4 text-escalate">
             Screening failed: {view.message}
           </p>
         )}
@@ -150,13 +149,13 @@ function Results({ result, replayedAt }: { result: ScreenResponse; replayedAt?: 
   return (
     <div className="grid gap-12">
       {replayedAt && (
-        <p className="rounded-lg border border-rule bg-sheet p-3 text-sm text-muted">
+        <p className="rounded-xl border border-rule p-3 text-sm text-muted">
           Replaying a screening saved on {formatDate(replayedAt)}. Remove{" "}
           <code>?demo=cached</code> from the URL to run live.
         </p>
       )}
       {result.warnings && result.warnings.length > 0 && (
-        <div className="rounded-lg border border-caution/40 bg-sheet p-4 text-sm">
+        <div className="rounded-xl border border-caution/40 p-4 text-sm">
           <p className="font-medium text-caution">Part of this screening is incomplete</p>
           <ul className="mt-1 list-disc pl-5 text-muted">
             {result.warnings.map((w) => (
@@ -178,7 +177,7 @@ function Results({ result, replayedAt }: { result: ScreenResponse; replayedAt?: 
         <FindingsList findings={result.findings} searchFailed={searchFailed} />
       </section>
 
-      <section className="border-t border-rule pt-8">
+      <section>
         <MonitorButton query={result.query} exampleHeadline={result.findings[0]?.headline} />
       </section>
 

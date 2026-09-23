@@ -9,7 +9,7 @@ const LABEL: Record<Provenance, string> = {
 // A label, not a warning: neutral border, muted text, no color coding.
 export function ProvenanceBadge({ provenance }: { provenance: Provenance }) {
   return (
-    <span className="rounded border border-rule px-1.5 py-0.5 text-xs font-normal text-muted">
+    <span className="rounded-full bg-rule/60 px-2 py-0.5 text-xs font-normal text-muted">
       {LABEL[provenance]}
     </span>
   );

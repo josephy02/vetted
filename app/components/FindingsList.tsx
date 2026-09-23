@@ -40,7 +40,7 @@ export function FindingsList({ findings, searchFailed }: { findings: Finding[]; 
       {findings.map((f) => (
         <li key={f.id} id={`finding-${f.id}`} className="scroll-mt-6 py-5 target:bg-accent/5">
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted">
-            <span className="text-xs font-medium text-accent">[{f.id.slice(1)}]</span>
+            <span className="text-xs text-muted">[{f.id.slice(1)}]</span>
             <span className="flex items-center gap-1.5 text-ink">
               <span className={`size-2 rounded-full ${SEVERITY[f.severity].dot}`} aria-hidden />
               {SEVERITY[f.severity].label}

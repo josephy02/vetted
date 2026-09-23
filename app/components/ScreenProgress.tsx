@@ -39,7 +39,7 @@ export function ScreenProgress({ steps }: { steps: Record<ScreenStep, StepState>
 
   return (
     <div>
-      <p className="mb-6 font-mono text-3xl tabular-nums tracking-tight">
+      <p className="mb-6 text-4xl font-light tabular-nums tracking-tight">
         {(elapsed / 1000).toFixed(1)}
         <span className="ml-1 text-base text-muted">s elapsed</span>
       </p>
