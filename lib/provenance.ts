@@ -13,8 +13,8 @@ export const WIRE_DOMAINS = [
   "openpr.com",
 ];
 
-// Hosts where the page is almost always the company's own profile. Ambiguous
-// hosts (crunchbase, medium, substack) are left to the model tiebreaker.
+// Social platforms. Anyone can post on them, so only a company page path is
+// labeled by rule; posts, articles and personal profiles go to the model.
 const SOCIAL_DOMAINS = [
   "linkedin.com",
   "x.com",
@@ -83,8 +83,11 @@ function under(host: string, domain: string): boolean {
   return host === domain || host.endsWith("." + domain);
 }
 
-const SELF_PUBLISHED_HOSTS = [...WIRE_DOMAINS, ...SOCIAL_DOMAINS];
 const INDEPENDENT_HOSTS = [...COURT_AND_REGULATOR_DOMAINS, ...NEWS_DOMAINS];
+
+function isCompanyPage(host: string, pathname: string): boolean {
+  return under(host, "linkedin.com") && /^\/(company|showcase)\//.test(pathname);
+}
 
 // True when two domains (or URLs) belong to the same site, subdomains included.
 export function sameSite(a: string, b: string): boolean {
@@ -96,7 +99,7 @@ export function sameSite(a: string, b: string): boolean {
 
 // True for hosts that can never be a company's own primary site.
 export function isGenericHost(host: string): boolean {
-  return [...SELF_PUBLISHED_HOSTS, ...INDEPENDENT_HOSTS].some((d) => under(host, d));
+  return [...WIRE_DOMAINS, ...SOCIAL_DOMAINS, ...INDEPENDENT_HOSTS].some((d) => under(host, d));
 }
 
 // Returns null when no rule applies; the caller sends those to the model.
@@ -110,7 +113,7 @@ export function classifyByRule(
   if (companyDomain && under(host, companyDomain)) {
     return { provenance: "self_published", classifiedBy: "rule" };
   }
-  if (SELF_PUBLISHED_HOSTS.some((d) => under(host, d))) {
+  if (WIRE_DOMAINS.some((d) => under(host, d)) || isCompanyPage(host, new URL(url).pathname)) {
     return { provenance: "self_published", classifiedBy: "rule" };
   }
   if (

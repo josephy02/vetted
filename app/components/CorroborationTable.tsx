@@ -22,7 +22,8 @@ export function CorroborationTable({
       <h2 className="mb-1 text-lg font-semibold">Does the independent web agree?</h2>
       <p className="mb-4 max-w-prose text-sm text-muted">
         What the company says about itself, checked against the registry and against sources it
-        does not control. &ldquo;Registry only&rdquo; is normal for a young company.
+        does not control. &ldquo;Registry only&rdquo; means the registry confirms it but no
+        independent source mentioned it.
       </p>
       <p className="mb-4 text-sm text-muted">
         {resolvedDomain.domain ? (

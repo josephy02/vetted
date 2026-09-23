@@ -35,6 +35,9 @@ export async function classifyByModel(
       "posts, and listing pages the company writes its own copy for.\n" +
       "independent: a third party the company does not control: news outlets, trade press, " +
       "court records, regulators, government sites, independent reviews and analyst coverage.\n" +
+      "On social platforms (LinkedIn, X, YouTube and the like) the author controls the page: it is " +
+      "self_published only if the account is the company's own; a post, article or profile by " +
+      "anyone else, including an employee, is independent.\n" +
       "Judge by who controls the page, not whether the content is positive. When unsure, answer " +
       "independent only if a named third party is clearly the publisher; otherwise self_published.",
     prompt:

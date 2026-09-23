@@ -35,10 +35,23 @@ describe("classifyByRule", () => {
     );
   });
 
-  it("labels company social profiles self_published", () => {
+  it("labels LinkedIn company pages self_published", () => {
     expect(classifyByRule("https://www.linkedin.com/company/acme")?.provenance).toBe(
       "self_published",
     );
+    expect(classifyByRule("https://www.linkedin.com/showcase/acme-cloud")?.provenance).toBe(
+      "self_published",
+    );
+  });
+
+  it("leaves other social pages to the model, since their author may be anyone", () => {
+    expect(
+      classifyByRule("https://www.linkedin.com/posts/jane-doe_acme-audit-activity-123"),
+    ).toBeNull();
+    expect(classifyByRule("https://www.linkedin.com/pulse/acme-review-jane-doe")).toBeNull();
+    expect(classifyByRule("https://www.linkedin.com/in/jane-doe")).toBeNull();
+    expect(classifyByRule("https://x.com/someone/status/123")).toBeNull();
+    expect(classifyByRule("https://www.youtube.com/watch?v=abc")).toBeNull();
   });
 
   it("labels any .gov independent", () => {
