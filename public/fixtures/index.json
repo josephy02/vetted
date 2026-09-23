@@ -10,5 +10,11 @@
     "domain": "decagon.ai",
     "file": "decagon.json",
     "savedAt": "2026-09-23T00:17:23.664Z"
+  },
+  {
+    "companyName": "Thinking Machines Lab",
+    "domain": null,
+    "file": "thinking-machines-lab.json",
+    "savedAt": "2026-09-23T10:11:39.623Z"
   }
 ]

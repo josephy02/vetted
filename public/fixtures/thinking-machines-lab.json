@@ -1,0 +1,661 @@
+{
+  "savedAt": "2026-09-23T10:11:39.623Z",
+  "result": {
+    "query": {
+      "companyName": "Thinking Machines Lab"
+    },
+    "verification": {
+      "verified": true,
+      "legalName": "THINKING MACHINES LAB INC.",
+      "incorporationState": "DE",
+      "entityStatus": "active",
+      "incorporationDate": "2024-12-10",
+      "website": "thinkingmachines.ai",
+      "officers": [
+        {
+          "name": "Andrew Straub",
+          "title": "Chief Financial Officer"
+        },
+        {
+          "name": "Ermira Murati",
+          "title": "Chief Executive Officer"
+        },
+        {
+          "name": "Katie Slattery",
+          "title": "Director"
+        },
+        {
+          "name": "Lauren Escher Lennon",
+          "title": "Secretary"
+        },
+        {
+          "name": "Sarah Wang",
+          "title": "Officer"
+        }
+      ],
+      "watchlistHits": [
+        {
+          "list": "OFAC SDN",
+          "match": false
+        }
+      ],
+      "sourceNote": "baselayer"
+    },
+    "resolvedDomain": {
+      "domain": "thinkingmachines.ai",
+      "domainSource": "resolved"
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://thinkingmachines.ai/",
+        "title": "Thinking Machines Lab",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Thinking Machines Lab\n\n...\n\nThinking Machines Lab is an artificial intelligence research and product company. We’re building a future where everyone has access to the knowledge and tools to make AI work for their unique needs and goals.\n\n...\n\nWhile AI capabilities have advanced dramatically, key gaps remain. The scientific community’s understanding of frontier AI systems lags behind rapidly advancing capabilities. Knowledge of how these systems are trained is concentrated within the top research labs, limiting both the public discourse on AI and people’s abilities to use AI effectively. And, despite their potential, these systems remain difficult for people to customize to their specific needs and values. To bridge the gaps, we’re building Thinking Machines Lab to make AI systems more widely understood, customizable and generally capable.\n\n...\n\nWe are scientists, engineers, and builders who’ve created some of the most widely used AI products, including ChatGPT and Character.ai, open-weights models like Mistral, as well as popular open source projects like PyTorch, OpenAI Gym, Fairseq, and Segment Anything.\n\n...\n\nEmphasis on human-AI collaboration. Instead of focusing solely on making fully autonomous AI systems, we are excited to build multimodal systems that work with people collaboratively.\n\n...\n\nMore flexible, adaptable, and personalized AI systems. We see enormous potential for AI to help in every field of work. While current systems excel at programming and mathematics, we’re building AI that can adapt to the full spectrum of human expertise and enable a broader spectrum of applications.\n\n...\n\nModel intelligence as the cornerstone. In addition to our emphasis on human-AI collaboration and customization, model intelligence is crucial and we are building models at the frontier of capabilities in domains like science and programming. Ultimately, the most advanced models will unlock the most transformative applications and benefits, such as enabling novel scientific discoveries and engineering breakthroughs."
+        ]
+      },
+      {
+        "id": "s2",
+        "url": "https://thinkingmachines.ai/news/announcing-tinker/",
+        "title": "Announcing Tinker - Thinking Machines Lab",
+        "publishedDate": "2025-10-01T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "# Announcing Tinker\n\n...\n\nOct 1, 2025\n\n...\n\nTinkerToy Computer invented by Daniel Hillis and Brian Silverman\n\n...\n\nToday, we are launching Tinker, a flexible API for fine-tuning language models. It empowers researchers and hackers to experiment with models by giving them control over the algorithms and data while we handle the complexity of distributed training. Tinker advances our mission of enabling more people to do research on cutting-edge models and customize them to their needs.\n\n...\n\nTinker lets you fine-tune a range of large and small open-weight models, including large mixture-of-experts models such as Qwen-235B-A22B. Switching from a small model to a large one is as simple as changing a single string in your Python code.\n\n...\n\nTinker is a managed service that runs on our internal clusters and training infrastructure. We handle scheduling, resource allocation, and failure recovery. This allows you to get small or large runs started immediately, without worrying about managing infrastructure. We use LoRA so that we can share the same pool of compute between multiple training runs, lowering costs.\n\n...\n\nTinker’s API gives you low-level primitives like `forward_backward` and `sample`, which can be used to express most common post-training methods. Even so, achieving good results requires getting many details right. That’s why we’re releasing an open-source library, the Tinker Cookbook, with modern implementations of post-training methods that run on top of the Tinker API.\n\n...\n\nTinker is now in private beta for researchers and developers. You can sign up for the Tinker waitlist here. We will be onboarding users to the platform starting today."
+        ]
+      },
+      {
+        "id": "s3",
+        "url": "https://thinkingmachines.ai/tinker/",
+        "title": "Tinker - Thinking Machines Lab",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Tinker - Thinking Machines Lab\n\n...\n\nTinkerToy Computer invented by Daniel Hillis and Brian Silverman\n\n...\n\n# Tinker is a training API for researchers\n\n...\n\nControl every aspect of model training and fine-tuning while we handle the infrastructure.\n\n...\n\n.\n\n...\n\n### Specialized agents\n\n...\n\nOn specialized tasks like search or data processing, users train smaller models on their production traces to beat large LLMs. Try the search tool and prompt distillation recipes in the cookbook.\n\n...\n\n### Forecasting\n\n...\n\nPredicting the future suits fine-tuning well. Any timestamped data splits into a verifiable RL task: predict the post-cutoff outcome from earlier information, yielding accurate, well-calibrated models.\n\n...\n\n### AI research\n\n...\n\nFor research on LLMs, Tinker lowers the barrier from managing a cluster to a few lines of code. Explore the distillation and true-thinking score recipes, plus the 400 section of the tutorials.\n\n...\n\n### THINKING MACHINES\n\n...\n\nWhat is Tinker and who is it for?\n\n...\n\nTinker is a flexible API for efficiently fine-tuning open source models with LoRA. It’s designed for researchers and developers who want flexibility and full control of their data and algorithms without worrying about infrastructure management.\n\n...\n\nTinker is currently available for a broad selection of open-source models, ranging from compact models like Qwen3.5-4B to large MoEs like Kimi-K2.6. We plan to expand our model lineup with even more choices soon."
+        ]
+      },
+      {
+        "id": "s4",
+        "url": "https://thinkingmachines.ai/inkling/",
+        "title": "Inkling - Thinking Machines Lab",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "# Open weights, ready to tinker\n\n...\n\nEfficient open models for text, images, and audio, available to fine-tune.\n\n...\n\n### Inkling\n\n...\n\nOur most capable open model, with native reasoning over text, images, and audio.\n\n...\n\nParameters\n: 975B total 41B active\nArchitecture\n: Mixture of Experts\nContext\n: 1M tokens (64K / 256K on Tinker)\nInput\n: Text, Image, Audio\n\n...\n\n### Inkling-Small\n\n...\n\nMatches its larger sibling on many benchmarks at a quarter of the size, with lower cost and latency.\n\n...\n\nParameters\n: 276B total 12B active\nArchitecture\n: Mixture of Experts\nContext\n: 1M tokens (64K / 256K on Tinker)\nInput\n: Text, Image, Audio\n\n...\n\n## Well-rounded, generalist models\n\n...\n\nGrab the open weights from Hugging Face, or fine-tune Inkling for your domain on Tinker, our training platform."
+        ]
+      },
+      {
+        "id": "s5",
+        "url": "https://thinkingmachines.ai/model-card/inkling/",
+        "title": "Inkling Model Card - Thinking Machines Lab",
+        "publishedDate": "2026-08-20T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "#### Model name\n\n...\n\nInkling\n\n...\n\n#### Legal name of the model provider\n\n...\n\nThinking Machines Lab, Inc.\n\n...\n\n#### Date of release\n\n...\n\nJuly 15, 2026\n\n...\n\n#### Intended uses\n\n...\n\nInkling is a general-purpose multimodal model that accepts text, image and audio inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation systems, and is suitable for general-purpose conversational use, instruction-following, and other natural language and multimodal tasks. It is released with open weights to support research, fine-tuning and integration into third-party products by downstream developers.\n\n...\n\nThe model is available via API access through Tinker, our service for fine-tuning. The model is also available via API access through third party inference providers.\n\n...\n\nThe weights are available for download through Hugging Face."
+        ]
+      },
+      {
+        "id": "s6",
+        "url": "https://thinkingmachines.ai/news/tinker-general-availability/",
+        "title": "Tinker: General Availability and Vision Input - Thinking Machines Lab",
+        "publishedDate": "2025-12-12T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Tinker:\n...\nThinking Machines Lab\n...\nThe waitlist is over! Everybody can use Tinker now; sign up here to get started. See the Tinker homepage for available models and pricing, and check out the Tinker cookbook for code examples."
+        ]
+      },
+      {
+        "id": "s7",
+        "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+        "title": "Inkling: Our Open-Weights Model - Thinking Machines Lab",
+        "publishedDate": "2026-07-15T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "# Inkling: Our Open-Weights Model\n\n...\n\nJul 15, 2026\n\n...\n\nOur mission is to build AI that extends human will and judgment. We have developed a platform that lets anyone customize models, previewed an AI system built for interactive collaboration, and published novel research. Today we are advancing our mission by releasing a model we trained from scratch with the full weights available, so that people can make it their own.\n\n...\n\nOur model, called Inkling, is a Mixture-of-Experts transformer with 975B total parameters, 41B active. It supports a context window of up to 1M tokens. It was pretrained on 45 trillion tokens of text, images, audio and video. It is the first in a family of models of different sizes: alongside it we are sharing a preview of Inkling-Small, a lighter-weight model with 12B active parameters, trained with a similar recipe, that achieves strong performance with even lower cost and latency.\n\n...\n\nInkling reasons natively over text, images, and audio, and balances cost with performance through efficient and controllable thinking effort. We trained it to be a broad, balanced foundation model: strong across many domains, flexible enough to adapt. Inkling is not the strongest overall model available today, open or closed. Instead, a combination of qualities makes it a good open-weights base for customization: multimodal capabilities, efficient thinking, and availability on Tinker for fine-tuning. Inkling is just the start: our first release in a model family we will continue to build on."
+        ]
+      },
+      {
+        "id": "s8",
+        "url": "https://thinkingmachines.ai/news/nvidia-partnership/",
+        "title": "Thinking Machines Lab and NVIDIA Announce Long-Term Gigawatt ...",
+        "publishedDate": "2026-03-10T00:00:00.000Z",
+        "provenance": "self_published",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Long\n\n...\n\n# Thinking Machines Lab and NVIDIA Announce Long-Term Gigawatt-Scale Strategic Partnership\n\n...\n\nMar 10, 2026\n\n...\n\nJensen Huang (NVIDIA) and Mira Murati (Thinking Machines)\n\n...\n\nThinking Machines Lab and NVIDIA announced today a multi-year strategic partnership to deploy at least one gigawatt of next-generation NVIDIA Vera Rubin systems to support Thinking Machines’ frontier model training and platforms delivering customizable AI at scale. Deployment on NVIDIA’s Vera Rubin platform is targeted for early next year.\n\n...\n\nThe partnership also includes an effort to design training and serving systems for NVIDIA architectures and broaden access to frontier AI and open models for enterprises, research institutions, and the scientific community.\n\n...\n\nNVIDIA has also made a significant investment in Thinking Machines Lab to support the company’s long-term growth.\n\n...\n\n“AI is the most powerful knowledge discovery instrument in human history,” said Jensen Huang, founder and CEO of NVIDIA. “Thinking Machines has brought together a world-class team to advance the frontier of AI. We are thrilled to partner with Thinking Machines to realize their exciting vision for the future of AI.”\n\n...\n\n“NVIDIA’s technology is the foundation on which the entire field is built,” said Mira Murati, cofounder and CEO of Thinking Machines. “This partnership accelerates our capacity to build AI that people can shape and make their own, as it shapes human potential in turn.”\n\n...\n\nBuilding powerful AI systems that are understandable, customizable, and collaborative demands advances in research, design, and infrastructure at scale. This partnership provides that foundation, with the shared aim of ensuring that the most transformative technology of our time expands human capability."
+        ]
+      },
+      {
+        "id": "s9",
+        "url": "https://www.wired.com/story/thinking-machines-lab-cofounder-office-relationship-firing-openai/",
+        "title": "Thinking Machines Cofounder’s Office Relationship Preceded His Termination | WIRED",
+        "publishedDate": "2026-01-17T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Leaders at Mira Murati’s startup believe Barret Zoph engaged in an incident of “serious misconduct.” The details are now coming to light.\n\n...\n\nLeaders at Mira Murati’s Thinking Machines Lab confronted the startup’s cofounder and former CTO, Barret Zoph, over an alleged relationship with another employee last summer, WIRED has learned.\n\nThat relationship was likely the alleged “misconduct” that has been mentioned in prior reporting, including by WIRED.\n\n...\n\nTo protect the privacy of the individuals involved, WIRED is not naming the employee in question. The individual, who worked in a different department than Zoph and was in a leadership role, is no longer at the lab.\n\n...\n\nMurati approached Zoph to discuss the relationship, sources say. The cofounders’ working relationship broke down in the months following that conversation, according to multiple sources, and Zoph started speaking to competitors about other opportunities.\n\n...\n\nBefore Zoph left the company, he was in conversation with leaders from Meta Superintelligence Labs, according to a source familiar with the matter. Zoph was ultimately hired by OpenAI. OpenAI’s CEO of applications, Fidji Simo, said the hiring had been in the works for weeks. Simo also noted that she did not share Thinking Machines’ concerns over Zoph’s ethics.\n\n...\n\nThis week, a third Thinking Machines cofounder, Luke Metz, and at least three other researchers from Murati’s startup also departed for OpenAI. In October, the startup’s cofounder Andrew Tulloch left for Meta.\n\n...\n\nWhile tensions between Murati and Zoph came to a head in recent days, they do not entirely explain the broader exodus of Thinking Machines employees.\n\n...\n\nWIRED previously reported that there was misalignment within Thinking Machines about what the startup should build."
+        ]
+      },
+      {
+        "id": "s10",
+        "url": "https://www.nytimes.com/2026/01/22/technology/thinking-machines-ai-startup-openai.html",
+        "title": "The Drama at Thinking Machines, a New A.I. Start-Up, Is Riveting Silicon Valley - The New York Times",
+        "publishedDate": "2026-01-22T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "On Jan. 12, Mira Murati, the chief executive and co-founder of the artificial intelligence start-up Thinking Machines Lab, was asked by Sam Schoenholz, a leading researcher at the company, to join a meeting.\n\n...\n\nMs. Murati sat down with Mr. Schoenholz and two other founders, Barret Zoph and Luke Metz. All four had worked together at OpenAI, the ChatGPT maker, where Ms. Murati had been the chief technology officer, before the creation of Thinking Machines in February.\n\n...\n\nBut in less than a year, Mr. Zoph, Mr. Metz and Mr. Schoenholz had become deeply unhappy with the start-up’s direction. Thinking Machines lagged OpenAI and other rivals in releasing products, and was struggling to raise new funding at an eye-popping $50 billion valuation. The men had urged Ms. Murati to strike a deal — Meta, the owner of Facebook and Instagram, had discussed buying Thinking Machines, and Ms. Murati had developed closer ties with the chief executive of Anthropic, a leading A.I. company — but no"
+        ]
+      },
+      {
+        "id": "s11",
+        "url": "https://www.wired.com/story/thinking-machines-lab-cofounders-leave-for-openai/",
+        "title": "Two Thinking Machines Lab Cofounders Are Leaving to Rejoin OpenAI | WIRED",
+        "publishedDate": "2026-01-14T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Thinking Machines cofounders Barret Zoph and Luke Metz are leaving the fledgling AI lab and rejoining OpenAI, the ChatGPT-maker announced on Wednesday. OpenAI’s CEO of applications, Fidji Simo, shared the news in a memo to staff this afternoon.\n\n...\n\nTwo narratives are already forming about what prompted the departures. The news was first reported on X by technology reporter Kylie Robison, who wrote that Zoph was fired for “unethical conduct.”\n\n...\n\nA source close to Thinking Machines alleged that Zoph had shared confidential company information with competitors. WIRED was unable to verify this information with Zoph, who did not immediately respond to WIRED’s request for comment.\n\n...\n\nAccording to the memo from Simo, Zoph told Thinking Machines CEO Mira Murati on Monday he was considering leaving. He was then fired on Wednesday. Simo went on to write that OpenAI doesn’t share the same concerns about Zoph as Murati.\n\n...\n\nThe personnel shake-up is a major win for OpenAI, which recently lost its VP of research, Jerry Tworek. A third Thinking Machines staffer, Sam Schoenholz, is also rejoining OpenAI, per the company’s announcement.\n\n...\n\nThe departures are a blow to Thinking Machines, which also lost another co-founder, Andrew Tulloch, in November when he took a new job at Meta. In a post on X, Murati confirmed Zoph's depature and said that Soumith Chintala will replace him as the startup’s chief technology officer.\n\n...\n\nSimo told employees in her memo that Zoph will report directly to her, and Metz and Schoenholz will work under him. The hiring announcement timeline was accelerated, she said, so they still have to work out some details about their roles."
+        ]
+      },
+      {
+        "id": "s12",
+        "url": "https://e.vnexpress.net/news/tech/personalities/co-founder-of-12b-ai-startup-thinking-machines-fired-after-workplace-relationship-surfaced-5008732.html",
+        "title": "Co-founder of $12B AI startup Thinking Machines fired after workplace relationship surfaced - VnExpress International",
+        "publishedDate": "2026-01-22T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "Murati, a former OpenAI CTO, told staff on Jan 14. that Thinking Machines had terminated Zoph’s employment due to \"unethical conduct,\" according to Fortune.\n...\nZoph told the Wall Street Journal that he was fired after Murati learned he was negotiating"
+        ]
+      },
+      {
+        "id": "s13",
+        "url": "https://techcrunch.com/2026/01/14/mira-muratis-startup-thinking-machines-lab-is-losing-two-of-its-co-founders-to-openai/",
+        "title": "Mira Murati's startup, Thinking Machines Lab, is losing two of its co-founders to OpenAI | TechCrunch",
+        "publishedDate": "2026-01-15T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "AI giants are common in Silicon Valley, the departure of co-founders from a startup less than a year after its founding is particularly notable. The loss of two co-founders simultaneously — especially when one served as CTO — could be perceived as a"
+        ]
+      },
+      {
+        "id": "s14",
+        "url": "https://www.mbmcommercial.co.uk/blog/thinking-machines-lab-and-the-risk-of-human-resources-dramas-is-your-cross-border-company-resilient/",
+        "title": "Thinking Machines Lab and the risk of “Human” Resources dramas; is your cross-border company resilient?",
+        "publishedDate": "2026-02-02T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "According to press reports, Thinking Machines Lab recently fired a co-founder who was also the company’s CTO following purported disagreements between him and the company’s CEO. With each side putting forth their own version of events, we cannot be certain of the real story, but the reports include that the CTO and several allies had challenged the CEO’s strategic decisions, that the CEO had accused the CTO of underperformance, and that the CTO had engaged in a romantic relationship with another company employee. Regardless of the real story, the result is that the CTO has decamped back to OpenAI along with several other Thinking Machines Lab employees with resulting heighted press attention.\n\nAs any founder knows, the health of working relationships between company leaders is a key component to success, and personal dramas within teams risk division, disruption, and delay. But the tools available to deal with such dramas often depend on the legal rules of the jurisdictions in which the company operates. The options available for Thinking Machines Lab in California may not work in New York, Edinburgh, or London.\n\n...\n\nFor example, that Thinking Machines Lab was reportedly able to fire the CTO without notice or any apparent fair process is likely due to default rules in California (and most US states) that employment is “at will” and neither notice nor process is typically required to dismiss an employee. This is not the case in the UK, where employees with sufficient service are protected by unfair dismissal and statutory notice rules. Additionally, the fact that the CTO was reportedly able to quickly jump ship to OpenAI, a competitor, is also likely due to California’s prohibition on the use of post-employment restrictions against competition. In some other US states and in the UK, the company might have been able to enforce a non-compete against the departing executive.\n\n...\n\nWe may never know what really transpired at Thinking Machines Lab, but we can learn from it nonetheless. When confronted with the inevitable “human” resources drama, companies should be ready with robust and appropriate policies and processes to de-escalate or effectively address. Companies should ensure they design employment agreements and terms to align with the laws of the relevant jurisdiction, even if that means terms cannot be uniform across multi-jurisdiction workforces. The treatment of any shares or share options held by departing founders and their role in the company should be agreed and documented. It is not helpful to have a discontented former founder remain part of any decision-making and while it’s not part of a “growth mindset” to plan for what might go wrong, it is worthwhile to agree at the outset how this would be dealt with. Ultimately, while having tools prepared for the possibility that some relationships may sour, founders must remain committed to nurturing and maintaining the relationships within the team that are most key to a company’s success."
+        ]
+      },
+      {
+        "id": "s15",
+        "url": "https://gizmodo.com/sam-altman-is-tearing-apart-his-former-colleagues-startup-2000711135",
+        "title": "Sam Altman Is Tearing Apart His Former Colleague's Startup",
+        "publishedDate": "2026-01-16T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "the scenes, things were apparently messier. In a memo to staff obtained by Wired, Simo wrote that Zoph told Murati on Monday that he was considering leaving the company. He was fired two days later. Sources close to Thinking Machines told Wired that Zoph"
+        ]
+      },
+      {
+        "id": "s16",
+        "url": "https://theoutpost.ai/news-story/thinking-machines-lab-fires-co-founder-barret-zoph-as-12-b-ai-startup-loses-half-its-founders-23195/",
+        "title": "Barret Zoph Fired From $12B AI Startup Amid Turmoil",
+        "publishedDate": "2026-01-22T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "A co-founder of a Silicon Valley AI startup valued at $12 billion was fired after months of internal turmoil that reportedly began with an undisclosed workplace relationship and later escalated into disputes over leadership and control. Barret Zoph, the co-founder and chief technology officer of Thinking Machines Lab, was dismissed last Wednesday following a contentious meeting with CEO Mira Murati after she had raised concerns about his conduct, trust and performance, according to The Wall Street Journal. Zoph reportedly admitted to Murati that he had a romantic relationship with a junior colleague that began while they were both working for their previous employer, OpenAI. Murati had suspected the relationship as early as last summer, The Journal reported. Zoph initially denied the relationship, according to the article. But weeks later, he and the woman reportedly acknowledged the relationship to Murati. Shortfly after the disclosure, she left the company and returned to OpenAI. While the woman was junior to Zoph, she did not report to him, The Journal said. Zoph told the newspaper that he was fired after Murati learned that he was negotiating with another company about a role. \"Thinking Machines Lab terminated my employment only after it learned I would be leaving the company. Full stop,\" he told The Journal. \"At no time did TML cite to me any performance reasons or any unethical conduct on my part as the reason for my termination and any suggestion otherwise is false and defamatory.\" Like the woman he with whom he reportedly had a relationship, Zoph went back to OpenAI. She was not named in the article. The relationship fallout later gave way to deeper disputes over leadership and authority. According to The Journal, Zoph and two colleagues confronted Murati in a meeting earlier this month, saying they disagreed with the company's direction and pushing for Zoph to be given greater control over technical decision-making -- including having senior executives report to him instead of Murati. Murati pushed back, citing concerns about Zoph's productivity over previous months, The Journal reported. Executives had observed a sharp drop in his engagement after he was stripped of managerial duties, including significantly reduced activity on Slack, the company's main way of communicating internally. Thinking Machines Labs co-founder Luke Metz and founding researcher Sam Schoenholz also left the company and returned to OpenAI, according to The Journal. In October, another co-founder, Andrew Tulloch, left the startup to return to Meta Platforms. Thinking Machines Lab was founded last year by Murati and a group of former OpenAI executives and researchers. It quickly became one of Silicon Valley's most closely watched AI startups. The company raised a record-breaking $2"
+        ]
+      },
+      {
+        "id": "s17",
+        "url": "https://itmagazine.com/2026/01/17/office-relationship-leads-to-termination-of-thinking-machines-cofounder-a-closer-look/",
+        "title": "Office Relationship Leads to Termination of Thinking Machines Cofounder: A Closer Look – IT Magazine",
+        "publishedDate": "2026-01-17T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "Lab, co-founded by Mira Murati, confronted Barret Zoph, the startup’s former CTO, regarding an alleged romantic relationship with another employee last summer. Reports indicate that this relationship may be linked to claims of serious misconduct. The"
+        ]
+      },
+      {
+        "id": "s18",
+        "url": "https://www.theinformation.com/articles/thinking-machines-lab-ceo-unusual-control-andreessen-led-deal",
+        "title": "Thinking Machines Lab CEO Has Unusual Control in Andreessen-Led Deal — The Information",
+        "publishedDate": "2025-04-29T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Exclusive: Inside Nik\n...\nArora’s Deals Hunt for Palo Alto Networks [\n...\n25% to unlock this story](https://www.\n...\nnikesh-aroras-deals\n...\n-alto-networks?\n...\n# Thinking Machines Lab CEO Has Unusual Control in Andreessen-Led Deal"
+        ]
+      },
+      {
+        "id": "s19",
+        "url": "https://dnyuz.com/2026/01/15/inside-openais-raid-on-thinking-machines-lab/",
+        "title": "Inside OpenAI’s Raid on Thinking Machines Lab – DNYUZ",
+        "publishedDate": "2026-01-15T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "A source with direct knowledge says that Thinking Machines leadership believed Zoph engaged in an incident of serious misconduct while at the company last year. That incident broke Murati’s trust, the source says, and disrupted the pair’s working relationship. The source also alleged Murati fired Zoph on Wednesday—before knowing he was going to OpenAI—due to what the company claimed were issues that arose after the alleged misconduct. Around the time the company learned that Zoph was returning to OpenAI, Thinking Machines raised concerns internally about whether he had shared confidential information with competitors. (Zoph has not responded to several requests for comment from WIRED.)\n\n...\n\nA separate source familiar with the matter pushed back on the perception that the recent personnel changes were wholly related to Zoph. “This has been part of a long discussion at Thinking Machines. There were discussions and misalignment on what the company wanted to build—it was about the product, the technology, and the future.”"
+        ]
+      },
+      {
+        "id": "s20",
+        "url": "https://www.inc.com/ava-levinson/thinking-machine-labs-staff-exodus/91289207",
+        "title": "AI Startup Faces Staff Exodus 6 Months After $2 Billion Funding Round",
+        "publishedDate": "2026-01-16T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "that the startup had failed to establish a clear product and business strategy and secure further funding. According to Bezinga, its one product is Tinker, an API that enables fine-tuning open-source AI models, but the company hasn’t yet trained a major"
+        ]
+      },
+      {
+        "id": "s21",
+        "url": "https://thinkingmachineslab.site/",
+        "title": "Thinking Machines Lab | Building the Future of Collaborative AI",
+        "provenance": "self_published",
+        "classifiedBy": "model",
+        "highlights": [
+          "# Advancing AI Through Open Science and Collaboration\n\n...\n\nThinking Machines Lab is a research and product company making artificial intelligence more understandable, customizable, and capable for everyone.\n\n...\n\nOur focus is on building multimodal AI systems that work *with* people—as creative partners and powerful tools—rather than simply replacing them.\n\n...\n\n### 3. Solid Foundations Matter\n\n...\n\nWe are committed to building models at the frontier of capability, backed by robust, secure, and efficient infrastructure to drive breakthroughs in science and engineering.\n\n...\n\n’25\n\n...\n\nFEBRUARY 2025\n\n...\n\n### Company Founded\n\n...\n\nThinking Machines Lab is founded by Mira Murati and a team of veteran AI researchers in San Francisco, established as a public-benefit corporation.\n\n...\n\n## Meet the Leadership\n\n...\n\nOur company is led by pioneers who have created some of the most widely used AI products and libraries, including ChatGPT, PyTorch, and Mistral.\n\n...\n\n### Mira Murati\n\n...\n\nChief Executive Officer\n\n...\n\n### John Schulman\n\nChief Scientist\n\n### Barret Zoph\n\nChief Technology Officer\n\n...\n\n### Andrew Tulloch\n\nChief Architect"
+        ]
+      },
+      {
+        "id": "s22",
+        "url": "https://www.forbes.com/companies/thinking-machines-lab/",
+        "title": "Thinking Machines Lab | Company Overview & News",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "$12 billion. Thinking Machines Lab has yet to release any AI models, but in 2025 it launched Tinker, a product researchers use to help them fine-tune AI models. This year, Murati has reportedly sought to raise new funds at a $50 billion valuation, even as"
+        ]
+      },
+      {
+        "id": "s23",
+        "url": "https://pitchbook.com/profiles/company/752821-12",
+        "title": "Thinking Machines Lab 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "24\n### Thinking Machines Lab General Information\n#### Description\nDeveloper of artificial intelligence systems designed to support the research and development of AI technologies. The company offers artificial intelligence models, research infrastructure and multimodal machine learning systems used for studying human-AI collaboration and adaptable AI applications across scientific and programming domains, enabling organizations and researchers to build and operate artificial intelligence technologies.\n#### Contact Information\n##### Website\nwww.thinkingmachines.ai\nOwnership Status\nPrivately Held (backing)\nFinancing Status\nVenture Capital-Backed\n##### Corporate Office\n* 95 3rd Street\n* 2nd Floor\n* San Francisco, CA 94103\n* United States\n\n\nPrimary Industry\nBusiness/Productivity Software\nOther Industries\nMedia and Information Services (B2B)\nVertical(s)\nArtificial Intelligence & Machine Learning\n##### Corporate Office\n* 95 3rd Street\n* 2nd Floor\n* San Francisco, CA 94103\n* United States\n"
+        ]
+      },
+      {
+        "id": "s24",
+        "url": "https://www.cbinsights.com/company/thinking-machines-lab",
+        "title": "Thinking Machines Lab - Products, Competitors, Financials, Employees, Headquarters Locations",
+        "publishedDate": "2026-03-10T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "Thinking Machines Lab develops artificial intelligence systems. The company develops artificial intelligence (AI) tools that are customizable and can work with humans in domains such as science and programming. Thinking Machines Lab also focuses on AI safety and alignment to prevent misuse and contribute to the understanding of AI technologies. It was founded in 2024 and is based in San Francisco, California.\n\n...\n\n## Headquarters Location\n\n...\n\n2300 Harrison Street\n\n...\n\nSan Francisco, California, 94110,\n\n...\n\nUnited States"
+        ]
+      },
+      {
+        "id": "s25",
+        "url": "https://builtin.com/articles/what-is-thinking-machines-lab",
+        "title": "Inside Thinking Machines Lab, Mira Murati's New AI Startup | Built In",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "Summary: Thinking Machines Lab, founded by former OpenAI CTO Mira Murati, is betting on AI customization over bigger models. Its Tinker platform helps developers efficiently fine-tune open-source AI, while its Inkling model powers autonomous AI agents. more Thinking Machines Lab, founded by former OpenAI CTO Mira Murati, is betting on AI customization over bigger models. Its Tinker platform helps developers efficiently fine-tune open-source AI, while its Inkling model powers autonomous AI agents.\n\n...\n\nThinking Machines Lab is an AI startup co-founded by former OpenAI CTO Mira Murati and other OpenAI alumni. After raising $2 billion in its first five months, the company released its first product, Tinker, which helps developers fine-tune models without worrying about the cost or complexities of distributed computing.\n\n...\n\nIn February 2025, she cofounded Thinking Machines Lab with other researchers from OpenAI, including John Schulman, Barrett Zoph, Lilian Weng, Andrew Tulloch and Luke Metz. Altogether, Murati assembled a 30-person team, including top developers and researchers from Meta, Mistral and other AI labs.\n\n...\n\nThinking Machines was founded with a promise to build multimodal AI systems that work with people collaboratively, and that can be adapted and customized to every field of work.\n\n...\n\n## What Is Tinker?\n\n...\n\nIn October 2025, Thinking Machines released its first product, Tinker, which streamlines the customization of AI models for specific tasks or fields of study. Users can modify a range of open source models, including Meta’s Llama, Alibab’s Qwen, OpenAI’s gpt-oss models, DeepSeek V3.1 and Moonshot AI’s Kimi K2 Thinking.\n\n...\n\nFrontier models can assist users with all sorts of things, but they often lack the specialized knowledge required for specific domains of work. For example, a medical researcher would need a custom-trained model to analyze the patterns of rare diseases, or a legal team might benefit from a model trained on industry-specific regulations. Tinker allows researchers and developers to customize open source frontier models for their own purposes without having to deal with the cost and complexity of distributed training and infrastructure management.\n\n...\n\nWhile Tinker does make fine-tuning more accessible, it still requires a significant amount of machine learning expertise. After choosing a base model to train on, users can tap Tinker’s flexible API to fine-tune the AI model through supervised learning, which relies on labeled data, or reinforcement learning, which teaches algorithms to learn through trial and error.\n\n...\n\n## What is Inkling?\n\n...\n\nInkling is Thinking Machine Labs’ first AI model. It is open-weight, allowing developers to modify and deploy the model on their own private infrastructure.. It is also natively multimodal, meaning it can process and reason across text, images and audio seamlessly.\n\n...\n\nInkling is built on a mixture-of-experts (MoE) architecture. While it contains a total of 975 billion parameters, it only activates 41 billion parameters per query. This routing mechanism optimizes computational efficiency, enabling the model to process complex tasks without requiring excessive computing power. Additionally, Inkling features a 1-million-token context window, so it can analyze massive datasets and long documents in a single prompt. For more resource-constrained environments, Thinking Machine Lab also offers Inkling-Small, a lighter alternative utilizing 12 billion active parameters.\n\n...\n\nInstead of operating inside a traditional chat interface, Inkling is designed to power autonomous, agentic workflows, where the AI actively executes complex, multi-step projects. In practice, this allows developers to deploy the model for tasks like building web applications, or as an automated developer that writes code and refines software through dozens of feedback iterations.\n\n...\n\nTinker is"
+        ]
+      },
+      {
+        "id": "s26",
+        "url": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab",
+        "title": "Thinking Machines Lab - Wikipedia",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "| | |\n| --- | --- |\n| Headquarters at 2300 Harrison St, Mission District, San Francisco | |\n| Type | Private (Benefit corporation) [1] |\n| Industry | Artificial intelligence |\n| Founded | February 2025; 1 year ago in San Francisco, California |\n| Founder | Mira Murati |\n| Headquarters | 2300 Harrison Street, San Francisco, California, United States |\n| Key people | Mira Murati (CEO) John Schulman (chief scientist) |\n| Products | AI systems and platforms |\n| Number of employees | 100 (2026) [2] |\n| Website | thinkingmachines.ai |\n\n...\n\nThinking Machines Lab Inc. is an American artificial intelligence (AI) startup founded by Mira Murati, the former chief technology officer of OpenAI. [3] Their flagship model is Inkling, an open weights large language model.\n\n...\n\nThinking Machines launched Tinker, an API for fine-tuning open weights models, in October 2025. As of August 2026, Tinker supports open models families Inkling, Qwen, and Nemotron, and models DeepSeek-V3.1, GLM-5.3, Kimi K2.6, and gpt-oss. [10]\n\n...\n\nIn August 2026, the company moved its headquarters to the office building 2300 Harrison St, in San Francisco's Mission District. [26]\n\n...\n\nOn October 1, 2025, Thinking Machines Lab announced Tinker, an API for fine-tuning language models. Users would submit jobs through the API for fine-tuning one of the various open-weight models supported. The Lab would run the jobs on its internal clusters and training infrastructure. [27] As of August 2026, Tinker supports open models families Inkling, Qwen, and Nemotron, and models DeepSeek-V3.1, GLM-5.3, Kimi K2.6, and gpt-oss. [10]"
+        ]
+      },
+      {
+        "id": "s27",
+        "url": "https://siliconvalleyinvestclub.com/tr/companies/thinkingmachines/tear-sheet.pdf",
+        "title": "Thinking Machines Lab",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "| AI research and product company FOUNDED February 2025 HQ San Francisco, California, US EMPLOYEES 195 WEBSITE thinkingmachines.ai AI RESEARCH FOUNDATION MODELS LATEST VALUATION (JUL FOUNDED 15, 2025) 2025 $12B OVERVIEW | OPEN-WEIGHT MODELS DEVELOPER TOOLS MACHINE LEARNING TOTAL RAISED TO DATE HEADCOUNT HEADQUARTERS San Francisco, $2B 195 California, US |\n| --- | --- |\n| Thinking Machines Lab is an AI research and product company founded in February 2025 by Mira Murati, with public reporting also identifying John Schulman, Barrett Zoph, Lilian Weng, Andrew Tulloch, and Luke Metz as co-founders. The company is based in San Francisco and presents itself as building AI that is more customizable, broadly useful, and designed around human-AI collaboration, safety, and open science. Thinking Machines Lab’s public footprint includes its main website, a team page, and later reporting on products, infrastructure, and model releases. COMPANY DETAILS | |\n| LEGAL NAME WEBSITE FOUNDED HEADCOUNT HQ SOCIAL INCORPORATED STRUCTURE HEADQUARTERS OFFICES LEADERSHIP | Thinking Machines Lab Inc. thinkingmachines.ai February 2025 195 San Francisco, California, US LinkedIn — linkedin.com California Public benefit corporation 2300 Harrison St, San Francisco, CA 94110, US San Francisco, California |\n| Mira Murati CEO Barrett Zoph CTO PRODUCTS & SERVICES | John Schulman Chief Scientist Andrew Tulloch Chief Architect |\n| Tinker Tool/API for fine-tuning models without managing distributed-computing complexity. Inkling First in-house open-weight model released in July 2026. | |"
+        ]
+      },
+      {
+        "id": "s28",
+        "url": "https://www.theinformation.com/articles/thinking-machines-lab-talks-raise-billions-roughly-40-billion-valuation",
+        "title": "Nvidia in Talks to Invest Around $2.5 Billion in Murati's Thinking ...",
+        "publishedDate": "2026-09-03T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "rule",
+        "highlights": [
+          "Two New Executives Steering KKR\n...\ns $10\n...\nAI Infrastructure Bet [\n...\n-infrastructure-\n...\nAB_post)\n...\n# Thinking Machines Lab In Talks to Raise Billions at Roughly $40 Billion Valuation"
+        ]
+      },
+      {
+        "id": "s29",
+        "url": "https://app.dealroom.co/companies/thinking_machines_lab",
+        "title": "Thinking Machines Lab company information, funding & investors",
+        "publishedDate": "2026-09-19T10:10:15.747Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "Edit\nThinking Machines Lab is an artificial intelligence research and product company established in February 2025 and headquartered in San Francisco. The company was founded by Mira Murati, who previously served as the Chief Technology Officer at OpenAI and was instrumental in the development of products like ChatGPT and DALL-E. Murati's departure from OpenAI was driven by a desire to pursue her own explorations in AI, leading to the creation of this new venture. The founding team is composed of seasoned researchers and engineers from prominent AI labs, including OpenAI, Meta AI, and Mistral AI, with many having worked on widely-used AI products and open-source projects. Notable members include OpenAI co-founder John Schulman as Chief Scientist and former OpenAI Vice President of Research Barret Zoph as Chief Technology Officer.\nThe firm is focused on developing customizable and generally capable AI systems that prioritize human-AI collaboration. Its core mission is to bridge the gap between the rapid advancement of AI capabilities and the broader scientific community's understanding of these systems. Thinking Machines Lab builds multimodal AI models designed to adapt to a wide spectrum of human expertise, going beyond current systems that excel primarily in programming and mathematics. The company's business-to-business model targets researchers, enterprises, and developers, offering them the infrastructure and tools to create AI systems tailored to their specific workflows and needs. Revenue is expected to be generated through managed APIs and licensing deals for on-premises deployment of their models.\nThe company's product strategy involves creating flexible and personalized AI systems that allow users to shape models according to their specific requirements and ethical considerations. Thinking Machines Lab emphasizes a full-stack approach, controlling everything from model training to deployment to ensure optimization. They plan to frequently publish technical blog posts, papers, and code to foster collaboration with the wider research community. Despite not having launched a public product yet, the company secured a significant $2 billion in an early-stage funding round in July 2025, led"
+        ]
+      },
+      {
+        "id": "s30",
+        "url": "https://tracxn.com/d/companies/thinking-machines-lab/__uSPGa2dnvHKfeiBjkNrQCkPFX-QcGogbaGhPqmvYk8k",
+        "title": "Thinking Machines Lab - 2026 Company Profile & Team - Tracxn",
+        "publishedDate": "2026-09-12T00:00:00.000Z",
+        "provenance": "independent",
+        "classifiedBy": "model",
+        "highlights": [
+          "Lab has raised $2B in funding from Andreessen Horowitz, with a current valuation of$*****. The company has 1109 active competitors, including 33 funded and 13 that have exited. Its top competitors include companies like Google DeepMind, ETRI and Pluralis."
+        ]
+      }
+    ],
+    "corroboration": [
+      {
+        "claim": "Legal name is Thinking Machines Lab, Inc.",
+        "selfSource": {
+          "id": "s5",
+          "url": "https://thinkingmachines.ai/model-card/inkling/",
+          "title": "Inkling Model Card - Thinking Machines Lab",
+          "publishedDate": "2026-08-20T00:00:00.000Z",
+          "provenance": "self_published",
+          "classifiedBy": "rule",
+          "highlights": [
+            "#### Model name\n\n...\n\nInkling\n\n...\n\n#### Legal name of the model provider\n\n...\n\nThinking Machines Lab, Inc.\n\n...\n\n#### Date of release\n\n...\n\nJuly 15, 2026\n\n...\n\n#### Intended uses\n\n...\n\nInkling is a general-purpose multimodal model that accepts text, image and audio inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation systems, and is suitable for general-purpose conversational use, instruction-following, and other natural language and multimodal tasks. It is released with open weights to support research, fine-tuning and integration into third-party products by downstream developers.\n\n...\n\nThe model is available via API access through Tinker, our service for fine-tuning. The model is also available via API access through third party inference providers.\n\n...\n\nThe weights are available for download through Hugging Face."
+          ]
+        },
+        "registryValue": "THINKING MACHINES LAB INC.",
+        "independentSupport": [
+          {
+            "id": "s26",
+            "url": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab",
+            "title": "Thinking Machines Lab - Wikipedia",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "| | |\n| --- | --- |\n| Headquarters at 2300 Harrison St, Mission District, San Francisco | |\n| Type | Private (Benefit corporation) [1] |\n| Industry | Artificial intelligence |\n| Founded | February 2025; 1 year ago in San Francisco, California |\n| Founder | Mira Murati |\n| Headquarters | 2300 Harrison Street, San Francisco, California, United States |\n| Key people | Mira Murati (CEO) John Schulman (chief scientist) |\n| Products | AI systems and platforms |\n| Number of employees | 100 (2026) [2] |\n| Website | thinkingmachines.ai |\n\n...\n\nThinking Machines Lab Inc. is an American artificial intelligence (AI) startup founded by Mira Murati, the former chief technology officer of OpenAI. [3] Their flagship model is Inkling, an open weights large language model.\n\n...\n\nThinking Machines launched Tinker, an API for fine-tuning open weights models, in October 2025. As of August 2026, Tinker supports open models families Inkling, Qwen, and Nemotron, and models DeepSeek-V3.1, GLM-5.3, Kimi K2.6, and gpt-oss. [10]\n\n...\n\nIn August 2026, the company moved its headquarters to the office building 2300 Harrison St, in San Francisco's Mission District. [26]\n\n...\n\nOn October 1, 2025, Thinking Machines Lab announced Tinker, an API for fine-tuning language models. Users would submit jobs through the API for fine-tuning one of the various open-weight models supported. The Lab would run the jobs on its internal clusters and training infrastructure. [27] As of August 2026, Tinker supports open models families Inkling, Qwen, and Nemotron, and models DeepSeek-V3.1, GLM-5.3, Kimi K2.6, and gpt-oss. [10]"
+            ]
+          },
+          {
+            "id": "s27",
+            "url": "https://siliconvalleyinvestclub.com/tr/companies/thinkingmachines/tear-sheet.pdf",
+            "title": "Thinking Machines Lab",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "| AI research and product company FOUNDED February 2025 HQ San Francisco, California, US EMPLOYEES 195 WEBSITE thinkingmachines.ai AI RESEARCH FOUNDATION MODELS LATEST VALUATION (JUL FOUNDED 15, 2025) 2025 $12B OVERVIEW | OPEN-WEIGHT MODELS DEVELOPER TOOLS MACHINE LEARNING TOTAL RAISED TO DATE HEADCOUNT HEADQUARTERS San Francisco, $2B 195 California, US |\n| --- | --- |\n| Thinking Machines Lab is an AI research and product company founded in February 2025 by Mira Murati, with public reporting also identifying John Schulman, Barrett Zoph, Lilian Weng, Andrew Tulloch, and Luke Metz as co-founders. The company is based in San Francisco and presents itself as building AI that is more customizable, broadly useful, and designed around human-AI collaboration, safety, and open science. Thinking Machines Lab’s public footprint includes its main website, a team page, and later reporting on products, infrastructure, and model releases. COMPANY DETAILS | |\n| LEGAL NAME WEBSITE FOUNDED HEADCOUNT HQ SOCIAL INCORPORATED STRUCTURE HEADQUARTERS OFFICES LEADERSHIP | Thinking Machines Lab Inc. thinkingmachines.ai February 2025 195 San Francisco, California, US LinkedIn — linkedin.com California Public benefit corporation 2300 Harrison St, San Francisco, CA 94110, US San Francisco, California |\n| Mira Murati CEO Barrett Zoph CTO PRODUCTS & SERVICES | John Schulman Chief Scientist Andrew Tulloch Chief Architect |\n| Tinker Tool/API for fine-tuning models without managing distributed-computing complexity. Inkling First in-house open-weight model released in July 2026. | |"
+            ]
+          }
+        ],
+        "independentConflict": [],
+        "status": "corroborated"
+      },
+      {
+        "claim": "Company founded in February 2025 in San Francisco as a public-benefit corporation",
+        "registryValue": "Incorporation date 2024-12-10, Delaware, active",
+        "independentSupport": [
+          {
+            "id": "s26",
+            "url": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab",
+            "title": "Thinking Machines Lab - Wikipedia",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "| | |\n| --- | --- |\n| Headquarters at 2300 Harrison St, Mission District, San Francisco | |\n| Type | Private (Benefit corporation) [1] |\n| Industry | Artificial intelligence |\n| Founded | February 2025; 1 year ago in San Francisco, California |\n| Founder | Mira Murati |\n| Headquarters | 2300 Harrison Street, San Francisco, California, United States |\n| Key people | Mira Murati (CEO) John Schulman (chief scientist) |\n| Products | AI systems and platforms |\n| Number of employees | 100 (2026) [2] |\n| Website | thinkingmachines.ai |\n\n...\n\nThinking Machines Lab Inc. is an American artificial intelligence (AI) startup founded by Mira Murati, the former chief technology officer of OpenAI. [3] Their flagship model is Inkling, an open weights large language model.\n\n...\n\nThinking Machines launched Tinker, an API for fine-tuning open weights models, in October 2025. As of August 2026, Tinker supports open models families Inkling, Qwen, and Nemotron, and models DeepSeek-V3.1, GLM-5.3, Kimi K2.6, and gpt-oss. [10]\n\n...\n\nIn August 2026, the company moved its headquarters to the office building 2300 Harrison St, in San Francisco's Mission District. [26]\n\n...\n\nOn October 1, 2025, Thinking Machines Lab announced Tinker, an API for fine-tuning language models. Users would submit jobs through the API for fine-tuning one of the various open-weight models supported. The Lab would run the jobs on its internal clusters and training infrastructure. [27] As of August 2026, Tinker supports open models families Inkling, Qwen, and Nemotron, and models DeepSeek-V3.1, GLM-5.3, Kimi K2.6, and gpt-oss. [10]"
+            ]
+          },
+          {
+            "id": "s27",
+            "url": "https://siliconvalleyinvestclub.com/tr/companies/thinkingmachines/tear-sheet.pdf",
+            "title": "Thinking Machines Lab",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "| AI research and product company FOUNDED February 2025 HQ San Francisco, California, US EMPLOYEES 195 WEBSITE thinkingmachines.ai AI RESEARCH FOUNDATION MODELS LATEST VALUATION (JUL FOUNDED 15, 2025) 2025 $12B OVERVIEW | OPEN-WEIGHT MODELS DEVELOPER TOOLS MACHINE LEARNING TOTAL RAISED TO DATE HEADCOUNT HEADQUARTERS San Francisco, $2B 195 California, US |\n| --- | --- |\n| Thinking Machines Lab is an AI research and product company founded in February 2025 by Mira Murati, with public reporting also identifying John Schulman, Barrett Zoph, Lilian Weng, Andrew Tulloch, and Luke Metz as co-founders. The company is based in San Francisco and presents itself as building AI that is more customizable, broadly useful, and designed around human-AI collaboration, safety, and open science. Thinking Machines Lab’s public footprint includes its main website, a team page, and later reporting on products, infrastructure, and model releases. COMPANY DETAILS | |\n| LEGAL NAME WEBSITE FOUNDED HEADCOUNT HQ SOCIAL INCORPORATED STRUCTURE HEADQUARTERS OFFICES LEADERSHIP | Thinking Machines Lab Inc. thinkingmachines.ai February 2025 195 San Francisco, California, US LinkedIn — linkedin.com California Public benefit corporation 2300 Harrison St, San Francisco, CA 94110, US San Francisco, California |\n| Mira Murati CEO Barrett Zoph CTO PRODUCTS & SERVICES | John Schulman Chief Scientist Andrew Tulloch Chief Architect |\n| Tinker Tool/API for fine-tuning models without managing distributed-computing complexity. Inkling First in-house open-weight model released in July 2026. | |"
+            ]
+          },
+          {
+            "id": "s29",
+            "url": "https://app.dealroom.co/companies/thinking_machines_lab",
+            "title": "Thinking Machines Lab company information, funding & investors",
+            "publishedDate": "2026-09-19T10:10:15.747Z",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "Edit\nThinking Machines Lab is an artificial intelligence research and product company established in February 2025 and headquartered in San Francisco. The company was founded by Mira Murati, who previously served as the Chief Technology Officer at OpenAI and was instrumental in the development of products like ChatGPT and DALL-E. Murati's departure from OpenAI was driven by a desire to pursue her own explorations in AI, leading to the creation of this new venture. The founding team is composed of seasoned researchers and engineers from prominent AI labs, including OpenAI, Meta AI, and Mistral AI, with many having worked on widely-used AI products and open-source projects. Notable members include OpenAI co-founder John Schulman as Chief Scientist and former OpenAI Vice President of Research Barret Zoph as Chief Technology Officer.\nThe firm is focused on developing customizable and generally capable AI systems that prioritize human-AI collaboration. Its core mission is to bridge the gap between the rapid advancement of AI capabilities and the broader scientific community's understanding of these systems. Thinking Machines Lab builds multimodal AI models designed to adapt to a wide spectrum of human expertise, going beyond current systems that excel primarily in programming and mathematics. The company's business-to-business model targets researchers, enterprises, and developers, offering them the infrastructure and tools to create AI systems tailored to their specific workflows and needs. Revenue is expected to be generated through managed APIs and licensing deals for on-premises deployment of their models.\nThe company's product strategy involves creating flexible and personalized AI systems that allow users to shape models according to their specific requirements and ethical considerations. Thinking Machines Lab emphasizes a full-stack approach, controlling everything from model training to deployment to ensure optimization. They plan to frequently publish technical blog posts, papers, and code to foster collaboration with the wider research community. Despite not having launched a public product yet, the company secured a significant $2 billion in an early-stage funding round in July 2025, led"
+            ]
+          }
+        ],
+        "independentConflict": [],
+        "status": "corroborated"
+      },
+      {
+        "claim": "Headquartered in San Francisco",
+        "selfSource": {
+          "id": "s1",
+          "url": "https://thinkingmachines.ai/",
+          "title": "Thinking Machines Lab",
+          "provenance": "self_published",
+          "classifiedBy": "rule",
+          "highlights": [
+            "Thinking Machines Lab\n\n...\n\nThinking Machines Lab is an artificial intelligence research and product company. We’re building a future where everyone has access to the knowledge and tools to make AI work for their unique needs and goals.\n\n...\n\nWhile AI capabilities have advanced dramatically, key gaps remain. The scientific community’s understanding of frontier AI systems lags behind rapidly advancing capabilities. Knowledge of how these systems are trained is concentrated within the top research labs, limiting both the public discourse on AI and people’s abilities to use AI effectively. And, despite their potential, these systems remain difficult for people to customize to their specific needs and values. To bridge the gaps, we’re building Thinking Machines Lab to make AI systems more widely understood, customizable and generally capable.\n\n...\n\nWe are scientists, engineers, and builders who’ve created some of the most widely used AI products, including ChatGPT and Character.ai, open-weights models like Mistral, as well as popular open source projects like PyTorch, OpenAI Gym, Fairseq, and Segment Anything.\n\n...\n\nEmphasis on human-AI collaboration. Instead of focusing solely on making fully autonomous AI systems, we are excited to build multimodal systems that work with people collaboratively.\n\n...\n\nMore flexible, adaptable, and personalized AI systems. We see enormous potential for AI to help in every field of work. While current systems excel at programming and mathematics, we’re building AI that can adapt to the full spectrum of human expertise and enable a broader spectrum of applications.\n\n...\n\nModel intelligence as the cornerstone. In addition to our emphasis on human-AI collaboration and customization, model intelligence is crucial and we are building models at the frontier of capabilities in domains like science and programming. Ultimately, the most advanced models will unlock the most transformative applications and benefits, such as enabling novel scientific discoveries and engineering breakthroughs."
+          ]
+        },
+        "independentSupport": [
+          {
+            "id": "s23",
+            "url": "https://pitchbook.com/profiles/company/752821-12",
+            "title": "Thinking Machines Lab 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "24\n### Thinking Machines Lab General Information\n#### Description\nDeveloper of artificial intelligence systems designed to support the research and development of AI technologies. The company offers artificial intelligence models, research infrastructure and multimodal machine learning systems used for studying human-AI collaboration and adaptable AI applications across scientific and programming domains, enabling organizations and researchers to build and operate artificial intelligence technologies.\n#### Contact Information\n##### Website\nwww.thinkingmachines.ai\nOwnership Status\nPrivately Held (backing)\nFinancing Status\nVenture Capital-Backed\n##### Corporate Office\n* 95 3rd Street\n* 2nd Floor\n* San Francisco, CA 94103\n* United States\n\n\nPrimary Industry\nBusiness/Productivity Software\nOther Industries\nMedia and Information Services (B2B)\nVertical(s)\nArtificial Intelligence & Machine Learning\n##### Corporate Office\n* 95 3rd Street\n* 2nd Floor\n* San Francisco, CA 94103\n* United States\n"
+            ]
+          },
+          {
+            "id": "s24",
+            "url": "https://www.cbinsights.com/company/thinking-machines-lab",
+            "title": "Thinking Machines Lab - Products, Competitors, Financials, Employees, Headquarters Locations",
+            "publishedDate": "2026-03-10T00:00:00.000Z",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "Thinking Machines Lab develops artificial intelligence systems. The company develops artificial intelligence (AI) tools that are customizable and can work with humans in domains such as science and programming. Thinking Machines Lab also focuses on AI safety and alignment to prevent misuse and contribute to the understanding of AI technologies. It was founded in 2024 and is based in San Francisco, California.\n\n...\n\n## Headquarters Location\n\n...\n\n2300 Harrison Street\n\n...\n\nSan Francisco, California, 94110,\n\n...\n\nUnited States"
+            ]
+          },
+          {
+            "id": "s26",
+            "url": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab",
+            "title": "Thinking Machines Lab - Wikipedia",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "| | |\n| --- | --- |\n| Headquarters at 2300 Harrison St, Mission District, San Francisco | |\n| Type | Private (Benefit corporation) [1] |\n| Industry | Artificial intelligence |\n| Founded | February 2025; 1 year ago in San Francisco, California |\n| Founder | Mira Murati |\n| Headquarters | 2300 Harrison Street, San Francisco, California, United States |\n| Key people | Mira Murati (CEO) John Schulman (chief scientist) |\n| Products | AI systems and platforms |\n| Number of employees | 100 (2026) [2] |\n| Website | thinkingmachines.ai |\n\n...\n\nThinking Machines Lab Inc. is an American artificial intelligence (AI) startup founded by Mira Murati, the former chief technology officer of OpenAI. [3] Their flagship model is Inkling, an open weights large language model.\n\n...\n\nThinking Machines launched Tinker, an API for fine-tuning open weights models, in October 2025. As of August 2026, Tinker supports open models families Inkling, Qwen, and Nemotron, and models DeepSeek-V3.1, GLM-5.3, Kimi K2.6, and gpt-oss. [10]\n\n...\n\nIn August 2026, the company moved its headquarters to the office building 2300 Harrison St, in San Francisco's Mission District. [26]\n\n...\n\nOn October 1, 2025, Thinking Machines Lab announced Tinker, an API for fine-tuning language models. Users would submit jobs through the API for fine-tuning one of the various open-weight models supported. The Lab would run the jobs on its internal clusters and training infrastructure. [27] As of August 2026, Tinker supports open models families Inkling, Qwen, and Nemotron, and models DeepSeek-V3.1, GLM-5.3, Kimi K2.6, and gpt-oss. [10]"
+            ]
+          }
+        ],
+        "independentConflict": [],
+        "status": "corroborated"
+      },
+      {
+        "claim": "CEO is Mira Murati",
+        "selfSource": {
+          "id": "s8",
+          "url": "https://thinkingmachines.ai/news/nvidia-partnership/",
+          "title": "Thinking Machines Lab and NVIDIA Announce Long-Term Gigawatt ...",
+          "publishedDate": "2026-03-10T00:00:00.000Z",
+          "provenance": "self_published",
+          "classifiedBy": "rule",
+          "highlights": [
+            "Long\n\n...\n\n# Thinking Machines Lab and NVIDIA Announce Long-Term Gigawatt-Scale Strategic Partnership\n\n...\n\nMar 10, 2026\n\n...\n\nJensen Huang (NVIDIA) and Mira Murati (Thinking Machines)\n\n...\n\nThinking Machines Lab and NVIDIA announced today a multi-year strategic partnership to deploy at least one gigawatt of next-generation NVIDIA Vera Rubin systems to support Thinking Machines’ frontier model training and platforms delivering customizable AI at scale. Deployment on NVIDIA’s Vera Rubin platform is targeted for early next year.\n\n...\n\nThe partnership also includes an effort to design training and serving systems for NVIDIA architectures and broaden access to frontier AI and open models for enterprises, research institutions, and the scientific community.\n\n...\n\nNVIDIA has also made a significant investment in Thinking Machines Lab to support the company’s long-term growth.\n\n...\n\n“AI is the most powerful knowledge discovery instrument in human history,” said Jensen Huang, founder and CEO of NVIDIA. “Thinking Machines has brought together a world-class team to advance the frontier of AI. We are thrilled to partner with Thinking Machines to realize their exciting vision for the future of AI.”\n\n...\n\n“NVIDIA’s technology is the foundation on which the entire field is built,” said Mira Murati, cofounder and CEO of Thinking Machines. “This partnership accelerates our capacity to build AI that people can shape and make their own, as it shapes human potential in turn.”\n\n...\n\nBuilding powerful AI systems that are understandable, customizable, and collaborative demands advances in research, design, and infrastructure at scale. This partnership provides that foundation, with the shared aim of ensuring that the most transformative technology of our time expands human capability."
+          ]
+        },
+        "registryValue": "Ermira Murati, Chief Executive Officer",
+        "independentSupport": [
+          {
+            "id": "s26",
+            "url": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab",
+            "title": "Thinking Machines Lab - Wikipedia",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "| | |\n| --- | --- |\n| Headquarters at 2300 Harrison St, Mission District, San Francisco | |\n| Type | Private (Benefit corporation) [1] |\n| Industry | Artificial intelligence |\n| Founded | February 2025; 1 year ago in San Francisco, California |\n| Founder | Mira Murati |\n| Headquarters | 2300 Harrison Street, San Francisco, California, United States |\n| Key people | Mira Murati (CEO) John Schulman (chief scientist) |\n| Products | AI systems and platforms |\n| Number of employees | 100 (2026) [2] |\n| Website | thinkingmachines.ai |\n\n...\n\nThinking Machines Lab Inc. is an American artificial intelligence (AI) startup founded by Mira Murati, the former chief technology officer of OpenAI. [3] Their flagship model is Inkling, an open weights large language model.\n\n...\n\nThinking Machines launched Tinker, an API for fine-tuning open weights models, in October 2025. As of August 2026, Tinker supports open models families Inkling, Qwen, and Nemotron, and models DeepSeek-V3.1, GLM-5.3, Kimi K2.6, and gpt-oss. [10]\n\n...\n\nIn August 2026, the company moved its headquarters to the office building 2300 Harrison St, in San Francisco's Mission District. [26]\n\n...\n\nOn October 1, 2025, Thinking Machines Lab announced Tinker, an API for fine-tuning language models. Users would submit jobs through the API for fine-tuning one of the various open-weight models supported. The Lab would run the jobs on its internal clusters and training infrastructure. [27] As of August 2026, Tinker supports open models families Inkling, Qwen, and Nemotron, and models DeepSeek-V3.1, GLM-5.3, Kimi K2.6, and gpt-oss. [10]"
+            ]
+          },
+          {
+            "id": "s10",
+            "url": "https://www.nytimes.com/2026/01/22/technology/thinking-machines-ai-startup-openai.html",
+            "title": "The Drama at Thinking Machines, a New A.I. Start-Up, Is Riveting Silicon Valley - The New York Times",
+            "publishedDate": "2026-01-22T00:00:00.000Z",
+            "provenance": "independent",
+            "classifiedBy": "rule",
+            "highlights": [
+              "On Jan. 12, Mira Murati, the chief executive and co-founder of the artificial intelligence start-up Thinking Machines Lab, was asked by Sam Schoenholz, a leading researcher at the company, to join a meeting.\n\n...\n\nMs. Murati sat down with Mr. Schoenholz and two other founders, Barret Zoph and Luke Metz. All four had worked together at OpenAI, the ChatGPT maker, where Ms. Murati had been the chief technology officer, before the creation of Thinking Machines in February.\n\n...\n\nBut in less than a year, Mr. Zoph, Mr. Metz and Mr. Schoenholz had become deeply unhappy with the start-up’s direction. Thinking Machines lagged OpenAI and other rivals in releasing products, and was struggling to raise new funding at an eye-popping $50 billion valuation. The men had urged Ms. Murati to strike a deal — Meta, the owner of Facebook and Instagram, had discussed buying Thinking Machines, and Ms. Murati had developed closer ties with the chief executive of Anthropic, a leading A.I. company — but no"
+            ]
+          },
+          {
+            "id": "s29",
+            "url": "https://app.dealroom.co/companies/thinking_machines_lab",
+            "title": "Thinking Machines Lab company information, funding & investors",
+            "publishedDate": "2026-09-19T10:10:15.747Z",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "Edit\nThinking Machines Lab is an artificial intelligence research and product company established in February 2025 and headquartered in San Francisco. The company was founded by Mira Murati, who previously served as the Chief Technology Officer at OpenAI and was instrumental in the development of products like ChatGPT and DALL-E. Murati's departure from OpenAI was driven by a desire to pursue her own explorations in AI, leading to the creation of this new venture. The founding team is composed of seasoned researchers and engineers from prominent AI labs, including OpenAI, Meta AI, and Mistral AI, with many having worked on widely-used AI products and open-source projects. Notable members include OpenAI co-founder John Schulman as Chief Scientist and former OpenAI Vice President of Research Barret Zoph as Chief Technology Officer.\nThe firm is focused on developing customizable and generally capable AI systems that prioritize human-AI collaboration. Its core mission is to bridge the gap between the rapid advancement of AI capabilities and the broader scientific community's understanding of these systems. Thinking Machines Lab builds multimodal AI models designed to adapt to a wide spectrum of human expertise, going beyond current systems that excel primarily in programming and mathematics. The company's business-to-business model targets researchers, enterprises, and developers, offering them the infrastructure and tools to create AI systems tailored to their specific workflows and needs. Revenue is expected to be generated through managed APIs and licensing deals for on-premises deployment of their models.\nThe company's product strategy involves creating flexible and personalized AI systems that allow users to shape models according to their specific requirements and ethical considerations. Thinking Machines Lab emphasizes a full-stack approach, controlling everything from model training to deployment to ensure optimization. They plan to frequently publish technical blog posts, papers, and code to foster collaboration with the wider research community. Despite not having launched a public product yet, the company secured a significant $2 billion in an early-stage funding round in July 2025, led"
+            ]
+          }
+        ],
+        "independentConflict": [],
+        "status": "corroborated"
+      },
+      {
+        "claim": "Company sells AI research/products including fine-tuning API (Tinker) and open-weights model (Inkling)",
+        "selfSource": {
+          "id": "s2",
+          "url": "https://thinkingmachines.ai/news/announcing-tinker/",
+          "title": "Announcing Tinker - Thinking Machines Lab",
+          "publishedDate": "2025-10-01T00:00:00.000Z",
+          "provenance": "self_published",
+          "classifiedBy": "rule",
+          "highlights": [
+            "# Announcing Tinker\n\n...\n\nOct 1, 2025\n\n...\n\nTinkerToy Computer invented by Daniel Hillis and Brian Silverman\n\n...\n\nToday, we are launching Tinker, a flexible API for fine-tuning language models. It empowers researchers and hackers to experiment with models by giving them control over the algorithms and data while we handle the complexity of distributed training. Tinker advances our mission of enabling more people to do research on cutting-edge models and customize them to their needs.\n\n...\n\nTinker lets you fine-tune a range of large and small open-weight models, including large mixture-of-experts models such as Qwen-235B-A22B. Switching from a small model to a large one is as simple as changing a single string in your Python code.\n\n...\n\nTinker is a managed service that runs on our internal clusters and training infrastructure. We handle scheduling, resource allocation, and failure recovery. This allows you to get small or large runs started immediately, without worrying about managing infrastructure. We use LoRA so that we can share the same pool of compute between multiple training runs, lowering costs.\n\n...\n\nTinker’s API gives you low-level primitives like `forward_backward` and `sample`, which can be used to express most common post-training methods. Even so, achieving good results requires getting many details right. That’s why we’re releasing an open-source library, the Tinker Cookbook, with modern implementations of post-training methods that run on top of the Tinker API.\n\n...\n\nTinker is now in private beta for researchers and developers. You can sign up for the Tinker waitlist here. We will be onboarding users to the platform starting today."
+          ]
+        },
+        "independentSupport": [
+          {
+            "id": "s25",
+            "url": "https://builtin.com/articles/what-is-thinking-machines-lab",
+            "title": "Inside Thinking Machines Lab, Mira Murati's New AI Startup | Built In",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "Summary: Thinking Machines Lab, founded by former OpenAI CTO Mira Murati, is betting on AI customization over bigger models. Its Tinker platform helps developers efficiently fine-tune open-source AI, while its Inkling model powers autonomous AI agents. more Thinking Machines Lab, founded by former OpenAI CTO Mira Murati, is betting on AI customization over bigger models. Its Tinker platform helps developers efficiently fine-tune open-source AI, while its Inkling model powers autonomous AI agents.\n\n...\n\nThinking Machines Lab is an AI startup co-founded by former OpenAI CTO Mira Murati and other OpenAI alumni. After raising $2 billion in its first five months, the company released its first product, Tinker, which helps developers fine-tune models without worrying about the cost or complexities of distributed computing.\n\n...\n\nIn February 2025, she cofounded Thinking Machines Lab with other researchers from OpenAI, including John Schulman, Barrett Zoph, Lilian Weng, Andrew Tulloch and Luke Metz. Altogether, Murati assembled a 30-person team, including top developers and researchers from Meta, Mistral and other AI labs.\n\n...\n\nThinking Machines was founded with a promise to build multimodal AI systems that work with people collaboratively, and that can be adapted and customized to every field of work.\n\n...\n\n## What Is Tinker?\n\n...\n\nIn October 2025, Thinking Machines released its first product, Tinker, which streamlines the customization of AI models for specific tasks or fields of study. Users can modify a range of open source models, including Meta’s Llama, Alibab’s Qwen, OpenAI’s gpt-oss models, DeepSeek V3.1 and Moonshot AI’s Kimi K2 Thinking.\n\n...\n\nFrontier models can assist users with all sorts of things, but they often lack the specialized knowledge required for specific domains of work. For example, a medical researcher would need a custom-trained model to analyze the patterns of rare diseases, or a legal team might benefit from a model trained on industry-specific regulations. Tinker allows researchers and developers to customize open source frontier models for their own purposes without having to deal with the cost and complexity of distributed training and infrastructure management.\n\n...\n\nWhile Tinker does make fine-tuning more accessible, it still requires a significant amount of machine learning expertise. After choosing a base model to train on, users can tap Tinker’s flexible API to fine-tune the AI model through supervised learning, which relies on labeled data, or reinforcement learning, which teaches algorithms to learn through trial and error.\n\n...\n\n## What is Inkling?\n\n...\n\nInkling is Thinking Machine Labs’ first AI model. It is open-weight, allowing developers to modify and deploy the model on their own private infrastructure.. It is also natively multimodal, meaning it can process and reason across text, images and audio seamlessly.\n\n...\n\nInkling is built on a mixture-of-experts (MoE) architecture. While it contains a total of 975 billion parameters, it only activates 41 billion parameters per query. This routing mechanism optimizes computational efficiency, enabling the model to process complex tasks without requiring excessive computing power. Additionally, Inkling features a 1-million-token context window, so it can analyze massive datasets and long documents in a single prompt. For more resource-constrained environments, Thinking Machine Lab also offers Inkling-Small, a lighter alternative utilizing 12 billion active parameters.\n\n...\n\nInstead of operating inside a traditional chat interface, Inkling is designed to power autonomous, agentic workflows, where the AI actively executes complex, multi-step projects. In practice, this allows developers to deploy the model for tasks like building web applications, or as an automated developer that writes code and refines software through dozens of feedback iterations.\n\n...\n\nTinker is"
+            ]
+          },
+          {
+            "id": "s26",
+            "url": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab",
+            "title": "Thinking Machines Lab - Wikipedia",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "| | |\n| --- | --- |\n| Headquarters at 2300 Harrison St, Mission District, San Francisco | |\n| Type | Private (Benefit corporation) [1] |\n| Industry | Artificial intelligence |\n| Founded | February 2025; 1 year ago in San Francisco, California |\n| Founder | Mira Murati |\n| Headquarters | 2300 Harrison Street, San Francisco, California, United States |\n| Key people | Mira Murati (CEO) John Schulman (chief scientist) |\n| Products | AI systems and platforms |\n| Number of employees | 100 (2026) [2] |\n| Website | thinkingmachines.ai |\n\n...\n\nThinking Machines Lab Inc. is an American artificial intelligence (AI) startup founded by Mira Murati, the former chief technology officer of OpenAI. [3] Their flagship model is Inkling, an open weights large language model.\n\n...\n\nThinking Machines launched Tinker, an API for fine-tuning open weights models, in October 2025. As of August 2026, Tinker supports open models families Inkling, Qwen, and Nemotron, and models DeepSeek-V3.1, GLM-5.3, Kimi K2.6, and gpt-oss. [10]\n\n...\n\nIn August 2026, the company moved its headquarters to the office building 2300 Harrison St, in San Francisco's Mission District. [26]\n\n...\n\nOn October 1, 2025, Thinking Machines Lab announced Tinker, an API for fine-tuning language models. Users would submit jobs through the API for fine-tuning one of the various open-weight models supported. The Lab would run the jobs on its internal clusters and training infrastructure. [27] As of August 2026, Tinker supports open models families Inkling, Qwen, and Nemotron, and models DeepSeek-V3.1, GLM-5.3, Kimi K2.6, and gpt-oss. [10]"
+            ]
+          },
+          {
+            "id": "s23",
+            "url": "https://pitchbook.com/profiles/company/752821-12",
+            "title": "Thinking Machines Lab 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+            "provenance": "independent",
+            "classifiedBy": "model",
+            "highlights": [
+              "24\n### Thinking Machines Lab General Information\n#### Description\nDeveloper of artificial intelligence systems designed to support the research and development of AI technologies. The company offers artificial intelligence models, research infrastructure and multimodal machine learning systems used for studying human-AI collaboration and adaptable AI applications across scientific and programming domains, enabling organizations and researchers to build and operate artificial intelligence technologies.\n#### Contact Information\n##### Website\nwww.thinkingmachines.ai\nOwnership Status\nPrivately Held (backing)\nFinancing Status\nVenture Capital-Backed\n##### Corporate Office\n* 95 3rd Street\n* 2nd Floor\n* San Francisco, CA 94103\n* United States\n\n\nPrimary Industry\nBusiness/Productivity Software\nOther Industries\nMedia and Information Services (B2B)\nVertical(s)\nArtificial Intelligence & Machine Learning\n##### Corporate Office\n* 95 3rd Street\n* 2nd Floor\n* San Francisco, CA 94103\n* United States\n"
+            ]
+          }
+        ],
+        "independentConflict": [],
+        "status": "corroborated"
+      }
+    ],
+    "footprint": {
+      "incorporationDate": "2024-12-10",
+      "ageMonths": 21,
+      "independentSourceCount": 21,
+      "earliestIndependentMention": "2025-04-29T00:00:00.000Z",
+      "thinRecord": true
+    },
+    "findings": [
+      {
+        "id": "f1",
+        "sourceId": "s16",
+        "sourceProvenance": "independent",
+        "headline": "Cofounder and CTO Barret Zoph fired amid misconduct and leadership dispute",
+        "summary": "Multiple outlets reported that Thinking Machines Lab fired cofounder and CTO Barret Zoph after allegations of an undisclosed workplace relationship with a junior colleague and a broader dispute over company direction and control; Zoph disputed the company's characterization and called it defamatory.",
+        "url": "https://theoutpost.ai/news-story/thinking-machines-lab-fires-co-founder-barret-zoph-as-12-b-ai-startup-loses-half-its-founders-23195/",
+        "publishedDate": "2026-01-22T00:00:00.000Z",
+        "severity": "medium",
+        "category": "executive"
+      },
+      {
+        "id": "f2",
+        "sourceId": "s13",
+        "sourceProvenance": "independent",
+        "headline": "Two cofounders depart for OpenAI within a year of founding",
+        "summary": "TechCrunch and other outlets reported that cofounders Barret Zoph and Luke Metz, along with founding researcher Sam Schoenholz, left Thinking Machines Lab to rejoin OpenAI less than a year after the startup's founding, following a prior cofounder departure to Meta.",
+        "url": "https://techcrunch.com/2026/01/14/mira-muratis-startup-thinking-machines-lab-is-losing-two-of-its-co-founders-to-openai/",
+        "publishedDate": "2026-01-15T00:00:00.000Z",
+        "severity": "medium",
+        "category": "executive"
+      },
+      {
+        "id": "f3",
+        "sourceId": "s20",
+        "sourceProvenance": "independent",
+        "headline": "Reports of staff exodus and lack of shipped major model",
+        "summary": "Inc. reported that Thinking Machines Lab faced a staff exodus roughly six months after a $2 billion funding round, noting the company had not yet trained a major model beyond its Tinker API product.",
+        "url": "https://www.inc.com/ava-levinson/thinking-machine-labs-staff-exodus/91289207",
+        "publishedDate": "2026-01-16T00:00:00.000Z",
+        "severity": "low",
+        "category": "other"
+      },
+      {
+        "id": "f4",
+        "sourceId": "s21",
+        "sourceProvenance": "self_published",
+        "headline": "Lookalike domain publishes outdated/conflicting company profile",
+        "summary": "A site at thinkingmachineslab.site (distinct from the company's official thinkingmachines.ai domain) presents company information including Barret Zoph as current CTO, which conflicts with independently reported leadership changes; this domain discrepancy warrants scrutiny as a possible impersonation or stale mirror site.",
+        "url": "https://thinkingmachineslab.site/",
+        "severity": "low",
+        "category": "other"
+      }
+    ],
+    "riskMemo": {
+      "overallRationale": "The registry confirms Thinking Machines Lab, Inc. as an active Delaware corporation with Mira Murati as CEO, consistent with the company's own claims and multiple independent sources. Independent reporting, however, reveals significant leadership turmoil: cofounder and CTO Barret Zoph was fired amid allegations of an undisclosed workplace relationship and disputes over strategic control, and multiple other cofounders and researchers departed to OpenAI and Meta within roughly a year of the company's founding [f1] [f2]. Commentary pieces also flagged the exodus as a governance and continuity risk for a company still building its first shipped products [f3]. Additionally, a lookalike domain (thinkingmachineslab.site) presents company information that appears stale or inconsistent with current leadership, which should be verified as an authentic company channel [f4]. No fraud, breach, sanctions, or litigation findings were identified among the 21 independent sources reviewed, but the leadership churn and identity-adjacent domain issue warrant a closer look before proceeding.",
+      "recommendation": "proceed_with_caution"
+    },
+    "timings": {
+      "verificationMs": 66931,
+      "searchMs": 8742,
+      "synthesisMs": 18466,
+      "totalMs": 85397
+    }
+  }
+}
