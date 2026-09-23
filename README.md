@@ -1,5 +1,7 @@
 # vetted
 
+[![CI](https://github.com/josephy02/vetted/actions/workflows/ci.yml/badge.svg)](https://github.com/josephy02/vetted/actions/workflows/ci.yml)
+
 AI copilot that verifies vendor identity and screens for risk signals across the live web, powered by Exa.
 
 Enter a US company name. In under a minute you get:
@@ -49,11 +51,11 @@ Exa Monitors re-run a search on a schedule, drop results they've already returne
 
 ## Cost controls
 
-Each screening makes one Baselayer business search (about $1.00) plus an OFAC screen, with the Agent run at `effort: "low"`. Lien and litigation searches are explicitly skipped. Complete results are cached in memory for an hour per company/city/state, so screening the same vendor again during a demo doesn't bill again. Each client is limited to 5 screenings per minute.
+Each screening makes one Baselayer business search (about $1.00) plus an OFAC screen, with the Agent run at `effort: "low"`. Lien and litigation searches are explicitly skipped. Complete results are cached in memory for an hour per company/city/state, so screening the same vendor again doesn't bill again. Each client is limited to 5 screenings and 5 new monitors per minute.
 
-## Deviations from the spec
+## Design decisions
 
-- **No `@exalabs/ai-sdk`.** Exa's `company-researcher` source calls `exa-js` directly and uses the AI SDK only for structured synthesis. That pattern fits better here too: the memo must cite only sources we pass in, and giving the model a search tool would let it bring in sources outside that set.
+- **`exa-js` directly, not `@exalabs/ai-sdk`.** The memo must cite only the sources the app retrieved. Giving the model a search tool would let it bring in sources outside that set, so retrieval happens first and the AI SDK is used only for structured synthesis.
 - **Dynamic Highlights instead of highlights + summary.** Exa's docs recommend one content view per request, and a per-result summary adds a model call per page.
 - **Streamed progress, not streamed memo text.** The memo is a structured object, so the route streams step completions (which drive the loading screen) and sends the memo once it's complete.
 
