@@ -178,7 +178,11 @@ function Results({ result, replayedAt }: { result: ScreenResponse; replayedAt?: 
       </section>
 
       <section>
-        <MonitorButton query={result.query} exampleHeadline={result.findings[0]?.headline} />
+        <MonitorButton
+          // A domain found automatically lets the monitor exclude the company's own site too.
+          query={{ ...result.query, domain: result.query.domain ?? result.resolvedDomain.domain }}
+          exampleHeadline={result.findings[0]?.headline}
+        />
       </section>
 
       <p className="text-xs text-muted">

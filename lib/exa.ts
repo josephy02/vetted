@@ -1,6 +1,7 @@
 import "server-only";
 import Exa, { DYNAMIC_HIGHLIGHTS_BETA } from "exa-js";
 import { hostOf, isGenericHost, WIRE_DOMAINS } from "./provenance";
+import { relevantHits } from "./relevance";
 import type { MonitorHit, ScreenRequest, Verification } from "./types";
 
 let client: Exa | undefined;
@@ -290,6 +291,7 @@ export async function createExaMonitor(req: ScreenRequest, webhookUrl: string) {
     search: {
       query: adverseMediaQuery(req.companyName),
       numResults: 10,
+      excludeDomains: excluding(req.domain),
       contents: { highlights: true },
     },
     trigger: { type: "interval", period: "1d" },
@@ -301,15 +303,22 @@ export async function createExaMonitor(req: ScreenRequest, webhookUrl: string) {
   return monitor;
 }
 
+// The company name comes from the monitor's metadata, set when it was created.
+export async function monitorCompanyName(monitorId: string): Promise<string> {
+  const monitor = await exa().monitors.get(monitorId);
+  const name = monitor.metadata?.companyName;
+  if (!name) throw new Error(`Monitor ${monitorId} has no company name`);
+  return name;
+}
+
 export async function listExaMonitorHits(monitorId: string) {
-  const runs = await exa().monitors.runs.list(monitorId, { limit: 10 });
+  const [companyName, runs] = await Promise.all([
+    monitorCompanyName(monitorId),
+    exa().monitors.runs.list(monitorId, { limit: 10 }),
+  ]);
   const completed = runs.data.filter((r) => r.status === "completed");
   const hits: MonitorHit[] = completed.flatMap((r) =>
-    (r.output?.results ?? []).map((item) => ({
-      title: String(item.title ?? item.url),
-      url: String(item.url),
-      publishedDate: item.publishedDate ? String(item.publishedDate) : undefined,
-    })),
+    relevantHits(companyName, r.output?.results ?? []),
   );
   return { hits, lastRunAt: completed[0]?.completedAt ?? undefined };
 }

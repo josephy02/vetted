@@ -134,8 +134,8 @@ function AlertPreview({ companyName, headline }: { companyName: string; headline
         <p className="font-medium">New coverage for {companyName}</p>
         <p className="mt-1 text-muted">
           {headline
-            ? `Alerts look like this, e.g. "${headline}", with the source link and a re-run of the risk memo.`
-            : "Each new article appears with its source link, date, and a re-run of the risk memo."}
+            ? `Alerts look like this, e.g. "${headline}", with its source link and date.`
+            : "Each new article appears with its source link and date."}
         </p>
       </div>
     </figure>

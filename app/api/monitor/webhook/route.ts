@@ -1,5 +1,6 @@
+import { monitorCompanyName } from "@/lib/exa";
 import { recordPushedHits, verifyWebhook } from "@/lib/monitors";
-import type { MonitorHit } from "@/lib/types";
+import { relevantHits } from "@/lib/relevance";
 
 // Receives `monitor.run.completed` deliveries from Exa Monitors.
 export async function POST(req: Request) {
@@ -21,12 +22,9 @@ export async function POST(req: Request) {
   }
 
   if (event.type === "monitor.run.completed") {
-    const hits: MonitorHit[] = (event.data?.output?.results ?? []).map((r) => ({
-      title: String(r.title ?? r.url),
-      url: String(r.url),
-      publishedDate: r.publishedDate ? String(r.publishedDate) : undefined,
-    }));
-    recordPushedHits(monitorId, hits);
+    const companyName = await monitorCompanyName(monitorId).catch(() => undefined);
+    if (!companyName) return Response.json({ error: "Unknown monitor" }, { status: 404 });
+    recordPushedHits(monitorId, relevantHits(companyName, event.data?.output?.results ?? []));
   }
 
   return Response.json({ received: true });

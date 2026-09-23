@@ -43,7 +43,7 @@ export async function createMonitor(req: ScreenRequest): Promise<MonitorResponse
   }
 
   // Fallback: record today's results as the baseline and diff on each check.
-  const baseline = await searchIndependentAdverse(req);
+  const baseline = await searchIndependentAdverse(req, req.domain);
   const id = `local_${crypto.randomUUID()}`;
   local.set(id, {
     request: req,
@@ -57,7 +57,7 @@ export async function createMonitor(req: ScreenRequest): Promise<MonitorResponse
 export async function checkMonitor(id: string): Promise<MonitorStatusResponse | null> {
   const entry = local.get(id);
   if (entry) {
-    const results = await searchIndependentAdverse(entry.request);
+    const results = await searchIndependentAdverse(entry.request, entry.request.domain);
     for (const r of results) {
       if (entry.seenUrls.has(r.url)) continue;
       entry.seenUrls.add(r.url);
