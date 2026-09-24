@@ -15,7 +15,7 @@
     "fixture": "node scripts/save-fixture.mjs"
   },
   "dependencies": {
-    "@ai-sdk/anthropic": "^3.0.119",
+    "@ai-sdk/anthropic": "^4.0.58",
     "ai": "^6.0.287",
     "exa-js": "^2.22.2",
     "next": "16.3.5",
