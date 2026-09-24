@@ -1,3 +1,4 @@
+import { accessDenied, hasAccess } from "@/lib/access";
 import { computeFootprint } from "@/lib/analysis";
 import { allow, cacheKey, getCached, setCached } from "@/lib/cache";
 import { assembleSources } from "@/lib/classify";
@@ -31,6 +32,7 @@ function failed(what: string, err: unknown): string {
 }
 
 export async function POST(req: Request) {
+  if (!hasAccess(req)) return accessDenied();
   const parsed = parseScreenRequest(await req.json().catch(() => null));
   if (typeof parsed === "string") return Response.json({ error: parsed }, { status: 400 });
 

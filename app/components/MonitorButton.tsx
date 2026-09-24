@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { accessHeaders } from "@/lib/access-code";
 import type { MonitorResponse, MonitorStatusResponse, ScreenRequest } from "@/lib/types";
 import { formatDate, hostname } from "./FindingsList";
 
@@ -24,7 +25,7 @@ export function MonitorButton({
     try {
       const res = await fetch("/api/monitor", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...accessHeaders() },
         body: JSON.stringify(query),
       });
       const body = await res.json();

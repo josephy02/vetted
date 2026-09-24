@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { accessHeaders, saveAccessCode } from "@/lib/access-code";
 import type { ScreenEvent, ScreenRequest, ScreenResponse, ScreenStep } from "@/lib/types";
+import { AccessCodeForm } from "./components/AccessCodeForm";
 import { CorroborationTable } from "./components/CorroborationTable";
 import { FindingsList, formatDate } from "./components/FindingsList";
 import { FootprintBanner } from "./components/FootprintBanner";
@@ -25,7 +27,7 @@ type View =
   | { kind: "idle" }
   | { kind: "loading"; query: ScreenRequest; steps: Steps }
   | { kind: "done"; result: ScreenResponse; replayedAt?: string }
-  | { kind: "error"; query: ScreenRequest; message: string };
+  | { kind: "error"; query: ScreenRequest; message: string; needsCode?: boolean };
 
 // ?demo=cached replays screenings saved by `npm run fixture`, for when the network
 // or an API is too slow to run live.
@@ -65,13 +67,20 @@ export default function Home() {
     setView({ kind: "loading", query, steps });
 
     try {
+      const auth = accessHeaders();
       const res = await fetch("/api/screen", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...auth },
         body: JSON.stringify(query),
       });
       if (!res.ok || !res.body) {
         const body = await res.json().catch(() => ({}));
+        if (res.status === 401) {
+          saveAccessCode(null);
+          const message = "x-access-code" in auth ? "That access code didn't work." : body.error;
+          setView({ kind: "error", query, message, needsCode: true });
+          return;
+        }
         throw new Error(body.error ?? `Request failed (${res.status})`);
       }
 
@@ -125,9 +134,19 @@ export default function Home() {
         {view.kind === "loading" && <ScreenProgress steps={view.steps} />}
 
         {view.kind === "error" && (
-          <p className="rounded-xl border border-escalate/30 p-4 text-escalate">
-            Screening failed: {view.message}
-          </p>
+          <div className="rounded-xl border border-escalate/30 p-4">
+            <p className="text-escalate">
+              {view.needsCode ? view.message : `Screening failed: ${view.message}`}
+            </p>
+            {view.needsCode && (
+              <AccessCodeForm
+                onSubmit={(code) => {
+                  saveAccessCode(code);
+                  screen(view.query);
+                }}
+              />
+            )}
+          </div>
         )}
 
         {view.kind === "done" && (

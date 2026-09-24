@@ -1,3 +1,4 @@
+import { accessDenied, hasAccess } from "@/lib/access";
 import { allow } from "@/lib/cache";
 import { createMonitor } from "@/lib/monitors";
 import { clientId, parseScreenRequest } from "@/lib/request";
@@ -5,6 +6,7 @@ import { clientId, parseScreenRequest } from "@/lib/request";
 export const maxDuration = 60;
 
 export async function POST(req: Request) {
+  if (!hasAccess(req)) return accessDenied();
   const parsed = parseScreenRequest(await req.json().catch(() => null));
   if (typeof parsed === "string") return Response.json({ error: parsed }, { status: 400 });
 

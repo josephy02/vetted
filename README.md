@@ -29,6 +29,7 @@ Open http://localhost:3000.
 | `ANTHROPIC_API_KEY` | yes | Used for the risk-memo synthesis step. |
 | `ANTHROPIC_MODEL` | no | Defaults to `claude-sonnet-5`. |
 | `APP_URL` | no | Public HTTPS origin. When set (or on Vercel), monitoring uses real Exa Monitors. |
+| `ACCESS_CODE` | no | When set, live screenings and new monitors require this code. Set it on any public deployment. |
 
 ## How it works
 
@@ -51,7 +52,7 @@ Exa Monitors re-run a search on a schedule, drop results they've already returne
 
 ## Cost controls
 
-Each screening makes one Baselayer business search (about $1.00) plus an OFAC screen, with the Agent run at `effort: "low"`. Lien and litigation searches are explicitly skipped. Complete results are cached in memory for an hour per company/city/state, so screening the same vendor again doesn't bill again. Each client is limited to 5 screenings and 5 new monitors per minute.
+Each screening makes one Baselayer business search (about $1.00) plus an OFAC screen, with the Agent run at `effort: "low"`. Lien and litigation searches are explicitly skipped. Complete results are cached in memory for an hour per company/city/state, so screening the same vendor again doesn't bill again. Each client is limited to 5 screenings and 5 new monitors per minute. A public deployment should also set `ACCESS_CODE`, so that only people with the code can run billed screenings. Anyone can still replay the saved screenings at `?demo=cached`.
 
 ## Design decisions
 
